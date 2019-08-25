@@ -191,17 +191,24 @@ class ViewController: UIViewController {
         let stair = climbStairs(8)
         print("leetcode70 output: \(stair)")
         
+        //88
+        
         //125
         let palindStr = isPalindrome("A man, a plan, a canal: Panama")
         print("leetcode125 output: \(palindStr)")
         
         //136
-        let single = singleNumber([4,1,2,1,2])
+        let single = singleNumber([4, 1, 2, 1, 2])
         print("leetcode136 output: \(single)")
         
         //171
         let excelColumn = titleToNumber("AAA")
         print("leetcode171 output: \(excelColumn)")
+        
+        //189
+        var aryWouldBeRotated = [1, 2, 3, 4, 5, 6, 7]
+        _ = rotate(&aryWouldBeRotated, 3)
+        print("leetcode189 output: \(aryWouldBeRotated)")
         
         //204
         let primes = countPrimes(10)
@@ -210,6 +217,14 @@ class ViewController: UIViewController {
         //242
         let anagram = isAnagram("rat", "car")
         print("leetcode242 output: \(anagram)")
+        
+        //268
+        let missingNo = missingNumber([9, 6, 4, 2, 3, 5, 7, 0, 1])
+        print("leetcode268 output: \(missingNo)")
+        
+        //278
+        let badVersion = firstBadVersion(5) ?? 1
+        print("leetcode278 output: \(badVersion)")
         
         //283
         var unremoveZeros = [1, 0]
@@ -1005,7 +1020,8 @@ func deleteDuplicates(_ head: ListNode?) -> ListNode? {
     return head     //注意： 這裡是return head
 }
 
-////Leetcode - 88 Merge Sorted Array
+
+//Leetcode - 88 Merge Sorted Array
 func merge(_ nums1: inout [Int], _ m: Int, _ nums2: [Int], _ n: Int) {
     var aIndex = m - 1
     var bIndex = n - 1
@@ -1110,13 +1126,27 @@ func titleToNumber(_ s: String) -> Int {    //AA = 27(26+1), AB = 28(26+2), AC =
 
 //Leetcode - 189
 func rotate(_ nums: inout [Int], _ k: Int) {
-    if nums.count == 0 { return }
+    //Solution 1:
+//    if nums.count == 0 { return }
+//
+//    for _ in 0 ..< k {
+//        nums.insert(nums.last!, at: 0)
+//        _ = nums.popLast()
+//    }
     
-    for _ in 0 ..< k {
-        nums.insert(nums.last!, at: 0)
-        _ = nums.popLast()
+    //Solution 2:
+    if nums.count <= 1 { return }
+    
+    var step = k
+    if nums.count < step {
+        step = step % nums.count
     }
-    print("rotated ary in leetcode 189: \(nums)")
+    
+    let range = (nums.count - step)...
+    let rotateObj = nums[range]
+    
+    nums.removeSubrange(range)
+    nums.insert(contentsOf: rotateObj, at: 0)
 }
 
 //Leetcode - 204 Count Primes
@@ -1211,6 +1241,46 @@ func isAnagram(_ s: String, _ t: String) -> Bool {
         }
     }
     return dic.keys.count == 0 ? true : false
+}
+
+//Leetcode - 268 Missing Number
+func missingNumber(_ nums: [Int]) -> Int {
+    //Solution 1:
+    var variousNums = nums
+    variousNums.sort()
+    var missingNo = 0
+    for i in variousNums {
+        if missingNo != i {
+            return missingNo
+        }
+        missingNo += 1
+    }
+    return missingNo
+}
+
+//Leetcode - 278 First Bad Version
+func firstBadVersion(_ n: Int) -> Int? {
+    var low = 1
+    var high = n
+    
+    while low <= high {
+        let mid = (low + high) / 2
+        if (isBadVersion(mid) && !isBadVersion(mid-1)) {
+            return mid
+        }
+        else if (isBadVersion(mid)) {
+            high = mid - 1
+        }
+        else {
+            low = mid + 1
+        }
+    }
+    return nil
+}
+
+func isBadVersion(_ n: Int) -> Bool {
+    //Leetcode provide
+    return true
 }
 
 //Leetcode - 283 Move Zeroes

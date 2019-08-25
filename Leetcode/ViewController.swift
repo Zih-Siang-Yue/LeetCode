@@ -81,7 +81,7 @@ class ViewController: UIViewController {
         let sumA = sumAry(ary: [1, 2, 3, 6, 7, 10, 22])
         print("yahoo3 output: \(sumA)")
         
-        //Leet code
+        //Leetcode
         //0.0
         let length = removeElement([1, 2, 4, 4, 6, 7, 8, 8], element: 6)
         print("leetcode0.0 output: \(length)")
@@ -203,10 +203,26 @@ class ViewController: UIViewController {
         let excelColumn = titleToNumber("AAA")
         print("leetcode171 output: \(excelColumn)")
         
+        //204
+        let primes = countPrimes(10)
+        print("leetcode204 output: \(primes)")
+        
+        //242
+        let anagram = isAnagram("rat", "car")
+        print("leetcode242 output: \(anagram)")
+        
         //283
         var unremoveZeros = [1, 0]
         moveZeroes(&unremoveZeros)
         print("leetcode283 output: \(unremoveZeros)")
+        
+        //349
+        let intersect1 = intersection([1, 2, 2, 1], [2, 2])
+        print("leetcode349 output: \(intersect1)")
+        
+        //350
+        let intersect2 = intersect([1, 2, 2, 1], [2, 2])
+        print("leetcode349 output: \(intersect2)")
         
         //389
         let diff = findTheDifference("a", "aa")
@@ -281,7 +297,7 @@ func sumAry(ary: [Int]) -> Int {
 
 //MARK: Leet code
 
-//Leet code - 0.0 移除指定Int remove element, 回傳移除之後的陣列數
+//Leetcode - 0.0 移除指定Int remove element, 回傳移除之後的陣列數
 func removeElement(_ ary:[Int], element:Int) -> Int {
     var mAry = ary
     for (i, value) in mAry.enumerated() {
@@ -292,7 +308,7 @@ func removeElement(_ ary:[Int], element:Int) -> Int {
     return mAry.count
 }
 
-//Leet code - 0.1 移除重複的值 remove duplicates
+//Leetcode - 0.1 移除重複的值 remove duplicates
 func removeDuplicates(_ ary:[Int]) -> [Int] {
     //0. 此演算法建立在已排序的ary裡
     //1. 準備兩個變數 i(目前的索引值), j(目前已被替換的索引值)
@@ -311,7 +327,7 @@ func removeDuplicates(_ ary:[Int]) -> [Int] {
     return Array(mAry[...j])
 }
 
-//Leet code - 0.2 移除重複的值(最多能包含兩個) remove duplicates(Two)
+//Leetcode - 0.2 移除重複的值(最多能包含兩個) remove duplicates(Two)
 func removeDuplicates2(_ ary:[Int]) -> [Int] {  // [1, 1, 1, 2, 2, 3, 3, 3, 4, 4, 5, 6]
     if ary.count == 0 { return [Int]() }
     
@@ -336,7 +352,7 @@ func removeDuplicates2(_ ary:[Int]) -> [Int] {  // [1, 1, 1, 2, 2, 3, 3, 3, 4, 4
     return Array(mAry[...j])
 }
 
-//Leet code - 0.3 陣列裡的值 +1, 並往前加總
+//Leetcode - 0.3 陣列裡的值 +1, 並往前加總
 func plusOne(digits ary:[Int]) -> [Int] {
     if ary.count == 0 { return [Int]() }
     
@@ -356,11 +372,11 @@ func plusOne(digits ary:[Int]) -> [Int] {
     return mAry
 }
 
-//Leet code 0.4 Pascal's Triangle I
+//Leetcode 0.4 Pascal's Triangle I
 
-//Leet code 0.5 Pascal's Triangle II
+//Leetcode 0.5 Pascal's Triangle II
 
-//Leet code 0.6 Merge Sorted Ary
+//Leetcode 0.6 Merge Sorted Ary
 func mergeSortedArys(_ aryA: [Int], _ aryB: [Int]) -> [Int] {
     //利用合併排序法的 合併步驟來完成,(合併排序法則需要加入"inout" 修飾字, 且要先做分割的動作)
     //1. 準備一個aIndex, bIndex, mergeIndex, 和一個空的ary
@@ -401,12 +417,12 @@ func mergeSortedArys(_ aryA: [Int], _ aryB: [Int]) -> [Int] {
     return mergeAry
 }
 
-//Leet code - 0.7, 如 Leet code -1
+//Leetcode - 0.7, 如 Leet code -1
 //func sum2(_ nums:[Int], _ target: Int) -> [Int] {
 //
 //}
 
-//Leet code - 0.8, 給一個ary, 要將3個數字加總之後 = 0, 回傳3個數字的索引值, 且需為升冪排序
+//Leetcode - 0.8, 給一個ary, 要將3個數字加總之後 = 0, 回傳3個數字的索引值, 且需為升冪排序
 func sum3Number(_ nums:[Int]) -> [Int] {    // [2, -7, 10, 5, -4, -8, 3, 1] -> 2 + (-7) + 5 = 0
     //1. 先排序ary
     //2. 將排序過後的ary 掃出 並將 0 - value 當作key, index當作value 存入dic(在下一個for loop)
@@ -435,7 +451,7 @@ func sum3Number(_ nums:[Int]) -> [Int] {    // [2, -7, 10, 5, -4, -8, 3, 1] -> 2
     return [0]
 }
 
-//Leet code - 0.9,給一個ary和一個target, 求出哪3個數字加總之後最接近target的值
+//Leetcode - 0.9,給一個ary和一個target, 求出哪3個數字加總之後最接近target的值
 func sum3Closest(nums: [Int], target: Int) -> Int { //[-2, 6, 0, 9, -4, 2, 7], target 20
     //1. 須先將ary 排序過
     //2. 準備3個指標 i, j, k, 和一個暫時加總得值temp 用來存最接近的值已作回傳, 和一個距離變數distance 用來記錄最接近的距離
@@ -477,7 +493,7 @@ func sum3Closest(nums: [Int], target: Int) -> Int { //[-2, 6, 0, 9, -4, 2, 7], t
     return temp
 }
 
-//Leet code - 0.10 求rotated 過的ary 最小值
+//Leetcode - 0.10 求rotated 過的ary 最小值
 func minimumInRotatedSortedAry(ary: [Int]) -> Int {     // [5, 6, 7, 1, 2, 3, 4]
     if ary.count == 0 {
         return 0
@@ -506,7 +522,7 @@ func minimumInRotatedSortedAry(ary: [Int]) -> Int {     // [5, 6, 7, 1, 2, 3, 4]
     return min(ary[start], ary[stop])
 }
 
-//Leet code - 1, ary裡的兩個數目加總 = target
+//Leetcode - 1, ary裡的兩個數目加總 = target
 func twoSum(_ nums: [Int], _ target: Int) -> [Int] {    //[2, 7, 11, 18], 18
     //1.for loop
     //2.key為target - ary[i]
@@ -524,7 +540,7 @@ func twoSum(_ nums: [Int], _ target: Int) -> [Int] {    //[2, 7, 11, 18], 18
     return [0]
 }
 
-//Leet code - 2
+//Leetcode - 2
 func addTwoNumber(_ l1: ListNode?,_ l2: ListNode?) -> ListNode? {   // (2 -> 4 -> 3) + (5 -> 6 -> 4)
     return addTwoNumbers(l1, l2, 0)                          //l1(val:2, next:4 -> 3) + l2(val:5, next:6 -> 4)
 }
@@ -544,7 +560,7 @@ func addTwoNumbers(_ l1: ListNode?, _ l2: ListNode?,_ carry: Int) -> ListNode? {
 //input:  (6 -> 4 -> 6) + (4 -> 7 -> 3)
 //output: (0 -> 2 -> 0 -> 1)
 
-//Leet code - 5
+//Leetcode - 5
 func longestPalindrome(_ s: String) -> String {
     if s.count == 0 {
         return ""
@@ -574,7 +590,7 @@ func isPalindrome(str: String) -> Bool {
     return str == rStr ? true : false
 }
 
-//Leet code - 7, Int 反轉後仍是正常的Int
+//Leetcode - 7, Int 反轉後仍是正常的Int
 func reverseInt(_ x: Int) -> Int {
     //1.先new reverse:Int
     //2.當原本的值 == 0 -> 不再近迴圈, 所以 while origin != 0
@@ -597,7 +613,7 @@ func reverseInt(_ x: Int) -> Int {
     return reverse
 }
 
-//Leet code - 9, 判斷Int是否對稱
+//Leetcode - 9, 判斷Int是否對稱
 func isPalindrome(_ x: Int) -> Bool {
     //1. 先過濾"負數" & "尾數為0的值", 因為不可能對稱 -> false
     //2. 當reverse > origin 不再進迴圈
@@ -635,7 +651,7 @@ func isPalindrome(_ x: Int) -> Bool {
     */
 }
 
-//Leet code - 12, Int 轉換成羅馬數字
+//Leetcode - 12, Int 轉換成羅馬數字
 func intToRoman(_ num: Int) -> String {   ///3425 -> MMMCDXXV
     //1. 先將10的倍數值都寫成ary
     //2. 將int / 1000的倍數 + (int % 1000) / 100 + (int % 100 / 10) + int % 10
@@ -646,7 +662,7 @@ func intToRoman(_ num: Int) -> String {   ///3425 -> MMMCDXXV
     return M[num/1000] + C[(num%1000)/100] + X[(num%100)/10] + I[num%10];
 }
 
-//Leet code - 13, 羅馬數字轉換成Int
+//Leetcode - 13, 羅馬數字轉換成Int
 func romanToInt(_ s: String) -> Int {   // D
     let dic:[String: Int] = ["I": 1,
                              "V": 5,
@@ -681,7 +697,7 @@ func romanToInt(_ s: String) -> Int {   // D
     return sum;
 }
 
-//Leet code - 14
+//Leetcode - 14
 func longestCommonPrefix(_ strs: [String]) -> String {  //["leetcode", "leet", "lee", "lean"]
     //1. 找到strs 裡最小的值, 並把它當作longestPrefix
     //2. for loop strs
@@ -707,7 +723,7 @@ func longestCommonPrefix(_ strs: [String]) -> String {  //["leetcode", "leet", "
     return longestPrefix
 }
 
-//Leet code - 20
+//Leetcode - 20
 func isValidParentheses(_ s: String) -> Bool {      //[](){}
     //1. new一個dic 反向存放符號(key 為右邊符號, value為左邊符號
     //2. new一個stack 存放左邊符號
@@ -734,7 +750,7 @@ func isValidParentheses(_ s: String) -> Bool {      //[](){}
     return stack.isEmpty
 }
 
-//Leet code - 21    //Warning - Compile Error (use of unresolved identifier Int_Max)
+//Leetcode - 21    //Warning - Compile Error (use of unresolved identifier Int_Max)
 func mergeTwoLists(_ l1: ListNode?, _ l2: ListNode?) -> ListNode? {
     guard l1?.val != nil || l2?.val != nil else {
         return nil
@@ -754,7 +770,7 @@ func mergeTwoLists(_ l1: ListNode?, _ l2: ListNode?) -> ListNode? {
     return node
 }
 
-//Leet code - 26    //Almost the same as No.0.1
+//Leetcode - 26    //Almost the same as No.0.1
 func removeDuplicates(_ nums: inout [Int]) -> Int {
     if nums.count == 0 { return 0 }
     
@@ -769,7 +785,7 @@ func removeDuplicates(_ nums: inout [Int]) -> Int {
     return nums.count
 }
 
-//Leet code - 28    //Warning - Time Limited
+//Leetcode - 28    //Warning - Time Limited
 func strStr(_ haystack: String, _ needle: String) -> Int {
     if needle.isEmpty { return 0 }
     if haystack.count < needle.count { return -1 }
@@ -825,7 +841,7 @@ func strStr(_ haystack: String, _ needle: String) -> Int {
     */
 }
 
-//Leet code - 35
+//Leetcode - 35
 func searchInsert(_ nums: [Int], _ target: Int) -> Int {    //[1, 3, 5, 6] , 7
     for i in 0 ..< nums.count {
         if target <= nums[i] {
@@ -841,7 +857,7 @@ func searchInsert(_ nums: [Int], _ target: Int) -> Int {    //[1, 3, 5, 6] , 7
     return nums.count
 }
 
-//Leet code - 50 x的 ｎ次方
+//Leetcode - 50 x的 ｎ次方
 func myPow(_ x: Double, _ n: Int) -> Double {
     //1. 利用遞迴方式撰寫
     //2. if n == 0 (任何 x 的 0次方皆為1) -> 回傳1
@@ -861,11 +877,11 @@ func myPow(_ x: Double, _ n: Int) -> Double {
     return mN % 2 == 0 ? myPow(mX * mX, mN / 2) : myPow(mX * mX, mN / 2) * mX
 }
 
-//Leet code - 53 Maximum Subarray
+//Leetcode - 53 Maximum Subarray
 func maxSubArray(_ nums: [Int]) -> Int {        //[1, 2, -7, -3, 4, 7, 0, -3]
     let length = nums.count
-    if (length == 0) {return 0}
-    if(length == 1) {return nums[0]}
+    if (length == 0) { return 0 }
+    if (length == 1) { return nums[0] }
     
     var localMax = 0
     var soFarMax = Int.min
@@ -876,14 +892,14 @@ func maxSubArray(_ nums: [Int]) -> Int {        //[1, 2, -7, -3, 4, 7, 0, -3]
     return soFarMax
 }
 
-//Leet code - 58 Length of Last Word
+//Leetcode - 58 Length of Last Word
 func lengthOfLastWord(_ s: String) -> Int {
     if s.isEmpty { return 0 }
     let ary = s.split(separator: " ")
     return ary.last?.count ?? 0
 }
 
-//Leet code - 66 plus one
+//Leetcode - 66 plus one
 func plusOne(_ digits: [Int]) -> [Int] {//若過號 要變成 單位數
     if digits.count == 0 { return [Int]() }
     
@@ -899,7 +915,7 @@ func plusOne(_ digits: [Int]) -> [Int] {//若過號 要變成 單位數
     return ary
 }
 
-//Leet code - 67 Add Binary
+//Leetcode - 67 Add Binary
 func addBinary(_ a: String, _ b: String) -> String {
     let mA = Array(a)
     let mB = Array(b)
@@ -920,7 +936,7 @@ func addBinary(_ a: String, _ b: String) -> String {
     return rev
 }
 
-//Leet code - 69 Sqrt(x)
+//Leetcode - 69 Sqrt(x)
 func mySqrt(_ x: Int) -> Int {
 //    return Int(Double(x).squareRoot())
     guard x != 0 else { return 0 }
@@ -945,7 +961,7 @@ func mySqrt(_ x: Int) -> Int {
     return high
 }
 
-//Leet code - 70 Climbing Stairs(費氏數列變形，只是他從index 1,2開始): n為top, 每次只能走1 or 2步, 有多少種組合可以到達top
+//Leetcode - 70 Climbing Stairs(費氏數列變形，只是他從index 1,2開始): n為top, 每次只能走1 or 2步, 有多少種組合可以到達top
 func climbStairs(_ n: Int) -> Int {
     if n == 0 {
         return 0
@@ -975,7 +991,7 @@ func climbing(_ i: Int, _ n: Int) -> Int {  //climb stairs formula
     return climbing(i+1, n) + climbing(i+2, n)
 }
 
-//Leet code - 83 Remove Duplicates from Sorted List
+//Leetcode - 83 Remove Duplicates from Sorted List
 func deleteDuplicates(_ head: ListNode?) -> ListNode? {
     var current = head
     while current != nil && current?.next != nil {
@@ -989,7 +1005,7 @@ func deleteDuplicates(_ head: ListNode?) -> ListNode? {
     return head     //注意： 這裡是return head
 }
 
-////Leet code - 88 Merge Sorted Array
+////Leetcode - 88 Merge Sorted Array
 func merge(_ nums1: inout [Int], _ m: Int, _ nums2: [Int], _ n: Int) {
     var aIndex = m - 1
     var bIndex = n - 1
@@ -1019,7 +1035,7 @@ func merge(_ nums1: inout [Int], _ m: Int, _ nums2: [Int], _ n: Int) {
     }
 }
 
-//Leet code 100 Same Tree
+//Leetcode 100 Same Tree
 func isSameTree(_ p: TreeNode?, _ q: TreeNode?) -> Bool {
     if p == nil && q == nil {
         return true
@@ -1034,7 +1050,7 @@ func isSameTree(_ p: TreeNode?, _ q: TreeNode?) -> Bool {
     return isSameTree(p?.left, q?.left) && isSameTree(p?.right, q?.right)
 }
 
-//Leet code 104 Maximum Depth of Binary Tree
+//Leetcode 104 Maximum Depth of Binary Tree
 public class TreeNode {
     public var val: Int
     public var left: TreeNode?
@@ -1055,7 +1071,7 @@ func maxDepth(_ root: TreeNode?) -> Int {
     return maxDepth(root?.left)
 }
 
-//Leet code - 125 Valid Palindrome
+//Leetcode - 125 Valid Palindrome
 func isPalindrome(_ s: String) -> Bool {
     var filterStr = ""
     s.lowercased().enumerateSubstrings(in: s.startIndex..<s.endIndex, options: .byWords) { (subStr, _, _, _) in
@@ -1064,7 +1080,7 @@ func isPalindrome(_ s: String) -> Bool {
     return filterStr == String(filterStr.reversed()) ? true : false
 }
 
-//Leet code - 136 Single Number
+//Leetcode - 136 Single Number
 func singleNumber(_ nums: [Int]) -> Int {
     var dic = [Int:Int]()
     for i in nums {
@@ -1079,7 +1095,7 @@ func singleNumber(_ nums: [Int]) -> Int {
     return fDic.keys.first!
 }
 
-//Leet code - 171 Excel Sheet Column Number
+//Leetcode - 171 Excel Sheet Column Number
 func titleToNumber(_ s: String) -> Int {    //AA = 27(26+1), AB = 28(26+2), AC = 29, AZ = 52(26 + 26), BA = 53
     let dic = ["A":1, "B":2, "C":3, "D":4, "E":5, "F":6, "G":7, "H":8, "I":9, "J":10, "K":11, "L":12, "M":13, "N":14, "O":15, "P":16, "Q":17, "R":18, "S":19, "T":20, "U":21, "V":22, "W":23, "X":24, "Y":25, "Z":26]
     var sum = 0
@@ -1092,7 +1108,7 @@ func titleToNumber(_ s: String) -> Int {    //AA = 27(26+1), AB = 28(26+2), AC =
     return sum
 }
 
-//Leet code - 189
+//Leetcode - 189
 func rotate(_ nums: inout [Int], _ k: Int) {
     if nums.count == 0 { return }
     
@@ -1103,7 +1119,27 @@ func rotate(_ nums: inout [Int], _ k: Int) {
     print("rotated ary in leetcode 189: \(nums)")
 }
 
-//Leet code - 206 Reverse Linked List
+//Leetcode - 204 Count Primes
+func countPrimes(_ n: Int) -> Int {
+    var count: Int = 0
+    for i in 2...n {
+        if isPrime(i) {
+            count += 1
+        }
+    }
+    return count
+}
+
+func isPrime(_ n: Int) -> Bool {
+    for i in 2...n {
+        if n % i == 0 {
+            return false
+        }
+    }
+    return true
+}
+
+//Leetcode - 206 Reverse Linked List
 func reverseList(_ head: ListNode?) -> ListNode? {
     return reverse(cur: head, pre: nil)
 }
@@ -1115,7 +1151,7 @@ func reverse(cur: ListNode?, pre: ListNode?) -> ListNode? {
     return reverse(cur: next, pre: cur)
 }
 
-//Leet code - 217 Contains Duplicate
+//Leetcode - 217 Contains Duplicate
 func containsDuplicate(_ nums: [Int]) -> Bool {
     var dic = [Int:Int]()
     for i in nums {
@@ -1129,7 +1165,7 @@ func containsDuplicate(_ nums: [Int]) -> Bool {
     return false
 }
 
-//Leet code - 226 Invert Binary Tree
+//Leetcode - 226 Invert Binary Tree
 func invertTree(_ root: TreeNode?) -> TreeNode? {
     if root == nil || root?.val == nil {
         return nil
@@ -1140,7 +1176,7 @@ func invertTree(_ root: TreeNode?) -> TreeNode? {
     return root
 }
 
-//Leet code - 231 Power of Two 負數不行
+//Leetcode - 231 Power of Two 負數不行
 func isPowerOfTwo(_ n: Int) -> Bool {   //218 109
     if n <= 0 { return false }
     var number = n
@@ -1155,7 +1191,29 @@ func isPowerOfTwo(_ n: Int) -> Bool {   //218 109
     return true
 }
 
-//Leet code - 283 Move Zeroes
+//Leetcode - 242 Valid Anagram
+func isAnagram(_ s: String, _ t: String) -> Bool {
+    if s.isEmpty && t.isEmpty {
+        return true
+    }
+    
+    var dic = [Character: Int]()
+    for sLetter in s {
+        dic[sLetter] = dic[sLetter] != nil ? dic[sLetter]! + 1 : 1
+    }
+    
+    for tLetter in t {
+        if let value = dic[tLetter] {
+            dic[tLetter] = value - 1 == 0 ? nil : value - 1
+        }
+        else {
+            return false
+        }
+    }
+    return dic.keys.count == 0 ? true : false
+}
+
+//Leetcode - 283 Move Zeroes
 func moveZeroes(_ nums: inout [Int]) {      //[0,1,0,3,12]
     if nums.isEmpty { return }
     var cur = 0
@@ -1168,12 +1226,12 @@ func moveZeroes(_ nums: inout [Int]) {      //[0,1,0,3,12]
     nums.replaceSubrange(cur..<nums.count, with: repeatElement(0, count: nums.count-cur))
 }
 
-//Leet code - 292 Nim Game, 和朋友玩撿石頭遊戲, n為總數石頭, 一人一次撿1-3顆, 最後一次撿到的算贏, I win ->true, friend -> false
+//Leetcode - 292 Nim Game, 和朋友玩撿石頭遊戲, n為總數石頭, 一人一次撿1-3顆, 最後一次撿到的算贏, I win ->true, friend -> false
 func canWinNim(_ n: Int) -> Bool {
     return n % 4 == 0 ? false : true
 }
 
-//Leet code - 349 Intersection of Two Arrays
+//Leetcode - 349 Intersection of Two Arrays
 func intersection(_ nums1: [Int], _ nums2: [Int]) -> [Int] {
     var dic = [Int:Int]()
     var intersections = [Int]()
@@ -1181,6 +1239,7 @@ func intersection(_ nums1: [Int], _ nums2: [Int]) -> [Int] {
     for i in nums1 {
         dic[i] = 0
     }
+    
     for j in nums2 {
         if dic[j] != nil && !intersections.contains(j) {
             intersections.append(j)
@@ -1189,7 +1248,25 @@ func intersection(_ nums1: [Int], _ nums2: [Int]) -> [Int] {
     return intersections
 }
 
-//Leet code - 389 Find the Difference
+//Leetcode - 350  Intersection of Two Arrays II
+func intersect(_ nums1: [Int], _ nums2: [Int]) -> [Int] {
+    var dic = [Int:Int]()
+    var intersections = [Int]()
+    
+    for i in nums1 {
+        dic[i] = dic[i] != nil ? dic[i]! + 1 : 1
+    }
+    
+    for j in nums2 {
+        if let value = dic[j] {
+            intersections.append(j)
+            dic[j] = value - 1 == 0 ? nil : value - 1
+        }
+    }
+    return intersections
+}
+
+//Leetcode - 389 Find the Difference
 func findTheDifference(_ s: String, _ t: String) -> Character {
     var dic = [Character:Int]()
     for i in s {
@@ -1199,9 +1276,8 @@ func findTheDifference(_ s: String, _ t: String) -> Character {
         else {
             dic[i]! += 1
         }
-        
-        
     }
+    
     for j in t {
         if dic[j] == nil {
             return j
@@ -1216,7 +1292,7 @@ func findTheDifference(_ s: String, _ t: String) -> Character {
     return "?"
 }
 
-//Leet code - 771
+//Leetcode - 771
 func numJewelsInStones(_ J: String, _ S: String) -> Int {
     var output:Int = 0
     for i in 0..<J.count {

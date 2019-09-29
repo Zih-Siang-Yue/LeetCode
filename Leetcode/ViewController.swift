@@ -193,6 +193,14 @@ class ViewController: UIViewController {
         
         //88
         
+        //121
+        let profit1 = maxProfit1([7,1,5,3,6,4])
+        print("leetcode121 output: \(profit1)")
+        
+        //122
+        let profit2 = maxProfit2([7,1,5,3,6,4])
+        print("leetcode122 output: \(profit2)")
+        
         //125
         let palindStr = isPalindrome("A man, a plan, a canal: Panama")
         print("leetcode125 output: \(palindStr)")
@@ -200,6 +208,10 @@ class ViewController: UIViewController {
         //136
         let single = singleNumber([4, 1, 2, 1, 2])
         print("leetcode136 output: \(single)")
+        
+        //169
+        let major = majorityElement([3, 2, 3])
+        print("leetcode169 output: \(major)")
         
         //171
         let excelColumn = titleToNumber("AAA")
@@ -243,9 +255,25 @@ class ViewController: UIViewController {
         let diff = findTheDifference("a", "aa")
         print("leetcode389 output: \(diff)")
         
+        //448
+        let disappears = findDisappearedNumbers([4, 3, 2, 7, 8, 2, 3, 1])
+        print("leetcode448 output: \(disappears)")
+        
+        //724
+        let pivotI = pivotIndex([-1, -1, -1, 0, 1, 1])//([1, 7, 3, 6, 5, 6])
+        print("leetcode724 output: \(pivotI)")
+        
+        //746
+        let minStep = minCostClimbingStairs([1, 100, 1, 1, 1, 100, 1, 1, 100, 1]) //[10, 15, 20]
+        print("leetcode746 output: \(minStep)")
+        
         //771
         let num = numJewelsInStones("aA", "aAAbbbb")
         print("leetcod771 output: \(num)")
+        
+        //970
+        let powerfulNum = powerfulIntegers(2, 1, 10)
+        print("leetcode970 output: \(powerfulNum)")
         
         //Stack Design
         let stack = Stack()
@@ -1087,6 +1115,35 @@ func maxDepth(_ root: TreeNode?) -> Int {
     return maxDepth(root?.left)
 }
 
+//Leetcode - 121 Best Time to Buy and Sell Stock
+func maxProfit1(_ prices: [Int]) -> Int {
+    if prices.count <= 1 { return 0 }
+    
+    var lowest: Int = prices.first!
+    var maxProfit: Int = 0
+    
+    for price in prices {
+        lowest = min(lowest, price)
+        maxProfit = max(maxProfit, price - lowest)
+    }
+    return maxProfit
+}
+
+//Leetcode - 122 Best Time to Buy and Sell Stock II
+func maxProfit2(_ prices: [Int]) -> Int {       //[7,1,5,3,6,4]
+    /* Approach 1
+     Runtime 36ms
+     Memory 21MB
+     */
+    if prices.count <= 1 { return 0 }
+
+    var maxProfit: Int = 0
+    for i in 1..<prices.count {
+        maxProfit += max(prices[i] - prices[i - 1], 0)
+    }
+    return maxProfit
+}
+
 //Leetcode - 125 Valid Palindrome
 func isPalindrome(_ s: String) -> Bool {
     var filterStr = ""
@@ -1109,6 +1166,24 @@ func singleNumber(_ nums: [Int]) -> Int {
     }
     let fDic = dic.filter { $0.value == 1 }
     return fDic.keys.first!
+}
+
+//Leetcode - 169 Majority Element
+func majorityElement(_ nums: [Int]) -> Int {    // [2,2,1,1,1,2,2]
+    /* Approach 1
+     Runtime: 156 ms, faster than 50.31% of Swift online submissions for Majority Element.
+     Memory Usage: 21.6 MB, less than 33.33% of Swift online submissions for Majority Element.
+     */
+    var dic: [Int: Int] = [:]
+    for num in nums {
+        dic[num] = dic[num] == nil ? 1 : dic[num]! + 1
+    }
+    for (key, value) in dic {
+        if value > (nums.count / 2) {
+            return key
+        }
+    }
+    return 0
 }
 
 //Leetcode - 171 Excel Sheet Column Number
@@ -1362,6 +1437,105 @@ func findTheDifference(_ s: String, _ t: String) -> Character {
     return "?"
 }
 
+//Leetcode - 448 Find All Numbers Disappeared in an Array
+func findDisappearedNumbers(_ nums: [Int]) -> [Int] {   // [4,3,2,7,8,2,3,1]
+    /*Approach 1 ->
+     Runtime: 516 ms, faster than 47.55% of Swift online submissions for Find All Numbers Disappeared in an Array.
+     Memory Usage: 22.8 MB, less than 33.33% of Swift online submissions for Find All Numbers Disappeared in an Array.
+     */
+    if (nums.count == 0) { return nums }
+
+    var dic: [Int: Int] = [:]
+    for num in nums {
+        dic[num] = 1
+    }
+
+    var missing: [Int] = []
+    for i in 1...nums.count {
+        if dic[i] == nil {
+            missing.append(i)
+        }
+    }
+    return missing
+    
+    /* Approach 2
+     Runtime: 652 ms, faster than 6.29% of Swift online submissions for Find All Numbers Disappeared in an Array.
+     Memory Usage: 25.9 MB, less than 33.33% of Swift online submissions for Find All Numbers Disappeared in an Array.
+    if (nums.count == 0) { return nums }
+    let originSet = Set(nums)
+    let expectSet = Set<Int>(Array(1...nums.count))
+    return Array(expectSet.symmetricDifference(originSet))
+    */
+    
+    /* Approach 3 -> Time limited O(n2)
+    if nums.count == 0 { return nums }
+    var ary: [Int] = Array(1...nums.count)
+    for num in nums {
+        if let index = ary.index(of: num) {
+            ary.remove(at: index)
+        }
+    }
+    return ary
+     */
+}
+
+//Leetcode - 598 Range Addition II
+//func maxCount(_ m: Int, _ n: Int, _ ops: [[Int]]) -> Int {
+//
+//}
+
+//Leetcode - 724 Find Pivot Index
+func pivotIndex(_ nums: [Int]) -> Int {
+    /* Approach 1
+     Runtime: 160 ms, faster than 36.42% of Swift online submissions for Find Pivot Index.
+     Memory Usage: 20.6 MB, less than 25.00% of Swift online submissions for Find Pivot Index.
+     */
+    if nums.count <= 2 { return -1 }
+    
+    let sum = nums.reduce(0, +)     // 先求一次總和
+    var preSum = 0
+    
+    for i in 0 ..< nums.count {
+        let rightSum = i == nums.count - 1 ? 0 : sum - preSum - nums[i]  // 總和 - 左邊和 - index該數本身
+        if rightSum == preSum {  // 左邊和 == 右邊和
+            return i
+        }
+        preSum += nums[i]   // 左邊和一直累積
+    }
+    return -1
+    
+    /* Approach 2 - Time limited
+    if nums.count <= 2 { return -1 }
+    
+    for i in 0 ..< nums.count {
+        let left = nums[..<i].reduce(0, +)
+        let right = nums[(i+1)...].reduce(0, +)
+        if left == right {
+            return i
+        }
+    }
+    return -1
+    */
+}
+
+//Leetcode - 746 Min Cost Climbing Stairs
+func minCostClimbingStairs(_ cost: [Int]) -> Int {      //[10 , 15, 20] || [1, 100, 1, 1, 1, 100, 1, 1, 100, 1]
+    guard cost.count > 1 else { return 0 }
+    var cost = cost
+    for i in 2 ..< cost.count {
+        // cost[2] = min(100, 1)    = 2
+        // cost[3] = min(1, 100)    = 3
+        // cost[4] = min(1, 1)      = 3
+        // cost[5] = min(1, 1)      = 103
+        // cost[6] = min(100, 1)    = 1 + 3 = 4
+        // cost[7] = min(1, 100)    = 1 + 4 = 5
+        // cost[8] = min(1, 1)      = 100 + 4 = 104
+        // cost[9] = min(100, 1)    = 1 + 5 = 6
+        cost[i] += min(cost[i - 1], cost[i - 2])
+    }
+    return min(cost[cost.count - 1], cost[cost.count - 2])  // min(6, 104) = 6
+}
+
 //Leetcode - 771
 func numJewelsInStones(_ J: String, _ S: String) -> Int {
     var output:Int = 0
@@ -1377,6 +1551,53 @@ func numJewelsInStones(_ J: String, _ S: String) -> Int {
         }
     }
     return output
+}
+
+//Leetcode - 970 Powerful Integers
+/*
+ Input: x = 2, y = 3, bound = 10
+ Output: [2,3,4,5,7,9,10]
+ Explanation:
+ 2 = 2^0 + 3^0
+ 3 = 2^1 + 3^0
+ 4 = 2^0 + 3^1
+ 5 = 2^1 + 3^1
+ 7 = 2^2 + 3^1
+ 9 = 2^3 + 3^0
+ 10 = 2^0 + 3^2
+ */
+
+func powerfulIntegers(_ x: Int, _ y: Int, _ bound: Int) -> [Int] {  // x:2, y:1, bound:10
+    
+    /* Approach - Time limited
+     Runtime: 12 ms, faster than 12.50% of Swift online submissions for Powerful Integers.
+     Memory Usage: 22.7 MB, less than 100.00% of Swift online submissions for Powerful Integers.
+    */
+    var response: Set<Int> = []
+    let doubleX: Double = Double(x)
+    let doubleY: Double = Double(y)
+    var i: Double = 0
+    var j: Double = 0
+    
+    while pow(doubleX, i) <= Double(bound) {
+        while pow(doubleY, j) <= Double(bound) {
+            let sum = pow(doubleX, i) + pow(doubleY, j)
+            if sum <= Double(bound) {
+                response.insert(Int(sum))
+            }
+            j += 1
+            
+            if doubleY < 2 {
+                break
+            }
+        }
+        j = 0
+        i += 1
+        if doubleX < 2 {
+            break
+        }
+    }
+    return Array(response)
 }
 
 

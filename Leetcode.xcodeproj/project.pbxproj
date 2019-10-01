@@ -13,6 +13,12 @@
 		BC824262217B175D0011CA7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC824261217B175D0011CA7F /* Assets.xcassets */; };
 		BC824265217B175D0011CA7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC824263217B175D0011CA7F /* LaunchScreen.storyboard */; };
 		BC824270217B175E0011CA7F /* LeetcodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC82426F217B175E0011CA7F /* LeetcodeTests.swift */; };
+		F05C92052330C174003DB2EB /* YahooInterview.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05C92042330C174003DB2EB /* YahooInterview.swift */; };
+		F05C92072330C1A6003DB2EB /* Leetcode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05C92062330C1A6003DB2EB /* Leetcode.swift */; };
+		F05C92092330C469003DB2EB /* LeetcodeStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05C92082330C469003DB2EB /* LeetcodeStack.swift */; };
+		F05C920B2330C4FA003DB2EB /* LeetcodeListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05C920A2330C4FA003DB2EB /* LeetcodeListNode.swift */; };
+		F0E80F562342F9AC00808912 /* ClosurePractice.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E80F552342F9AC00808912 /* ClosurePractice.swift */; };
+		F0E80F582342FA5600808912 /* Others.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E80F572342FA5600808912 /* Others.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +42,12 @@
 		BC82426B217B175E0011CA7F /* LeetcodeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeetcodeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC82426F217B175E0011CA7F /* LeetcodeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeetcodeTests.swift; sourceTree = "<group>"; };
 		BC824271217B175E0011CA7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F05C92042330C174003DB2EB /* YahooInterview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YahooInterview.swift; sourceTree = "<group>"; };
+		F05C92062330C1A6003DB2EB /* Leetcode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Leetcode.swift; sourceTree = "<group>"; };
+		F05C92082330C469003DB2EB /* LeetcodeStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeetcodeStack.swift; sourceTree = "<group>"; };
+		F05C920A2330C4FA003DB2EB /* LeetcodeListNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeetcodeListNode.swift; sourceTree = "<group>"; };
+		F0E80F552342F9AC00808912 /* ClosurePractice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosurePractice.swift; sourceTree = "<group>"; };
+		F0E80F572342FA5600808912 /* Others.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Others.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +95,10 @@
 				BC824261217B175D0011CA7F /* Assets.xcassets */,
 				BC824263217B175D0011CA7F /* LaunchScreen.storyboard */,
 				BC824266217B175D0011CA7F /* Info.plist */,
+				F05C92042330C174003DB2EB /* YahooInterview.swift */,
+				F0E80F592342FAF300808912 /* LeetcodeQuestion */,
+				F0E80F552342F9AC00808912 /* ClosurePractice.swift */,
+				F0E80F572342FA5600808912 /* Others.swift */,
 			);
 			path = Leetcode;
 			sourceTree = "<group>";
@@ -94,6 +110,16 @@
 				BC824271217B175E0011CA7F /* Info.plist */,
 			);
 			path = LeetcodeTests;
+			sourceTree = "<group>";
+		};
+		F0E80F592342FAF300808912 /* LeetcodeQuestion */ = {
+			isa = PBXGroup;
+			children = (
+				F05C92062330C1A6003DB2EB /* Leetcode.swift */,
+				F05C92082330C469003DB2EB /* LeetcodeStack.swift */,
+				F05C920A2330C4FA003DB2EB /* LeetcodeListNode.swift */,
+			);
+			path = LeetcodeQuestion;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,8 +223,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F05C92092330C469003DB2EB /* LeetcodeStack.swift in Sources */,
 				BC82425D217B17590011CA7F /* ViewController.swift in Sources */,
 				BC82425B217B17590011CA7F /* AppDelegate.swift in Sources */,
+				F05C92072330C1A6003DB2EB /* Leetcode.swift in Sources */,
+				F0E80F582342FA5600808912 /* Others.swift in Sources */,
+				F05C920B2330C4FA003DB2EB /* LeetcodeListNode.swift in Sources */,
+				F0E80F562342F9AC00808912 /* ClosurePractice.swift in Sources */,
+				F05C92052330C174003DB2EB /* YahooInterview.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

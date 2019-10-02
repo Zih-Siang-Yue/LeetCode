@@ -140,7 +140,7 @@ class Leetcode {
         print("leetcode121 output: \(profit1)")
         
         //122
-        let profit2 = maxProfit2([7, 1, 5, 3, 6, 4])
+        let profit2 = maxProfit2([1, 3, 5, 3, 7, 10, 12, 14, 15])
         print("leetcode122 output: \(profit2)")
         
         //125
@@ -1036,12 +1036,36 @@ class Leetcode {
          Memory 21MB
          */
         if prices.count <= 1 { return 0 }
-        
+
         var maxProfit: Int = 0
         for i in 1..<prices.count {
             maxProfit += max(prices[i] - prices[i - 1], 0)
         }
         return maxProfit
+        
+        /* Approach 2
+                 guard prices.count > 0 else { return 0 }
+        
+        var profit = 0
+        var minPrice = Int.max
+        var fprofit = 0
+        
+        for i in 0 ..< prices.count {
+            if profit > (prices[i] - minPrice) {
+                fprofit += profit
+                profit = 0
+                minPrice = prices[i]
+            }
+            else {
+                profit = max(profit, (prices[i] - minPrice))
+                minPrice = min(prices[i], minPrice)
+            }
+            print("i: \(i), prices[\(i)]: \(prices[i]), fprofit: \(fprofit), profit: \(profit), minPrice: \(minPrice)")
+        }
+        fprofit += profit
+        
+        return fprofit
+         */
     }
     
     //Leetcode - 125 Valid Palindrome

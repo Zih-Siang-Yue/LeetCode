@@ -811,6 +811,11 @@ class Leetcode {
     }
     
     //Leetcode - 53 Maximum Subarray
+    /* 解題思維:
+     主要需要兩個變數: 1. 記錄ary 裡面的值加總的總和(localMax) 2. 過程途中最大的值(soFarMax)
+     注意: localMax 若 < 0, 則使用0 做加總(以此次重新開始再加總)
+          soFarMax 則與 localMax 取最大值即可
+     */
     func maxSubArray(_ nums: [Int]) -> Int {        //[1, 2, -7, -3, 4, 7, 0, -3]
         let length = nums.count
         if (length == 0) { return 0 }
@@ -819,8 +824,8 @@ class Leetcode {
         var localMax = 0
         var soFarMax = Int.min
         for i in 0..<length {
-            localMax = nums[i] + max(localMax,0);       //1, 3, -4, -3, 4, 11, 11, 8        <--
-            soFarMax = max(soFarMax,localMax)           //1, 3, 3,  3, 4, 11, 11, 11        <-- 保留最大
+            localMax = nums[i] + max(localMax,0);       //1, 3, -4, -3, 4, 11, 11, 8    <-- localMax 若為負數, 則歸零
+            soFarMax = max(soFarMax,localMax)           //1, 3, 3,  3, 4, 11, 11, 11    <-- 保留最大
         }
         return soFarMax
     }

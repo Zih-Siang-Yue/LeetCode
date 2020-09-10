@@ -989,6 +989,18 @@ class Leetcode {
         return isSameTree(p?.left, q?.left) && isSameTree(p?.right, q?.right)
     }
     
+    //Leetcode 101 Symmetric Tree
+    func isSymmetric(_ root: TreeNode?) -> Bool {
+        return isMirrot(root, root)
+    }
+    
+    private func isMirrot(_ t1: TreeNode?, _ t2: TreeNode?) -> Bool {
+        if t1 == nil && t2 == nil { return true }
+        if t1 == nil || t2 == nil { return false }
+        return t1?.val == t2?.val && isMirrot(t1?.left, t2?.right) && isMirrot(t2?.left, t1?.right)
+    }
+    
+    //Leetcode 104 Maximum Depth of Binary Tree
     func maxDepth(_ root: TreeNode?) -> Int {
         if root?.left == nil && root?.right == nil {
             return 1

@@ -8,6 +8,16 @@
 
 import Foundation
 
+//Definition for a list node.
+public class ListNode {
+    public var val: Int
+    public var next: ListNode?
+    public init(_ val: Int) {
+        self.val = val
+        self.next = nil
+    }
+}
+
 //Definition for a binary tree node.
 public class TreeNode {
     public var val: Int

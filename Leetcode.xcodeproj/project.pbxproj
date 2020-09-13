@@ -17,7 +17,6 @@
 		F05C92052330C174003DB2EB /* YahooInterview.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05C92042330C174003DB2EB /* YahooInterview.swift */; };
 		F05C92072330C1A6003DB2EB /* Leetcode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05C92062330C1A6003DB2EB /* Leetcode.swift */; };
 		F05C92092330C469003DB2EB /* LeetcodeStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05C92082330C469003DB2EB /* LeetcodeStack.swift */; };
-		F05C920B2330C4FA003DB2EB /* LeetcodeListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05C920A2330C4FA003DB2EB /* LeetcodeListNode.swift */; };
 		F0E80F562342F9AC00808912 /* ClosurePractice.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E80F552342F9AC00808912 /* ClosurePractice.swift */; };
 		F0E80F582342FA5600808912 /* Others.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E80F572342FA5600808912 /* Others.swift */; };
 /* End PBXBuildFile section */
@@ -47,7 +46,6 @@
 		F05C92042330C174003DB2EB /* YahooInterview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YahooInterview.swift; sourceTree = "<group>"; };
 		F05C92062330C1A6003DB2EB /* Leetcode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Leetcode.swift; sourceTree = "<group>"; };
 		F05C92082330C469003DB2EB /* LeetcodeStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeetcodeStack.swift; sourceTree = "<group>"; };
-		F05C920A2330C4FA003DB2EB /* LeetcodeListNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeetcodeListNode.swift; sourceTree = "<group>"; };
 		F0E80F552342F9AC00808912 /* ClosurePractice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosurePractice.swift; sourceTree = "<group>"; };
 		F0E80F572342FA5600808912 /* Others.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Others.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -120,7 +118,6 @@
 			children = (
 				F05C92062330C1A6003DB2EB /* Leetcode.swift */,
 				F05C92082330C469003DB2EB /* LeetcodeStack.swift */,
-				F05C920A2330C4FA003DB2EB /* LeetcodeListNode.swift */,
 			);
 			path = LeetcodeQuestion;
 			sourceTree = "<group>";
@@ -232,7 +229,6 @@
 				BC82425B217B17590011CA7F /* AppDelegate.swift in Sources */,
 				F05C92072330C1A6003DB2EB /* Leetcode.swift in Sources */,
 				F0E80F582342FA5600808912 /* Others.swift in Sources */,
-				F05C920B2330C4FA003DB2EB /* LeetcodeListNode.swift in Sources */,
 				F0E80F562342F9AC00808912 /* ClosurePractice.swift in Sources */,
 				F05C92052330C174003DB2EB /* YahooInterview.swift in Sources */,
 			);

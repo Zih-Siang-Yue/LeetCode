@@ -1616,3 +1616,43 @@ class Leetcode {
         return Array(response)
     }
 }
+
+
+/*
+ //Leetcode - 155 Min Stack
+ Runtime: 132 ms, faster than 26.94% of Swift online submissions for Min Stack.
+ Memory Usage: 21.7 MB, less than 72.60% of Swift online submissions for Min Stack.
+ */
+class MinStack {
+    var stack: [Int]
+    var minList: [Int]
+
+    init() {
+        self.stack = [Int]()
+        self.minList = [Int]()
+    }
+    
+    func push(_ x: Int) {
+        self.stack.append(x)
+        
+        guard let preMin = self.minList.last else {
+            self.minList.append(x)
+            return
+        }
+        let minimum = preMin < x ? preMin : x
+        self.minList.append(minimum)
+    }
+    
+    func pop() {
+        _ = self.stack.popLast()
+        _ = self.minList.popLast()
+    }
+    
+    func top() -> Int {
+        return self.stack.last ?? 0
+    }
+    
+    func getMin() -> Int {
+        return self.minList.last ?? 0
+    }
+}

@@ -654,6 +654,38 @@ class Leetcode {
         return longestPrefix
     }
     
+    //Leetcode - 14 (Runtime error)
+    func longestCommonPrefix1(_ strs: [String]) -> String {
+        /* Runtime error
+         Step1: 準備 var prefix: String, let commonPreSet: Set
+         Step2: 使用set 來儲存, 當前index 掃出的char, 若此時set.count > 1(代表不再相同), 則直接回傳 prefix, 若 set.count = 1, 則將它存進prefix
+         Step3: 需要有個機制來掃出每個字串的相同 index, 以方便比較該index 是否都是相同的字
+         Step4: 需要優化效能, 想辦法解決while 迴圈, 因為會runtime error
+         */
+        
+        var prefixStr = ""
+        var commonSet:Set<Character> = Set()
+        var i: Int = 0
+        while i >= 0 {
+            for str in strs {
+                if i >= str.count {
+                    return prefixStr
+                }
+                commonSet.insert(Array(str)[i])
+                if (commonSet.count > 1) {
+                    return prefixStr
+                }
+            }
+            
+            prefixStr.append(commonSet.first!)
+            commonSet.removeFirst()
+            i += 1
+        }
+        
+        
+        return ""
+    }
+    
     //Leetcode - 20
     func isValidParentheses(_ s: String) -> Bool {      //[](){}
         //1. new一個dic 反向存放符號(key 為右邊符號, value為左邊符號

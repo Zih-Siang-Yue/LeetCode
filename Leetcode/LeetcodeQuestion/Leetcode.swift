@@ -164,6 +164,10 @@ class Leetcode {
         _ = rotate(&aryWouldBeRotated, 3)
         print("leetcode189 output: \(aryWouldBeRotated)")
         
+        //198
+        let houseRobber = rob([2, 3, 2])
+        print("leetcode198 output: \(houseRobber)")
+        
         //202
         let happyNum = isHappy(37)
         print("leetcode202 output: \(happyNum)")
@@ -1148,6 +1152,47 @@ class Leetcode {
         
         nums.removeSubrange(range)
         nums.insert(contentsOf: rotateObj, at: 0)
+    }
+    
+    //Leetcode 198 House Robber
+    // [5, 6, 0, 7, 2, 1, 6, 8, 9, 7]
+    func rob(_ nums: [Int]) -> Int {
+        return robSolution1(nums)
+        return robSolution2(nums)
+    }
+    
+    func robSolution1(_ nums: [Int]) -> Int {
+        /* Solution1:
+         Time:  O(n)
+         Space: O(1)
+         1. 先排除0 個數量的狀況
+         2. 因為不能跟相鄰的做加總, 故要再往前一格(i-2), 竟然至少要-2 所以要從 i > 1 才開始
+         3. 開始for loop, 從第一個...該索引值的前一個(i-2), 並挑選這範圍內的最大值與自己加總
+         4. 因為會更改原本的值(houses[i] +=), 所以最後取最大值回傳即可
+         */
+        if (nums.count == 0) { return 0 }
+        
+        var houses = nums
+        for i in houses.indices where i > 1 {
+            houses[i] += houses[0...i-2].max()!
+        }
+        return houses.max()!
+    }
+    
+    func robSolution2(_ nums: [Int]) -> Int {
+        var dict = [Int:Int]()
+        func rob2(_ index:Int) -> Int {
+            if index < 0 {
+                return 0
+            }
+            if let value = dict[index] {
+                return value
+            }
+            let result =  max(rob2(index-2)+nums[index],rob2(index-1))
+            dict[index,default:0] = result  //default 為, 若給定的index 在dict 裡面沒有就會回傳 default值
+            return result
+        }
+        return rob2(nums.count-1)
     }
     
     //Leetcode - 202

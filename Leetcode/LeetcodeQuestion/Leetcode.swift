@@ -550,6 +550,12 @@ class Leetcode {
     
     //Leetcode - 9, 判斷Int是否對稱
     func isPalindrome(_ x: Int) -> Bool {
+        return isPalindromeSolution1(x)
+        return isPalindromeSolution2(x)
+        return isPalindromeSolution3(x)
+    }
+    
+    func isPalindromeSolution1(_ x: Int) -> Bool {
         //1. 先過濾"負數" & "尾數為0的值", 因為不可能對稱 -> false
         //2. 當reverse > origin 不再進迴圈
         //3. rev = rev * 10 + origin % 10
@@ -570,20 +576,37 @@ class Leetcode {
             return true
         }
         return false
+    }
+    
+    func isPalindromeSolution2(_ x: Int) -> Bool {
+        // do it myself
+        let mutableX = x
+        var rev: String = ""
+        for i in String(mutableX).reversed() {
+            rev.append(i)
+        }
         
-        /*
-         自己寫的
-         var rev: String = ""
-         for i in String(mutableX).reversed() {
-         rev.append(i)
-         }
-         
-         let revX:Int? = Int(rev)
-         if revX != nil, revX == mutableX {
-         return true
-         }
-         return false
-         */
+        let revX:Int? = Int(rev)
+        if revX != nil, revX == mutableX {
+            return true
+        }
+        return false
+    }
+    
+    func isPalindromeSolution3(_ x: Int) -> Bool {
+        //do it myself (but it need to work with Extension_String.swift)
+        if (x < 0) { return false }
+        let str = String(x)
+        if str.count == 1 { return true }
+        
+        let half = Int(str.count / 2)
+        for i in 0 ..< str.count {
+            if (str[i] != str[str.count - 1 - i]) {
+                return false
+            }
+            if (i > half) { return true }
+        }
+        return true
     }
     
     //Leetcode - 12, Int 轉換成羅馬數字

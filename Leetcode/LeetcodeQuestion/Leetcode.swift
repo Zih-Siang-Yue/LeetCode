@@ -479,17 +479,18 @@ class Leetcode {
     
     //Leetcode - 2
     func addTwoNumber(_ l1: ListNode?,_ l2: ListNode?) -> ListNode? {   // (2 -> 4 -> 3) + (5 -> 6 -> 4)
-        return addTwoNumbers(l1, l2, 0)                          //l1(val:2, next:4 -> 3) + l2(val:5, next:6 -> 4)
+        return addTwoNumberSolution1(l1, l2, 0) //l1(val:2, next:4 -> 3) + l2(val:5, next:6 -> 4)
     }
     
-    func addTwoNumbers(_ l1: ListNode?, _ l2: ListNode?,_ carry: Int) -> ListNode? {
-        guard let l1 = l1, let l2 = l2 else {
+    func addTwoNumberSolution1(_ l1: ListNode?, _ l2: ListNode?,_ carry: Int) -> ListNode? {
+        guard l1 != nil || l2 != nil else {
             return carry > 0 ? ListNode(carry) : nil  //l1 == nil && l2 == nil 進入判斷
         }
-        
-        let value = l1.val + l2.val + carry           //2 + 5 + 0 = 7     //4 + 6 + 0 = 10    // 3 + 4 + 1 = 8
+        let x = l1?.val ?? 0
+        let y = l2?.val ?? 0
+        let value = x + y + carry           //2 + 5 + 0 = 7     //4 + 6 + 0 = 10    // 3 + 4 + 1 = 8
         let r1 = ListNode(value % 10)  //ListNode val: 7, next =   //ListNode val: 0, next //ListNode val: 8, next:
-        r1.next = addTwoNumbers(l1.next, l2.next, value / 10)   //addTwoNumbers(0, 0, 0)
+        r1.next = addTwoNumberSolution1(l1?.next, l2?.next, value / 10)   //addTwoNumbers(0, 0, 0)
         return r1
     }
     //input:  (6 -> 4 -> 6) + (4 -> 7 -> 3)

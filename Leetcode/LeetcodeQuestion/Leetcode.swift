@@ -1028,11 +1028,13 @@ class Leetcode {
     
     //Leetcode 104 Maximum Depth of Binary Tree
     func maxDepth(_ root: TreeNode?) -> Int {
-        if root?.left == nil && root?.right == nil {
-            return 1
-        }
-        
-        return maxDepth(root?.left)
+        /**
+         Step1: 先判斷本身(root) 是否為nil, 若為nil 則代表沒有這一層 return 0
+         Step2: 開始往下尋找(left or right), 各別往下尋找一層需要加上1
+         Step3: 遞迴之後看是左邊的階層比較深(depth), 還是右邊的, 用max 函數找到最大即可
+         */
+        guard let root = root else { return 0 }
+        return max(maxDepth(root.left) + 1, maxDepth(root.right) + 1)
     }
     
     //Leetcode - 118 Pascal's Triangle

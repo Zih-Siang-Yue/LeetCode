@@ -184,6 +184,10 @@ class Leetcode {
         let anagram = isAnagram("rat", "car")
         print("leetcode242 output: \(anagram)")
         
+        //258
+        let digits = addDigits(20)
+        print("leetcode258 ouput: \(digits)")
+        
         //268
         let missingNo = missingNumber([9, 6, 4, 2, 3, 5, 7, 0, 1])
         print("leetcode268 output: \(missingNo)")
@@ -1335,6 +1339,27 @@ class Leetcode {
             }
         }
         return dic.keys.count == 0 ? true : false
+    }
+    
+    //Leetcode 258 Add Digits
+    func addDigits(_ num: Int) -> Int {
+        if num / 10 <= 0 { return num }
+        
+        var number = num
+        var sum: Int = 0
+        while number % 10 > 0 || number / 10 > 0 {
+            let digit = number % 10
+            sum += digit
+            number /= 10
+            if (number <= 0 && sum / 10 <= 0) {
+                return sum
+            }
+            if (number <= 0) {
+                number = sum
+                sum = 0
+            }
+        }
+        return sum
     }
     
     //Leetcode - 268 Missing Number

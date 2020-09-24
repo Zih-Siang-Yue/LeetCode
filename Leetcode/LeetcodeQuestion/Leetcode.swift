@@ -915,6 +915,20 @@ class Leetcode {
     
     //Leetcode - 35 Search Insert Position
     func searchInsert(_ nums: [Int], _ target: Int) -> Int {    //[1, 3, 5, 6] , 7
+        return searchInsertSolution1(nums, target)
+        return searchInsertSolution2(nums, target)
+    }
+    
+    func searchInsertSolution1(_ nums: [Int], _ target: Int) -> Int {
+        for (i, v) in nums.enumerated() {
+            if v >= target {
+                return i
+            }
+        }
+        return nums.count
+    }
+    
+    func searchInsertSolution2(_ nums: [Int], _ target: Int) -> Int {
         for i in 0 ..< nums.count {
             if target <= nums[i] {
                 return i

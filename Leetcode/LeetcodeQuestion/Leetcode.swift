@@ -66,6 +66,10 @@ class Leetcode {
         let sumListNode = addTwoNumber(l1, l2)
         print("leetcode2 ouput: val -> \(sumListNode!.val) next -> \(String(describing: sumListNode?.next))")
         
+        //3
+        let longestSubstr = lengthOfLongestSubstring("dvdf")
+        print("leetcode3 output: \(longestSubstr)")
+        
         //5
         let longestPalind = longestPalindrome("bb")
         print("leetcode5 output: \(longestPalind)")
@@ -499,6 +503,32 @@ class Leetcode {
     }
     //input:  (6 -> 4 -> 6) + (4 -> 7 -> 3)
     //output: (0 -> 2 -> 0 -> 1)
+    
+    //Leetcode - 3 Longest Substring Without Repeating Characters
+    func lengthOfLongestSubstring(_ s: String) -> Int {
+        var ary = [String]()
+        var length = 0
+        for i in s {
+            if var substr = ary.last {
+                if substr.contains(i) {
+                    let index = substr.firstIndex(of: i)!
+                    let newsubStr = substr[substr.index(after: index)...]
+                    var newStr = String(newsubStr)
+                    newStr.append(i)
+                    ary.append(newStr)
+                }
+                else {
+                    substr.append(i)
+                    ary[ary.count-1] = substr
+                }
+            }
+            else {
+                ary.append(String(i))
+            }
+            length = max(length, ary.last!.count)
+        }
+        return length
+    }
     
     //Leetcode - 5
     func longestPalindrome(_ s: String) -> String {

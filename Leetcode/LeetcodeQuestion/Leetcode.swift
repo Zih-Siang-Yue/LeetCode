@@ -236,6 +236,10 @@ class Leetcode {
         //970
         let powerfulNum = powerfulIntegers(2, 1, 10)
         print("leetcode970 output: \(powerfulNum)")
+        
+        //1450
+        let students = busyStudent([2, 3, 6], [4, 3, 8], 7)
+        print("leetcode1450 output: \(students)")
     }
     
     func stackDesign() {
@@ -1671,6 +1675,19 @@ class Leetcode {
             }
         }
         return Array(response)
+    }
+    
+    //Leetcode - 1450 Number of Students Doing Homework at a Given Time
+    func busyStudent(_ startTime: [Int], _ endTime: [Int], _ queryTime: Int) -> Int {
+        if startTime.isEmpty || endTime.isEmpty { return 0 }
+        
+        let count = min(startTime.count, endTime.count)
+        var numberOfStudents = 0
+        for i in 0 ..< count {
+            let range = startTime[i] ... endTime[i]
+            if range.contains(queryTime) { numberOfStudents += 1 }
+        }
+        return numberOfStudents
     }
 }
 

@@ -173,6 +173,10 @@ class Leetcode {
         _ = rotate(&aryWouldBeRotated, 3)
         print("leetcode189 output: \(aryWouldBeRotated)")
         
+        //191
+        let oneBits = hammingWeight(11)
+        print("leetcode191 output: \(oneBits)")
+        
         //198
         let houseRobber = rob([2, 3, 2])
         print("leetcode198 output: \(houseRobber)")
@@ -1250,6 +1254,18 @@ class Leetcode {
         
         nums.removeSubrange(range)
         nums.insert(contentsOf: rotateObj, at: 0)
+    }
+    
+    //Leetcode 191 Number of 1 bits
+    func hammingWeight(_ n: Int) -> Int {
+        var i = 0
+        let str = n.decTobin()
+        for c in str {
+            if c == "1" {
+                i += 1
+            }
+        }
+        return i
     }
     
     //Leetcode 198 House Robber

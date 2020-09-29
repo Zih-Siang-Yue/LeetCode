@@ -15,6 +15,7 @@
 		BC824270217B175E0011CA7F /* LeetcodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC82426F217B175E0011CA7F /* LeetcodeTests.swift */; };
 		F0482190250687A000740590 /* Definition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F048218F250687A000740590 /* Definition.swift */; };
 		F0482192250FBA2000740590 /* Extension_String.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0482191250FBA2000740590 /* Extension_String.swift */; };
+		F048219525237E4400740590 /* Extension_Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = F048219425237E4400740590 /* Extension_Int.swift */; };
 		F05C92052330C174003DB2EB /* YahooInterview.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05C92042330C174003DB2EB /* YahooInterview.swift */; };
 		F05C92072330C1A6003DB2EB /* Leetcode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05C92062330C1A6003DB2EB /* Leetcode.swift */; };
 		F05C92092330C469003DB2EB /* LeetcodeStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05C92082330C469003DB2EB /* LeetcodeStack.swift */; };
@@ -45,6 +46,7 @@
 		BC824271217B175E0011CA7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F048218F250687A000740590 /* Definition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Definition.swift; sourceTree = "<group>"; };
 		F0482191250FBA2000740590 /* Extension_String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension_String.swift; sourceTree = "<group>"; };
+		F048219425237E4400740590 /* Extension_Int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension_Int.swift; sourceTree = "<group>"; };
 		F05C92042330C174003DB2EB /* YahooInterview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YahooInterview.swift; sourceTree = "<group>"; };
 		F05C92062330C1A6003DB2EB /* Leetcode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Leetcode.swift; sourceTree = "<group>"; };
 		F05C92082330C469003DB2EB /* LeetcodeStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeetcodeStack.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				F0E80F572342FA5600808912 /* Others.swift */,
 				F048218F250687A000740590 /* Definition.swift */,
 				F0482191250FBA2000740590 /* Extension_String.swift */,
+				F048219425237E4400740590 /* Extension_Int.swift */,
 			);
 			path = Leetcode;
 			sourceTree = "<group>";
@@ -231,6 +234,7 @@
 				F0482192250FBA2000740590 /* Extension_String.swift in Sources */,
 				BC82425D217B17590011CA7F /* ViewController.swift in Sources */,
 				BC82425B217B17590011CA7F /* AppDelegate.swift in Sources */,
+				F048219525237E4400740590 /* Extension_Int.swift in Sources */,
 				F05C92072330C1A6003DB2EB /* Leetcode.swift in Sources */,
 				F0E80F582342FA5600808912 /* Others.swift in Sources */,
 				F0E80F562342F9AC00808912 /* ClosurePractice.swift in Sources */,

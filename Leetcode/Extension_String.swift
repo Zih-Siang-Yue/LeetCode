@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension String {
+fileprivate extension String {
     
     var length: Int {
         return count
@@ -32,5 +32,17 @@ extension String {
         let start = index(startIndex, offsetBy: range.lowerBound)
         let end = index(start, offsetBy: range.upperBound - range.lowerBound)
         return String(self[start ..< end])
+    }
+}
+
+extension String {
+    subscript (value: Int) -> Character {
+        return self[index(at: value)]
+    }
+}
+
+private extension String {
+    func index(at offset: Int) -> String.Index {
+        return self.index(startIndex, offsetBy: offset)
     }
 }

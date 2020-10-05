@@ -125,7 +125,7 @@ class Leetcode {
         print("leetcode50 output: \(pow)")
         
         //53
-        let masSubs = maxSubArray([1, 2, -7, -3, 4, 7, 0, -3])
+        let masSubs = maxSubArray([-2,1,-3,4,-1,2,1,-5,4])
         print("leetcode53 output: \(masSubs)")
         
         //67
@@ -985,6 +985,12 @@ class Leetcode {
           soFarMax 則與 localMax 取最大值即可
      */
     func maxSubArray(_ nums: [Int]) -> Int {        //[1, 2, -7, -3, 4, 7, 0, -3]
+        return maxSubArraySolution1(nums)
+        return maxSubArraySolution2(nums)
+    }
+    
+    func maxSubArraySolution1(_ nums: [Int]) -> Int {        //[1, 2, -7, -3, 4, 7, 0, -3]
+        //Runtime: 28 ms, faster than 99.80%
         let length = nums.count
         if (length == 0) { return 0 }
         if (length == 1) { return nums[0] }
@@ -996,6 +1002,21 @@ class Leetcode {
             soFarMax = max(soFarMax,localMax)           //1, 3, 3,  3, 4, 11, 11, 11    <-- 保留最大
         }
         return soFarMax
+    }
+
+    func maxSubArraySolution2(_ nums: [Int]) -> Int {
+        //Runtime: 32 ms
+        if nums.isEmpty { return 0 }
+        if nums.count == 1 { return nums.first! }
+        
+        var sum = nums.first!
+        var maxValue = nums.first!
+        for i in 1 ..< nums.count {
+            let v = nums[i]
+            sum = max(sum + v, v)
+            maxValue = max(sum, maxValue)
+        }
+        return maxValue
     }
     
     //Leetcode - 58 Length of Last Word

@@ -1622,28 +1622,20 @@ class Leetcode {
     
     //Leetcode - 389 Find the Difference
     func findTheDifference(_ s: String, _ t: String) -> Character {
-        var dic = [Character:Int]()
-        for i in s {
-            if dic[i] == nil {
-                dic[i] = 1
-            }
-            else {
-                dic[i]! += 1
+        if s.isEmpty { return t.first! }
+        
+        var dict:[Character: Int] = [:]
+        for c in t {
+            dict[c] = dict[c] != nil ? dict[c]! + 1 : 1
+        }
+        
+        for c in s {
+            if dict[c] != nil {
+                dict[c] = dict[c]! > 1 ? dict[c]! - 1 : nil
             }
         }
         
-        for j in t {
-            if dic[j] == nil {
-                return j
-            }
-            else if dic[j]! > 1 {
-                dic[j]! -= 1
-            }
-            else {
-                dic[j] = nil
-            }
-        }
-        return "?"
+        return dict.keys.first!
     }
     
     //Leetcode - 448 Find All Numbers Disappeared in an Array

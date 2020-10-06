@@ -216,6 +216,10 @@ class Leetcode {
         let digits = addDigits(20)
         print("leetcode258 ouput: \(digits)")
         
+        //263
+        let isUglyNum = isUgly(14)
+        print("leetcode263 output: \(isUglyNum)")
+        
         //268
         let missingNo = missingNumber([9, 6, 4, 2, 3, 5, 7, 0, 1])
         print("leetcode268 output: \(missingNo)")
@@ -1525,6 +1529,31 @@ class Leetcode {
             }
         }
         return dic.keys.count == 0 ? true : false
+    }
+    
+    //Leetcode 263 Ugly Number
+    func isUgly (_ num: Int) -> Bool {
+        //Runtime: 0 ms, faster than 100.00%
+        if num == 0 { return false }
+        if num == 1 { return true }
+        
+        var number = num
+        while number % 2 == 0 || number % 3 == 0 || number % 5 == 0 {
+            if number % 2 == 0 {
+                number /= 2
+            }
+            
+            if number % 3 == 0 {
+                number /= 3
+            }
+            
+            if number % 5 == 0 {
+                number /= 5
+            }
+        }
+        
+        if number == 1 { return true }
+        return false
     }
     
     //Leetcode 258 Add Digits

@@ -193,6 +193,21 @@ class Leetcode {
         let duplicateOrNot = containsDuplicate([1, 2, 3, 1])
         print("leetcode217 output: \(duplicateOrNot)")
         
+        //234
+        let listNode1 = ListNode(1)
+        let listNode2 = ListNode(2)
+        let listNode3 = ListNode(-3)
+        let listNode4 = ListNode(-3)
+        let listNode5 = ListNode(2)
+        let listNode6 = ListNode(1)
+        listNode1.next = listNode2
+        listNode2.next = listNode3
+        listNode3.next = listNode4
+        listNode4.next = listNode5
+        listNode5.next = listNode6
+        let listNodePalindrome = isPalindrome(listNode1)
+        print("leetcode234 output: \(listNodePalindrome)")
+        
         //242
         let anagram = isAnagram("rat", "car")
         print("leetcode242 output: \(anagram)")
@@ -1452,6 +1467,21 @@ class Leetcode {
             }
         }
         return true
+    }
+    
+    //Leetcode - 234 Palindrome Linked List
+    func isPalindrome(_ head: ListNode?) -> Bool {
+        //Runtime: 92 ms, faster than 92.90%
+        var ary: [Int] = []
+        transferListNodeToIntAry(head, &ary)
+        if ary == ary.reversed() { return true }
+        return false
+    }
+    
+    func transferListNodeToIntAry(_ node: ListNode?, _ ary: inout [Int]) {
+        if node == nil { return }
+        ary.append(node!.val)
+        return transferListNodeToIntAry(node!.next, &ary)
     }
     
     //Leetcode - 242 Valid Anagram

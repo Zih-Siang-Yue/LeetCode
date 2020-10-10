@@ -241,6 +241,10 @@ class Leetcode {
         let intersect2 = intersect([1, 2, 2, 1], [2, 2])
         print("leetcode349 output: \(intersect2)")
         
+        //387
+        let firstIndexOfUniqChar = firstUniqCharSolution1("leetcode")
+        print("leetcode387 output: \(firstIndexOfUniqChar)")
+        
         //389
         let diff = findTheDifference("a", "aa")
         print("leetcode389 output: \(diff)")
@@ -1670,6 +1674,63 @@ class Leetcode {
         return intersections
     }
     
+    //Leetcode - 387 First Unique Character in a String
+    func firstUniqChar(_ s: String) -> Int {
+        return firstUniqCharSolution1(s)
+        return firstUniqCharSolution2(s)
+    }
+    
+    func firstUniqCharSolution1(_ s: String) -> Int {
+        if s.count == 0 { return -1 }
+        if s.count == 1 { return 0 }
+        
+        var dict: [Character:CharInfo] = [:]
+        for (i,v) in s.enumerated() {
+            if dict[v] == nil {
+                dict[v] = CharInfo(count: 1, index: i)
+                continue
+            }
+            var charInfo = dict[v]!
+            charInfo.count += 1
+            dict[v] = charInfo
+        }
+        
+        // 先找到dict裡面的count == 1的, 若有兩個以上則比較 index
+        var ary: [CharInfo] = []
+        for info in dict.values {
+            if info.count == 1 {
+                ary.append(info)
+            }
+        }
+        
+        if ary.count < 1 { return -1 }
+        if ary.count == 1 { return ary.first!.index }
+        
+        if ary.count > 1 {
+            var firstIndex = Int.max
+            for info in ary {
+                firstIndex = min(firstIndex, info.index)
+            }
+            return firstIndex
+        }
+        return -1
+    }
+    
+    func firstUniqCharSolution2(_ s: String) -> Int {
+        if s.count == 0 { return -1 }
+        if s.count == 1 { return 0 }
+        
+        var dict: [Character:Int] = [:]
+        for char in s {
+            dict[char] = dict[char] == nil ? 1 : dict[char]! + 1
+        }
+        
+        for (i,v) in s.enumerated() {
+            if dict[v] == 1 { return i }
+        }
+        return -1
+    }
+
     //Leetcode - 389 Find the Difference
     func findTheDifference(_ s: String, _ t: String) -> Character {
         if s.isEmpty { return t.first! }
@@ -1902,4 +1963,9 @@ class MinStack {
     func getMin() -> Int {
         return self.minList.last ?? 0
     }
+}
+
+struct CharInfo {
+    var count: Int
+    var index: Int
 }

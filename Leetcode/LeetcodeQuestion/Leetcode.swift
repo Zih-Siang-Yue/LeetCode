@@ -233,6 +233,10 @@ class Leetcode {
         moveZeroes(&unremoveZeros)
         print("leetcode283 output: \(unremoveZeros)")
         
+        //342
+        let theFlagOfIsPowerOfFour = isPowerOfFour(16)
+        print("leetcode 342 output: \(theFlagOfIsPowerOfFour)")
+        
         //349
         let intersect1 = intersection([1, 2, 2, 1], [2, 2])
         print("leetcode349 output: \(intersect1)")
@@ -1637,6 +1641,18 @@ class Leetcode {
     //Leetcode - 292 Nim Game, 和朋友玩撿石頭遊戲, n為總數石頭, 一人一次撿1-3顆, 最後一次撿到的算贏, I win ->true, friend -> false
     func canWinNim(_ n: Int) -> Bool {
         return n % 4 == 0 ? false : true
+    }
+    
+    //Leetcode - 342 Power of Four
+    func isPowerOfFour(_ num: Int) -> Bool {
+        //Runtime: 4 ms, faster than 100.00%
+        if num == 0 || num == 2 || num == 3 { return false }
+        
+        var n = num
+        while n % 4 == 0 {
+            n /= 4
+        }
+        return n == 1 ? true : false
     }
     
     //Leetcode - 349 Intersection of Two Arrays

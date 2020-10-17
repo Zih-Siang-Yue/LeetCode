@@ -251,6 +251,10 @@ class Leetcode {
         moveZeroes(&unremoveZeros)
         print("leetcode283 output: \(unremoveZeros)")
         
+        //290
+        let isConformWordPattern = wordPattern("abba", "dog cat cat dog")
+        print("leetcode290 output: \(isConformWordPattern)")
+        
         //342
         let theFlagOfIsPowerOfFour = isPowerOfFour(16)
         print("leetcode 342 output: \(theFlagOfIsPowerOfFour)")
@@ -1662,6 +1666,28 @@ class Leetcode {
             }
         }
         nums.replaceSubrange(cur..<nums.count, with: repeatElement(0, count: nums.count-cur))
+    }
+    
+    //Leetcode 290 Word Pattern
+    func wordPattern(_ pattern: String, _ s: String) -> Bool {
+        let array:[String] = s.components(separatedBy: " ")
+        var dict:[String:String] = [:]
+        if pattern.count != array.count { return false }
+        
+        for index in 0 ..< array.count {
+            let strIndex = pattern.index(pattern.startIndex, offsetBy: index)
+            let letter:String = String(pattern[strIndex])
+            if let value = dict[letter] {
+                if value == array[index] {
+                    continue
+                }
+                return false
+            }
+            //Dict 沒值
+            if dict.values.contains(array[index]) { return false }
+            dict[letter] = array[index]
+        }
+        return true
     }
     
     //Leetcode - 292 Nim Game, 和朋友玩撿石頭遊戲, n為總數石頭, 一人一次撿1-3顆, 最後一次撿到的算贏, I win ->true, friend -> false

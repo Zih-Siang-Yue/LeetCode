@@ -211,6 +211,10 @@ class Leetcode {
         let primes = countPrimes(10)
         print("leetcode204 output: \(primes)")
         
+        //205
+        let isIsomor = isIsomorphic("aa", "ab")
+        print("leetcode205 output: \(isIsomor)")
+        
         //217
         let duplicateOrNot = containsDuplicate([1, 2, 3, 1])
         print("leetcode217 output: \(duplicateOrNot)")
@@ -1508,6 +1512,31 @@ class Leetcode {
             }
         }
         return count
+    }
+    
+    //Leetcode - 205 Isomorphic Strings
+    func isIsomorphic(_ s: String, _ t: String) -> Bool {
+        //Time limit exceeded
+        if s.count != t.count { return false }
+
+        var dict:[Character:Character] = [:]
+        var replacedAry:[Character] = []
+        
+        for i in 0 ..< s.count {
+            let originalChar = s[s.index(s.startIndex, offsetBy: i)]
+            let replacedChar = t[t.index(t.startIndex, offsetBy: i)]
+            
+            if let value = dict[originalChar] {
+                if value != replacedChar {
+                    return false
+                }
+                continue
+            }
+            if replacedAry.contains(replacedChar) { return false }
+            replacedAry.append(replacedChar)
+            dict[originalChar] = replacedChar
+        }
+        return true
     }
     
     //Leetcode - 206 Reverse Linked List

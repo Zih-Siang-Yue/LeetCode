@@ -49,27 +49,7 @@ class Leetcode {
         //1
         let sumIndexes = twoSum([2, 7, 11, 18], 9)
         print("leetcode1 output: \(sumIndexes)")
-        
-        //2
-        let l1nextNext = ListNode.init(3)
-        l1nextNext.next = ListNode.init(5)
-        let l1next = ListNode.init(4)
-        l1next.next = l1nextNext
-        let l1 = ListNode.init(2)
-        l1.next = l1next
-        
-        let l2next = ListNode.init(6)
-        l2next.next = ListNode.init(4)
-        let l2 = ListNode.init(5)
-        l2.next = l2next
-        
-        let sumListNode = addTwoNumber(l1, l2)
-        print("leetcode2 ouput: val -> \(sumListNode!.val) next -> \(String(describing: sumListNode?.next))")
-        
-        //3
-        let longestSubstr = lengthOfLongestSubstring("dvdf")
-        print("leetcode3 output: \(longestSubstr)")
-        
+                
         //5
         let longestPalind = longestPalindrome("bb")
         print("leetcode5 output: \(longestPalind)")
@@ -94,13 +74,6 @@ class Leetcode {
         let longestPrefix:String = longestCommonPrefix(["leetcode", "leet", "lee", "lean"])
         print("leetcode14 ouput: \(longestPrefix)")
         
-        //15
-        let thrSum:[[Int]] = threeSum([-2,0,1,1,2])
-        print("leetcode15 output: \(thrSum)")
-        
-        //16
-        let thrSumClosest:Int = threeSumClosest([1, 1, 1 ,1], -100)
-        print("leetcode16 output: \(thrSumClosest)")
         
         //17
         let letterCombination = letterCombinations("234")
@@ -111,6 +84,17 @@ class Leetcode {
         print("leetcode20 output: \(isValid)")
         
         //21
+        let l1nextNext = ListNode(3)
+        l1nextNext.next = ListNode(5)
+        let l1next = ListNode(4)
+        l1next.next = l1nextNext
+        let l1 = ListNode(2)
+        l1.next = l1next
+        
+        let l2next = ListNode(6)
+        l2next.next = ListNode(4)
+        let l2 = ListNode(5)
+        l2.next = l2next
         let mergeTwoNode = mergeTwoLists(l1, l2)
         print("leetcode21 output: \(mergeTwoNode!)")
         
@@ -562,51 +546,9 @@ class Leetcode {
         }
         return [0]
     }
+
     
-    //Leetcode - 2
-    func addTwoNumber(_ l1: ListNode?,_ l2: ListNode?) -> ListNode? {   // (2 -> 4 -> 3) + (5 -> 6 -> 4)
-        return addTwoNumberSolution1(l1, l2, 0) //l1(val:2, next:4 -> 3) + l2(val:5, next:6 -> 4)
-    }
     
-    func addTwoNumberSolution1(_ l1: ListNode?, _ l2: ListNode?,_ carry: Int) -> ListNode? {
-        guard l1 != nil || l2 != nil else {
-            return carry > 0 ? ListNode(carry) : nil  //l1 == nil && l2 == nil 進入判斷
-        }
-        let x = l1?.val ?? 0
-        let y = l2?.val ?? 0
-        let value = x + y + carry           //2 + 5 + 0 = 7     //4 + 6 + 0 = 10    // 3 + 4 + 1 = 8
-        let r1 = ListNode(value % 10)  //ListNode val: 7, next =   //ListNode val: 0, next //ListNode val: 8, next:
-        r1.next = addTwoNumberSolution1(l1?.next, l2?.next, value / 10)   //addTwoNumbers(0, 0, 0)
-        return r1
-    }
-    //input:  (6 -> 4 -> 6) + (4 -> 7 -> 3)
-    //output: (0 -> 2 -> 0 -> 1)
-    
-    //Leetcode - 3 Longest Substring Without Repeating Characters
-    func lengthOfLongestSubstring(_ s: String) -> Int {
-        var ary = [String]()
-        var length = 0
-        for i in s {
-            if var substr = ary.last {
-                if substr.contains(i) {
-                    let index = substr.firstIndex(of: i)!
-                    let newsubStr = substr[substr.index(after: index)...]
-                    var newStr = String(newsubStr)
-                    newStr.append(i)
-                    ary.append(newStr)
-                }
-                else {
-                    substr.append(i)
-                    ary[ary.count-1] = substr
-                }
-            }
-            else {
-                ary.append(String(i))
-            }
-            length = max(length, ary.last!.count)
-        }
-        return length
-    }
     
     //Leetcode - 5
     func longestPalindrome(_ s: String) -> String {
@@ -792,68 +734,6 @@ class Leetcode {
         }
         
         return longestPrefix
-    }
-    
-    //Leetcode - 15 3Sum    [-2,0,1,1,2]
-    /**
-     Runtime: 292 ms, faster than 67.58%, Memory Usage: 18.6 MB, less than 29.86%
-     */
-    func threeSum(_ nums: [Int]) -> [[Int]] {
-        if nums.isEmpty { return [] }
-        
-        let sortedNums = nums.sorted()
-        var answer:[String:[Int]] = [:]
-        
-        let length = sortedNums.count
-        for i in 0 ..< length {
-            var low  = i + 1
-            var high = length - 1
-            while low < high {
-                let sum = sortedNums[i] + sortedNums[low] + sortedNums[high]
-                if sum > 0 {
-                    high -= 1
-                }
-                else if sum < 0 {
-                    low += 1
-                }
-                else {
-                    let key = "\(sortedNums[i])\(sortedNums[low])\(sortedNums[high])"
-                    answer[key] = [sortedNums[i], sortedNums[low], sortedNums[high]]
-                    
-                    low += 1
-                    while low < high, sortedNums[low] == sortedNums[low-1] {
-                        low += 1
-                    }
-                }
-            }
-        }
-        return Array(answer.values)
-    }
-    
-    //Leetcode - 16 3Sum Closest
-    func threeSumClosest(_ nums: [Int], _ target: Int) -> Int {
-        return threeSumClosestSolution1(nums, target)
-    }
-    
-    func threeSumClosestSolution1(_ nums: [Int], _ target: Int) -> Int {
-        var threeSum:Int? = nil
-        let length = nums.count
-        
-        for i in 0 ..< length {
-            for j in i + 1 ..< length   {
-                for k in j + 1 ..< length {
-                    let sum = nums[i] + nums[j] + nums[k]
-                    let interval = sum - target
-                    if interval == 0 { return sum }
-                    if threeSum == nil {
-                        threeSum = sum
-                        continue
-                    }
-                    threeSum = abs(threeSum! - target) < abs(interval) ? threeSum : sum
-                }
-            }
-        }
-        return threeSum!
     }
     
     //Leetcode 17 Letter Combinations of a Phone Number

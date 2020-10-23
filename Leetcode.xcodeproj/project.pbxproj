@@ -16,6 +16,12 @@
 		F0482190250687A000740590 /* Definition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F048218F250687A000740590 /* Definition.swift */; };
 		F0482192250FBA2000740590 /* Extension_String.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0482191250FBA2000740590 /* Extension_String.swift */; };
 		F048219525237E4400740590 /* Extension_Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = F048219425237E4400740590 /* Extension_Int.swift */; };
+		F058E8F025428845002885CC /* Q15-3Sum.swift in Sources */ = {isa = PBXBuildFile; fileRef = F058E8EF25428845002885CC /* Q15-3Sum.swift */; };
+		F058E8F2254288D0002885CC /* Executable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F058E8F1254288D0002885CC /* Executable.swift */; };
+		F058E8FD2542D612002885CC /* Q16-3SumClosest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F058E8FC2542D612002885CC /* Q16-3SumClosest.swift */; };
+		F058E8FF2542D6B6002885CC /* Q39-CombinationSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = F058E8FE2542D6B6002885CC /* Q39-CombinationSum.swift */; };
+		F058E9012542D90F002885CC /* Q3-LongestSubstringWithoutRepeatingCharacters.swift in Sources */ = {isa = PBXBuildFile; fileRef = F058E9002542D90F002885CC /* Q3-LongestSubstringWithoutRepeatingCharacters.swift */; };
+		F058E9032542DA04002885CC /* Q2_AddTwoNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F058E9022542DA04002885CC /* Q2_AddTwoNumbers.swift */; };
 		F05C92052330C174003DB2EB /* YahooInterview.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05C92042330C174003DB2EB /* YahooInterview.swift */; };
 		F05C92072330C1A6003DB2EB /* Leetcode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05C92062330C1A6003DB2EB /* Leetcode.swift */; };
 		F05C92092330C469003DB2EB /* LeetcodeStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05C92082330C469003DB2EB /* LeetcodeStack.swift */; };
@@ -47,6 +53,12 @@
 		F048218F250687A000740590 /* Definition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Definition.swift; sourceTree = "<group>"; };
 		F0482191250FBA2000740590 /* Extension_String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension_String.swift; sourceTree = "<group>"; };
 		F048219425237E4400740590 /* Extension_Int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension_Int.swift; sourceTree = "<group>"; };
+		F058E8EF25428845002885CC /* Q15-3Sum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q15-3Sum.swift"; sourceTree = "<group>"; };
+		F058E8F1254288D0002885CC /* Executable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Executable.swift; sourceTree = "<group>"; };
+		F058E8FC2542D612002885CC /* Q16-3SumClosest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q16-3SumClosest.swift"; sourceTree = "<group>"; };
+		F058E8FE2542D6B6002885CC /* Q39-CombinationSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q39-CombinationSum.swift"; sourceTree = "<group>"; };
+		F058E9002542D90F002885CC /* Q3-LongestSubstringWithoutRepeatingCharacters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q3-LongestSubstringWithoutRepeatingCharacters.swift"; sourceTree = "<group>"; };
+		F058E9022542DA04002885CC /* Q2_AddTwoNumbers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Q2_AddTwoNumbers.swift; sourceTree = "<group>"; };
 		F05C92042330C174003DB2EB /* YahooInterview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YahooInterview.swift; sourceTree = "<group>"; };
 		F05C92062330C1A6003DB2EB /* Leetcode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Leetcode.swift; sourceTree = "<group>"; };
 		F05C92082330C469003DB2EB /* LeetcodeStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeetcodeStack.swift; sourceTree = "<group>"; };
@@ -313,6 +325,9 @@
 		F058E8DD25428743002885CC /* Array */ = {
 			isa = PBXGroup;
 			children = (
+				F058E8EF25428845002885CC /* Q15-3Sum.swift */,
+				F058E8FC2542D612002885CC /* Q16-3SumClosest.swift */,
+				F058E8FE2542D6B6002885CC /* Q39-CombinationSum.swift */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -327,6 +342,7 @@
 		F058E8DF25428743002885CC /* LinkedList */ = {
 			isa = PBXGroup;
 			children = (
+				F058E9022542DA04002885CC /* Q2_AddTwoNumbers.swift */,
 			);
 			path = LinkedList;
 			sourceTree = "<group>";
@@ -341,6 +357,7 @@
 		F058E8E125428743002885CC /* HashTable */ = {
 			isa = PBXGroup;
 			children = (
+				F058E9002542D90F002885CC /* Q3-LongestSubstringWithoutRepeatingCharacters.swift */,
 			);
 			path = HashTable;
 			sourceTree = "<group>";
@@ -444,6 +461,7 @@
 				F058E8CA254285AC002885CC /* Hard */,
 				F05C92062330C1A6003DB2EB /* Leetcode.swift */,
 				F05C92082330C469003DB2EB /* LeetcodeStack.swift */,
+				F058E8F1254288D0002885CC /* Executable.swift */,
 			);
 			path = LeetcodeQuestion;
 			sourceTree = "<group>";
@@ -550,15 +568,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				F05C92092330C469003DB2EB /* LeetcodeStack.swift in Sources */,
+				F058E8FF2542D6B6002885CC /* Q39-CombinationSum.swift in Sources */,
+				F058E9032542DA04002885CC /* Q2_AddTwoNumbers.swift in Sources */,
+				F058E8F2254288D0002885CC /* Executable.swift in Sources */,
 				F0482190250687A000740590 /* Definition.swift in Sources */,
 				F0482192250FBA2000740590 /* Extension_String.swift in Sources */,
+				F058E8FD2542D612002885CC /* Q16-3SumClosest.swift in Sources */,
 				BC82425D217B17590011CA7F /* ViewController.swift in Sources */,
 				BC82425B217B17590011CA7F /* AppDelegate.swift in Sources */,
 				F048219525237E4400740590 /* Extension_Int.swift in Sources */,
+				F058E8F025428845002885CC /* Q15-3Sum.swift in Sources */,
 				F05C92072330C1A6003DB2EB /* Leetcode.swift in Sources */,
 				F0E80F582342FA5600808912 /* Others.swift in Sources */,
 				F0E80F562342F9AC00808912 /* ClosurePractice.swift in Sources */,
 				F05C92052330C174003DB2EB /* YahooInterview.swift in Sources */,
+				F058E9012542D90F002885CC /* Q3-LongestSubstringWithoutRepeatingCharacters.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

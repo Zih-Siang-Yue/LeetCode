@@ -94,6 +94,10 @@ class Leetcode {
         let longestPrefix:String = longestCommonPrefix(["leetcode", "leet", "lee", "lean"])
         print("leetcode14 ouput: \(longestPrefix)")
         
+        //15
+        let thrSum:[[Int]] = threeSum([-2,0,1,1,2])
+        print("leetcode15 output: \(thrSum)")
+        
         //16
         let thrSumClosest:Int = threeSumClosest([1, 1, 1 ,1], -100)
         print("leetcode16 output: \(thrSumClosest)")
@@ -788,6 +792,42 @@ class Leetcode {
         }
         
         return longestPrefix
+    }
+    
+    //Leetcode - 15 3Sum    [-2,0,1,1,2]
+    /**
+     Runtime: 292 ms, faster than 67.58%, Memory Usage: 18.6 MB, less than 29.86%
+     */
+    func threeSum(_ nums: [Int]) -> [[Int]] {
+        if nums.isEmpty { return [] }
+        
+        let sortedNums = nums.sorted()
+        var answer:[String:[Int]] = [:]
+        
+        let length = sortedNums.count
+        for i in 0 ..< length {
+            var low  = i + 1
+            var high = length - 1
+            while low < high {
+                let sum = sortedNums[i] + sortedNums[low] + sortedNums[high]
+                if sum > 0 {
+                    high -= 1
+                }
+                else if sum < 0 {
+                    low += 1
+                }
+                else {
+                    let key = "\(sortedNums[i])\(sortedNums[low])\(sortedNums[high])"
+                    answer[key] = [sortedNums[i], sortedNums[low], sortedNums[high]]
+                    
+                    low += 1
+                    while low < high, sortedNums[low] == sortedNums[low-1] {
+                        low += 1
+                    }
+                }
+            }
+        }
+        return Array(answer.values)
     }
     
     //Leetcode - 16 3Sum Closest

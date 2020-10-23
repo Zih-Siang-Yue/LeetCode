@@ -95,8 +95,12 @@ class Leetcode {
         print("leetcode14 ouput: \(longestPrefix)")
         
         //16
-        let threeSum:Int = threeSumClosest([1, 1, 1 ,1], -100)
-        print("leetcode16 output: \(threeSum)")
+        let thrSumClosest:Int = threeSumClosest([1, 1, 1 ,1], -100)
+        print("leetcode16 output: \(thrSumClosest)")
+        
+        //17
+        let letterCombination = letterCombinations("234")
+        print("leetcode17 output:\(letterCombination)")
         
         //20
         let isValid = isValidParentheses("[](){}")
@@ -810,6 +814,42 @@ class Leetcode {
             }
         }
         return threeSum!
+    }
+    
+    //Leetcode 17 Letter Combinations of a Phone Number
+    func letterCombinations(_ digits: String) -> [String] {
+        let dict:[Character:[String]] = ["2":["a","b","c"],
+                                         "3":["d","e","f"],
+                                         "4":["g","h","i"],
+                                         "5":["j","k","l"],
+                                         "6":["m","n","o"],
+                                         "7":["p","q","r","s"],
+                                         "8":["t","u","v"],
+                                         "9":["w","x","y","z"]]
+        
+        if digits.isEmpty { return [] }
+        if digits.count == 1 {
+            let firstChar = digits[digits.startIndex]
+            return dict[firstChar]!
+        }
+        
+        var answers:[String] = dict[digits[digits.startIndex]]!
+        
+        for i in 1 ..< digits.count {
+            let index = digits.index(digits.startIndex, offsetBy: i)
+            let char = digits[index]
+            guard let letters = dict[char] else { return [] }
+            var temp:[String] = []
+            
+            for answer in answers {
+                for letter in letters {
+                    let combination = answer + letter
+                    temp.append(combination)
+                }
+            }
+            answers = temp
+        }
+        return answers
     }
     
     //Leetcode - 20

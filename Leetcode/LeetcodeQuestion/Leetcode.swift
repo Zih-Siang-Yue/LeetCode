@@ -78,10 +78,6 @@ class Leetcode {
         let letterCombination = letterCombinations("234")
         print("leetcode17 output:\(letterCombination)")
         
-        //18
-        let sumWithFourNumber = fourSum([-2,-1,-1,1,1,2,2], 0)
-        print("leetcode18 output: \(sumWithFourNumber)")
-
         //20
         let isValid = isValidParentheses("[](){}")
         print("leetcode20 output: \(isValid)")
@@ -782,34 +778,6 @@ class Leetcode {
             answers = temp
         }
         return answers
-    }
-    
-    //Leetcode - 18 4Sum
-    //[1,0,-1,0,-2,2], 0
-    func fourSum(_ nums: [Int], _ target: Int) -> [[Int]] {
-        if nums.count == 0 { return [] }
-        let sortedNums = nums.sorted()
-        var dict:[[Int]:Int] = [:]
-        let length = sortedNums.count
-        for i in 0 ..< length {
-            for j in i + 1 ..< length {
-                for k in j + 1 ..< length {
-                    for l in k + 1 ..< length {
-                        let ary = [sortedNums[i], sortedNums[j], sortedNums[k], sortedNums[l]]
-                        let fourSum = ary.reduce(0, +)
-                        if fourSum == target && dict[ary] == nil {
-                            dict[ary] = 1
-                        }
-                    }
-                }
-            }
-        }
-        
-        var answer:[[Int]] = []
-        for i in dict.keys {
-            answer.append(i)
-        }
-        return answer
     }
     
     //Leetcode - 20

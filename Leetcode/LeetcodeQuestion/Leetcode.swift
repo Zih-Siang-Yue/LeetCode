@@ -302,6 +302,11 @@ class Leetcode {
         //1450
         let students = busyStudent([2, 3, 6], [4, 3, 8], 7)
         print("leetcode1450 output: \(students)")
+
+        //factors
+        let factorList = factors(of: 16)
+        print("all factors: \(factorList)")
+
     }
     
     func stackDesign() {
@@ -2051,8 +2056,35 @@ class Leetcode {
         }
         return numberOfStudents
     }
+    
+    func factors(of n: Int) -> [Int] {
+        /*
+         e.g. 16 = [1, 2, 4, 8, 16]
+         因數是相對的, 自己必定跟 1 是互為因數, 漸進地往中間邁進, 直到自己的開根號值
+         所以下面的第一步就是從原本的數字開根號 開始往前找, 之後再根據找到的前方 因數 反推後面的因數 (只需要一半的時間)
+         */
+        precondition(n > 0, "n must be positive")
+        
+        let sqrtn = Int(Double(n).squareRoot()) // 先轉Double 再開根號
+        var factors: [Int] = []
+        factors.reserveCapacity(2 * sqrtn) // 'reserveCapacity' is used to avoid array reallocations.
+        
+        for i in 1...sqrtn {    // 先從1 ... 開根號得值
+            if n % i == 0 {
+                factors.append(i)  // 可以整除的都是因數, 加入factors
+            }
+        }
+        var j = factors.count - 1
+        if factors[j] * factors[j] == n {   // 若因數最後一個數值平方會等於自己, 就從最後一個 - 1  開始往回找
+            j -= 1
+        }
+        while j >= 0 {
+            factors.append(n / factors[j])  // n 除與剛剛找到的因數, 就會等於另一邊的因數
+            j -= 1
+        }
+        return factors
+    }
 }
-
 
 /*
  //Leetcode - 155 Min Stack

@@ -25,6 +25,7 @@
 		F058E9012542D90F002885CC /* Q3-LongestSubstringWithoutRepeatingCharacters.swift in Sources */ = {isa = PBXBuildFile; fileRef = F058E9002542D90F002885CC /* Q3-LongestSubstringWithoutRepeatingCharacters.swift */; };
 		F058E9032542DA04002885CC /* Q2_AddTwoNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F058E9022542DA04002885CC /* Q2_AddTwoNumbers.swift */; };
 		F058E90B2546797D002885CC /* Q260_SingleNumber|||.swift in Sources */ = {isa = PBXBuildFile; fileRef = F058E90A2546797D002885CC /* Q260_SingleNumber|||.swift */; };
+		F058E90D25467BCD002885CC /* Q392_IsSubsequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F058E90C25467BCD002885CC /* Q392_IsSubsequence.swift */; };
 		F05C92052330C174003DB2EB /* YahooInterview.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05C92042330C174003DB2EB /* YahooInterview.swift */; };
 		F05C92072330C1A6003DB2EB /* Leetcode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05C92062330C1A6003DB2EB /* Leetcode.swift */; };
 		F05C92092330C469003DB2EB /* LeetcodeStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05C92082330C469003DB2EB /* LeetcodeStack.swift */; };
@@ -65,6 +66,7 @@
 		F058E9002542D90F002885CC /* Q3-LongestSubstringWithoutRepeatingCharacters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q3-LongestSubstringWithoutRepeatingCharacters.swift"; sourceTree = "<group>"; };
 		F058E9022542DA04002885CC /* Q2_AddTwoNumbers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Q2_AddTwoNumbers.swift; sourceTree = "<group>"; };
 		F058E90A2546797D002885CC /* Q260_SingleNumber|||.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q260_SingleNumber|||.swift"; sourceTree = "<group>"; };
+		F058E90C25467BCD002885CC /* Q392_IsSubsequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Q392_IsSubsequence.swift; sourceTree = "<group>"; };
 		F05C92042330C174003DB2EB /* YahooInterview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YahooInterview.swift; sourceTree = "<group>"; };
 		F05C92062330C1A6003DB2EB /* Leetcode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Leetcode.swift; sourceTree = "<group>"; };
 		F05C92082330C469003DB2EB /* LeetcodeStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeetcodeStack.swift; sourceTree = "<group>"; };
@@ -263,6 +265,7 @@
 		F058E8D3254286AF002885CC /* BinarySearch */ = {
 			isa = PBXGroup;
 			children = (
+				F058E90C25467BCD002885CC /* Q392_IsSubsequence.swift */,
 			);
 			path = BinarySearch;
 			sourceTree = "<group>";
@@ -592,6 +595,7 @@
 				F0482192250FBA2000740590 /* Extension_String.swift in Sources */,
 				F058E8FD2542D612002885CC /* Q16-3SumClosest.swift in Sources */,
 				F00EE63825440274004B5864 /* Q219_ContainsDuplicateII.swift in Sources */,
+				F058E90D25467BCD002885CC /* Q392_IsSubsequence.swift in Sources */,
 				BC82425D217B17590011CA7F /* ViewController.swift in Sources */,
 				BC82425B217B17590011CA7F /* AppDelegate.swift in Sources */,
 				F048219525237E4400740590 /* Extension_Int.swift in Sources */,

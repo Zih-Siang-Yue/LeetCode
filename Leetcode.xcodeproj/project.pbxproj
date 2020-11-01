@@ -16,6 +16,8 @@
 		F00EE6362543D3EF004B5864 /* Q18-4Sum.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00EE6352543D3EF004B5864 /* Q18-4Sum.swift */; };
 		F00EE63825440274004B5864 /* Q219_ContainsDuplicateII.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00EE63725440274004B5864 /* Q219_ContainsDuplicateII.swift */; };
 		F02A32532548626400230EE9 /* Q11_ContainerWithMostWater.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02A32522548626300230EE9 /* Q11_ContainerWithMostWater.swift */; };
+		F02A3255254E8AD500230EE9 /* Q46-Permutations.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02A3254254E8AD500230EE9 /* Q46-Permutations.swift */; };
+		F02A3257254E9D2500230EE9 /* Q48-RotateImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02A3256254E9D2500230EE9 /* Q48-RotateImage.swift */; };
 		F0482190250687A000740590 /* Definition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F048218F250687A000740590 /* Definition.swift */; };
 		F0482192250FBA2000740590 /* Extension_String.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0482191250FBA2000740590 /* Extension_String.swift */; };
 		F048219525237E4400740590 /* Extension_Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = F048219425237E4400740590 /* Extension_Int.swift */; };
@@ -58,6 +60,8 @@
 		F00EE6352543D3EF004B5864 /* Q18-4Sum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q18-4Sum.swift"; sourceTree = "<group>"; };
 		F00EE63725440274004B5864 /* Q219_ContainsDuplicateII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Q219_ContainsDuplicateII.swift; path = Leetcode/LeetcodeQuestion/Medium/Array/Q219_ContainsDuplicateII.swift; sourceTree = SOURCE_ROOT; };
 		F02A32522548626300230EE9 /* Q11_ContainerWithMostWater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Q11_ContainerWithMostWater.swift; sourceTree = "<group>"; };
+		F02A3254254E8AD500230EE9 /* Q46-Permutations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Q46-Permutations.swift"; path = "Leetcode/LeetcodeQuestion/Medium/Q46-Permutations.swift"; sourceTree = SOURCE_ROOT; };
+		F02A3256254E9D2500230EE9 /* Q48-RotateImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q48-RotateImage.swift"; sourceTree = "<group>"; };
 		F048218F250687A000740590 /* Definition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Definition.swift; sourceTree = "<group>"; };
 		F0482191250FBA2000740590 /* Extension_String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension_String.swift; sourceTree = "<group>"; };
 		F048219425237E4400740590 /* Extension_Int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension_Int.swift; sourceTree = "<group>"; };
@@ -296,6 +300,7 @@
 		F058E8D725428743002885CC /* Backtracking */ = {
 			isa = PBXGroup;
 			children = (
+				F02A3254254E8AD500230EE9 /* Q46-Permutations.swift */,
 			);
 			path = Backtracking;
 			sourceTree = "<group>";
@@ -343,6 +348,7 @@
 				F058E8FC2542D612002885CC /* Q16-3SumClosest.swift */,
 				F00EE6352543D3EF004B5864 /* Q18-4Sum.swift */,
 				F058E8FE2542D6B6002885CC /* Q39-CombinationSum.swift */,
+				F02A3256254E9D2500230EE9 /* Q48-RotateImage.swift */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -602,10 +608,12 @@
 				BC82425D217B17590011CA7F /* ViewController.swift in Sources */,
 				BC82425B217B17590011CA7F /* AppDelegate.swift in Sources */,
 				F048219525237E4400740590 /* Extension_Int.swift in Sources */,
+				F02A3255254E8AD500230EE9 /* Q46-Permutations.swift in Sources */,
 				F058E90B2546797D002885CC /* Q260_SingleNumber|||.swift in Sources */,
 				F058E8F025428845002885CC /* Q15-3Sum.swift in Sources */,
 				F05C92072330C1A6003DB2EB /* Leetcode.swift in Sources */,
 				F0E80F582342FA5600808912 /* Others.swift in Sources */,
+				F02A3257254E9D2500230EE9 /* Q48-RotateImage.swift in Sources */,
 				F00EE6362543D3EF004B5864 /* Q18-4Sum.swift in Sources */,
 				F0E80F562342F9AC00808912 /* ClosurePractice.swift in Sources */,
 				F05C92052330C174003DB2EB /* YahooInterview.swift in Sources */,

@@ -15,6 +15,7 @@
 		BC824270217B175E0011CA7F /* LeetcodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC82426F217B175E0011CA7F /* LeetcodeTests.swift */; };
 		F00EE6362543D3EF004B5864 /* Q18-4Sum.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00EE6352543D3EF004B5864 /* Q18-4Sum.swift */; };
 		F00EE63825440274004B5864 /* Q219_ContainsDuplicateII.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00EE63725440274004B5864 /* Q219_ContainsDuplicateII.swift */; };
+		F0194716254FD8A900F1AA09 /* Q404-SumOfLeftLeaves.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0194715254FD8A900F1AA09 /* Q404-SumOfLeftLeaves.swift */; };
 		F02A32532548626400230EE9 /* Q11_ContainerWithMostWater.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02A32522548626300230EE9 /* Q11_ContainerWithMostWater.swift */; };
 		F02A3255254E8AD500230EE9 /* Q46-Permutations.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02A3254254E8AD500230EE9 /* Q46-Permutations.swift */; };
 		F02A3257254E9D2500230EE9 /* Q48-RotateImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02A3256254E9D2500230EE9 /* Q48-RotateImage.swift */; };
@@ -70,6 +71,7 @@
 		BC824271217B175E0011CA7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F00EE6352543D3EF004B5864 /* Q18-4Sum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q18-4Sum.swift"; sourceTree = "<group>"; };
 		F00EE63725440274004B5864 /* Q219_ContainsDuplicateII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Q219_ContainsDuplicateII.swift; path = Leetcode/LeetcodeQuestion/Medium/Array/Q219_ContainsDuplicateII.swift; sourceTree = SOURCE_ROOT; };
+		F0194715254FD8A900F1AA09 /* Q404-SumOfLeftLeaves.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q404-SumOfLeftLeaves.swift"; sourceTree = "<group>"; };
 		F02A32522548626300230EE9 /* Q11_ContainerWithMostWater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Q11_ContainerWithMostWater.swift; sourceTree = "<group>"; };
 		F02A3254254E8AD500230EE9 /* Q46-Permutations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Q46-Permutations.swift"; path = "Leetcode/LeetcodeQuestion/Medium/Q46-Permutations.swift"; sourceTree = SOURCE_ROOT; };
 		F02A3256254E9D2500230EE9 /* Q48-RotateImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q48-RotateImage.swift"; sourceTree = "<group>"; };
@@ -172,6 +174,14 @@
 				F043BCF72568B67600B14544 /* Q461-HammingDistance .swift */,
 			);
 			path = "BitManipulation ";
+            sourceTree = "<group>";
+		};
+		F0194717254FD8AD00F1AA09 /* Tree */ = {
+			isa = PBXGroup;
+			children = (
+				F0194715254FD8A900F1AA09 /* Q404-SumOfLeftLeaves.swift */,
+			);
+			path = Tree;
 			sourceTree = "<group>";
 		};
 		F058E8C725428562002885CC /* Extensions */ = {
@@ -199,6 +209,7 @@
 				F058E8D4254286BC002885CC /* String */,
 				F058E8CF25428663002885CC /* TwoPointers */,
 				F043BCF92568B67E00B14544 /* BitManipulation  */,
+				F0194717254FD8AD00F1AA09 /* Tree */,
 			);
 			path = Easy;
 			sourceTree = "<group>";
@@ -665,6 +676,7 @@
 				F02A3259254EB32800230EE9 /* Q17-LetterCombinationsOfAPhoneNumber.swift in Sources */,
 				F00EE6362543D3EF004B5864 /* Q18-4Sum.swift in Sources */,
 				F0E80F562342F9AC00808912 /* ClosurePractice.swift in Sources */,
+				F0194716254FD8A900F1AA09 /* Q404-SumOfLeftLeaves.swift in Sources */,
 				F05C92052330C174003DB2EB /* YahooInterview.swift in Sources */,
 				F02A32622557C9AD00230EE9 /* Q49-GroupAnagrams.swift in Sources */,
 				F02A32532548626400230EE9 /* Q11_ContainerWithMostWater.swift in Sources */,

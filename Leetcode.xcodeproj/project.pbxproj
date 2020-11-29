@@ -25,9 +25,13 @@
 		F02A3264255ADFF400230EE9 /* Q62-UniquePaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02A3263255ADFF400230EE9 /* Q62-UniquePaths.swift */; };
 		F02A3266255AE0DB00230EE9 /* Q412-FizzBuzz.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02A3265255AE0DB00230EE9 /* Q412-FizzBuzz.swift */; };
 		F02A3268255AE5E200230EE9 /* Q383-RansomNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02A3267255AE5E200230EE9 /* Q383-RansomNote.swift */; };
+		F043BCF82568B67600B14544 /* Q461-HammingDistance .swift in Sources */ = {isa = PBXBuildFile; fileRef = F043BCF72568B67600B14544 /* Q461-HammingDistance .swift */; };
 		F0482190250687A000740590 /* Definition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F048218F250687A000740590 /* Definition.swift */; };
 		F0482192250FBA2000740590 /* Extension_String.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0482191250FBA2000740590 /* Extension_String.swift */; };
 		F048219525237E4400740590 /* Extension_Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = F048219425237E4400740590 /* Extension_Int.swift */; };
+		F04989DD255F80B300FDE8DC /* Q264-UglyNumberII.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04989DC255F80B300FDE8DC /* Q264-UglyNumberII.swift */; };
+		F04989DF255F85A900FDE8DC /* Q40-CombinationSumII.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04989DE255F85A900FDE8DC /* Q40-CombinationSumII.swift */; };
+		F04989E12562C44200FDE8DC /* Q414-ThirdMaximumNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04989E02562C44200FDE8DC /* Q414-ThirdMaximumNumber.swift */; };
 		F058E8F025428845002885CC /* Q15-3Sum.swift in Sources */ = {isa = PBXBuildFile; fileRef = F058E8EF25428845002885CC /* Q15-3Sum.swift */; };
 		F058E8F2254288D0002885CC /* Executable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F058E8F1254288D0002885CC /* Executable.swift */; };
 		F058E8FD2542D612002885CC /* Q16-3SumClosest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F058E8FC2542D612002885CC /* Q16-3SumClosest.swift */; };
@@ -76,9 +80,13 @@
 		F02A3263255ADFF400230EE9 /* Q62-UniquePaths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q62-UniquePaths.swift"; sourceTree = "<group>"; };
 		F02A3265255AE0DB00230EE9 /* Q412-FizzBuzz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Q412-FizzBuzz.swift"; path = "Leetcode/LeetcodeQuestion/Medium/Array/Q412-FizzBuzz.swift"; sourceTree = SOURCE_ROOT; };
 		F02A3267255AE5E200230EE9 /* Q383-RansomNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Q383-RansomNote.swift"; path = "Leetcode/LeetcodeQuestion/Medium/Array/Q383-RansomNote.swift"; sourceTree = SOURCE_ROOT; };
+		F043BCF72568B67600B14544 /* Q461-HammingDistance .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q461-HammingDistance .swift"; sourceTree = "<group>"; };
 		F048218F250687A000740590 /* Definition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Definition.swift; sourceTree = "<group>"; };
 		F0482191250FBA2000740590 /* Extension_String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension_String.swift; sourceTree = "<group>"; };
 		F048219425237E4400740590 /* Extension_Int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension_Int.swift; sourceTree = "<group>"; };
+		F04989DC255F80B300FDE8DC /* Q264-UglyNumberII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Q264-UglyNumberII.swift"; path = "Leetcode/LeetcodeQuestion/Medium/Array/Q264-UglyNumberII.swift"; sourceTree = SOURCE_ROOT; };
+		F04989DE255F85A900FDE8DC /* Q40-CombinationSumII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q40-CombinationSumII.swift"; sourceTree = "<group>"; };
+		F04989E02562C44200FDE8DC /* Q414-ThirdMaximumNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Q414-ThirdMaximumNumber.swift"; path = "Leetcode/LeetcodeQuestion/Medium/Array/Q414-ThirdMaximumNumber.swift"; sourceTree = SOURCE_ROOT; };
 		F058E8EF25428845002885CC /* Q15-3Sum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q15-3Sum.swift"; sourceTree = "<group>"; };
 		F058E8F1254288D0002885CC /* Executable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Executable.swift; sourceTree = "<group>"; };
 		F058E8FC2542D612002885CC /* Q16-3SumClosest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q16-3SumClosest.swift"; sourceTree = "<group>"; };
@@ -158,6 +166,14 @@
 			path = LeetcodeTests;
 			sourceTree = "<group>";
 		};
+		F043BCF92568B67E00B14544 /* BitManipulation  */ = {
+			isa = PBXGroup;
+			children = (
+				F043BCF72568B67600B14544 /* Q461-HammingDistance .swift */,
+			);
+			path = "BitManipulation ";
+			sourceTree = "<group>";
+		};
 		F058E8C725428562002885CC /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -182,6 +198,7 @@
 				F058E8D5254286DD002885CC /* Stack */,
 				F058E8D4254286BC002885CC /* String */,
 				F058E8CF25428663002885CC /* TwoPointers */,
+				F043BCF92568B67E00B14544 /* BitManipulation  */,
 			);
 			path = Easy;
 			sourceTree = "<group>";
@@ -230,6 +247,7 @@
 			children = (
 				F00EE63725440274004B5864 /* Q219_ContainsDuplicateII.swift */,
 				F02A3265255AE0DB00230EE9 /* Q412-FizzBuzz.swift */,
+				F04989E02562C44200FDE8DC /* Q414-ThirdMaximumNumber.swift */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -334,6 +352,7 @@
 		F058E8D925428743002885CC /* Math */ = {
 			isa = PBXGroup;
 			children = (
+				F04989DC255F80B300FDE8DC /* Q264-UglyNumberII.swift */,
 			);
 			path = Math;
 			sourceTree = "<group>";
@@ -369,6 +388,7 @@
 				F058E8FE2542D6B6002885CC /* Q39-CombinationSum.swift */,
 				F02A3256254E9D2500230EE9 /* Q48-RotateImage.swift */,
 				F02A3263255ADFF400230EE9 /* Q62-UniquePaths.swift */,
+				F04989DE255F85A900FDE8DC /* Q40-CombinationSumII.swift */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -624,15 +644,18 @@
 				F02A3266255AE0DB00230EE9 /* Q412-FizzBuzz.swift in Sources */,
 				F0482190250687A000740590 /* Definition.swift in Sources */,
 				F02A3268255AE5E200230EE9 /* Q383-RansomNote.swift in Sources */,
+				F043BCF82568B67600B14544 /* Q461-HammingDistance .swift in Sources */,
 				F0482192250FBA2000740590 /* Extension_String.swift in Sources */,
 				F058E8FD2542D612002885CC /* Q16-3SumClosest.swift in Sources */,
 				F00EE63825440274004B5864 /* Q219_ContainsDuplicateII.swift in Sources */,
 				F058E90D25467BCD002885CC /* Q392_IsSubsequence.swift in Sources */,
 				BC82425D217B17590011CA7F /* ViewController.swift in Sources */,
+				F04989DD255F80B300FDE8DC /* Q264-UglyNumberII.swift in Sources */,
 				BC82425B217B17590011CA7F /* AppDelegate.swift in Sources */,
 				F048219525237E4400740590 /* Extension_Int.swift in Sources */,
 				F02A3255254E8AD500230EE9 /* Q46-Permutations.swift in Sources */,
 				F058E90B2546797D002885CC /* Q260_SingleNumber|||.swift in Sources */,
+				F04989DF255F85A900FDE8DC /* Q40-CombinationSumII.swift in Sources */,
 				F02A325B254EB42700230EE9 /* Q22-GenerateParentheses.swift in Sources */,
 				F058E8F025428845002885CC /* Q15-3Sum.swift in Sources */,
 				F05C92072330C1A6003DB2EB /* Leetcode.swift in Sources */,
@@ -646,6 +669,7 @@
 				F02A32622557C9AD00230EE9 /* Q49-GroupAnagrams.swift in Sources */,
 				F02A32532548626400230EE9 /* Q11_ContainerWithMostWater.swift in Sources */,
 				F02A325F2555A1AE00230EE9 /* Q47-Permutations2.swift in Sources */,
+				F04989E12562C44200FDE8DC /* Q414-ThirdMaximumNumber.swift in Sources */,
 				F058E9012542D90F002885CC /* Q3-LongestSubstringWithoutRepeatingCharacters.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

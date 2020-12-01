@@ -9,5 +9,8 @@
 import Foundation
 
 protocol Executable {
-    func execute()
+    associatedtype I
+    associatedtype O
+    
+    func solution(_ input: I) -> O
 }

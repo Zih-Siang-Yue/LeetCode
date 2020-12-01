@@ -9,6 +9,10 @@
 import Foundation
 
 class Q15_3Sum: Executable {
+    
+    typealias I = [Int]
+    typealias O = [[Int]]
+    
     func execute() {
         let output:[[Int]] = threeSum([-2,0,1,1,2])
         print("leetcode15 output: \(output)")
@@ -18,13 +22,13 @@ class Q15_3Sum: Executable {
         return solution(nums)
     }
     
-    private func solution(_ nums: [Int]) -> [[Int]] {
+    func solution(_ input: [Int]) -> [[Int]] {
         /**
         Runtime: 292 ms, faster than 67.58%, Memory Usage: 18.6 MB, less than 29.86%
         */
-        if nums.isEmpty { return [] }
+        if input.isEmpty { return [] }
         
-        let sortedNums = nums.sorted()
+        let sortedNums = input.sorted()
         var answer:[String:[Int]] = [:]
         
         let length = sortedNums.count

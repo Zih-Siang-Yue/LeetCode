@@ -7,7 +7,11 @@
 //
 
 import Foundation
+
 class Q11_ContainerWithMostWater: Executable {
+    
+    typealias I = [Int]
+    typealias O = Int
     
     func execute() {
         //[1,1]
@@ -21,7 +25,7 @@ class Q11_ContainerWithMostWater: Executable {
         return solution(height)
     }
     
-    //Runtime: 144 ms, faster than 43.85%, Memory Usage: 14.5 MB, less than 39.87% 
+    //Runtime: 144 ms, faster than 43.85%, Memory Usage: 14.5 MB, less than 39.87%
     func solution(_ height: [Int]) -> Int {
         if height.isEmpty { return 0 }
         

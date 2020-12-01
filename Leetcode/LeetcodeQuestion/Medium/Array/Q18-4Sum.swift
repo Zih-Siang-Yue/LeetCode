@@ -8,18 +8,25 @@
 
 import Foundation
 
-class Q18_4Sum:Executable {
+class Q18_4Sum: Executable {
+    
+    typealias I = ([Int], Int)
+    typealias O = [[Int]]
+    
     func execute() {
         let output = fourSum([-2,-1,-1,1,1,2,2], 0)
         print("leetcode18 output: \(output)")
     }
     
     func fourSum(_ nums: [Int], _ target: Int) -> [[Int]] {
-       return solution(nums, target)
+       return solution((nums, target))
     }
     
-    //[-2,-1,0,0,1,2], 0
-    func solution(_ nums: [Int], _ target: Int) -> [[Int]] {
+    func solution(_ input: ([Int], Int)) -> [[Int]] {
+        return solution1(input.0, input.1)
+    }
+    
+    func solution1(_ nums: [Int], _ target: Int) -> [[Int]] {
         if nums.isEmpty { return [] }
         
         let sorted = nums.sorted()
@@ -53,7 +60,7 @@ class Q18_4Sum:Executable {
         return Array(answer.values)
     }
     
-    func timeout(_ nums: [Int], _ target: Int) -> [[Int]] {
+    func timeoutSolution(_ nums: [Int], _ target: Int) -> [[Int]] {
         if nums.count == 0 { return [] }
         let sortedNums = nums.sorted()
         var dict:[[Int]:Int] = [:]

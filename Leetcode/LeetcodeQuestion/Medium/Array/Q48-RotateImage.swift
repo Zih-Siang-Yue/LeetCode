@@ -9,18 +9,30 @@
 import Foundation
 
 class Q48_RotateImage: Executable {
-    func execute() {
-        var ary:[[Int]] = [[1,2,3,4], [5,6,7,8], [9,10,11,12], [13,14,15,16]]
-        rotate(&ary)
-        print("==> leetcode Q48 output: \(ary)")
-    }
     
-    func rotate(_ matrix: inout [[Int]]) {
-        solution(&matrix)
+    typealias I = [[Int]]
+    typealias O = [[Int]]
+    
+//    func execute() {
+//        var ary:[[Int]] = [[1,2,3,4], [5,6,7,8], [9,10,11,12], [13,14,15,16]]
+//        rotate(&ary)
+//        print("==> leetcode Q48 output: \(ary)")
+//    }
+    
+//    func rotate(_ matrix: inout [[Int]]) {
+//        var localInput = matrix
+//        solution(&localInput)
+//        return localInput
+//    }
+    
+    func solution(_ input: [[Int]]) -> [[Int]] {
+        var localInput = input
+        solution1(&localInput)
+        return localInput
     }
     
     // Runtime: 8 ms, faster than 96.70%, Memory Usage: 14.1 MB, less than 39.62%
-    func solution(_ matrix: inout [[Int]]) {
+    func solution1(_ matrix: inout [[Int]]) {
         let length = matrix.count
         // transpose matric
         for i in 0 ..< length {
@@ -46,7 +58,7 @@ class Q48_RotateImage: Executable {
     }
     
     //This solution need another 2D matrix
-    func solution1(_ matrix: inout [[Int]]) {
+    func solution2(_ matrix: inout [[Int]]) {
         var answers: [[Int]] = []
         var outsideIndex = 0
         let length = matrix.count

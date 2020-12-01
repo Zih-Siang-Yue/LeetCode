@@ -8,17 +8,24 @@
 
 import Foundation
 
-class Q16_3SumClosest:Executable {
+class Q16_3SumClosest: Executable {
+    typealias I = ([Int], Int)
+    typealias O = Int
+    
     func execute() {
         let output:Int = threeSumClosest([1, 1, 1 ,1], -100)
         print("leetcode16 output: \(output)")
     }
     
     func threeSumClosest(_ nums: [Int], _ target: Int) -> Int {
-        return threeSumClosestSolution1(nums, target)
+        return solution((nums, target))
     }
     
-    private func threeSumClosestSolution1(_ nums: [Int], _ target: Int) -> Int {
+    func solution(_ input: ([Int], Int)) -> Int {
+        return solution1(input.0, input.1)
+    }
+    
+    private func solution1(_ nums: [Int], _ target: Int) -> Int {
         var threeSum:Int? = nil
         let length = nums.count
         

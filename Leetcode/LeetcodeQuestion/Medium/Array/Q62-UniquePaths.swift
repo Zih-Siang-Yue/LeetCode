@@ -9,13 +9,22 @@
 import Foundation
 
 class Q62_UniquePaths: Executable {
+    
+    typealias I = (Int, Int)
+    typealias O = Int
+    
     func execute() {
         let pathOutput = uniquePaths(3, 3)
         print("leetcode62 uniquePaths output: \(pathOutput)")
     }
     
     func uniquePaths(_ m: Int, _ n: Int) -> Int {
-        return solution(m, n)
+        return solution((m, n))
+    }
+    
+    func solution(_ input: (Int, Int)) -> Int {
+        return solution1(input.0, input.1)
+//        return solution2(input.0, input.1)
     }
     
     /* 此方法適用於計算最小，最大，以及計算路徑可能... 等問題，依照不同狀況做不同條件處理
@@ -26,7 +35,7 @@ class Q62_UniquePaths: Executable {
      Step5: 回傳對角線的那個值
      */
     //Runtime: 4 ms, faster than 67.24%, Memory Usage: 14.1 MB, less than 45.98%
-    func solution(_ m: Int, _ n: Int) -> Int {
+    func solution1(_ m: Int, _ n: Int) -> Int {
         if m == 0 || n == 0 {
             return 0
         }
@@ -48,7 +57,7 @@ class Q62_UniquePaths: Executable {
     
     /* 如上只是寫法不相同 */
     //Runtime: 0 ms
-    func solution1(_ m: Int, _ n: Int) -> Int {
+    func solution2(_ m: Int, _ n: Int) -> Int {
         var dp = [[Int]](repeating : [Int](repeating : 0,count : n), count : m)
         
         for i in 0 ..< n {

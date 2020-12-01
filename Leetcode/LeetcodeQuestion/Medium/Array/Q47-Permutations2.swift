@@ -9,12 +9,25 @@
 import Foundation
 
 class Q47_Permutations2: Executable {
+    
+    typealias I = [Int]
+    typealias O = [[Int]]
+    
     func execute() {
         let output = permuteUnique([1,2,3])
         print("leetcode47 Permutation2 output: \(output)")
-}
+    }
     
     func permuteUnique(_ nums: [Int]) -> [[Int]] {
+        return solution(nums)
+    }
+    
+    func solution(_ input: [Int]) -> [[Int]] {
+        return solution1(input)
+//        return solution2(input)
+    }
+    
+    func solution1(_ nums: [Int]) -> [[Int]] {
         let nums = nums.sorted()
         var result = [[Int]]()
         var combi = [Int]()
@@ -43,7 +56,7 @@ class Q47_Permutations2: Executable {
         }
     }
     
-    func permuteUnique1(_ nums: [Int]) -> [[Int]] {
+    func solution2(_ nums: [Int]) -> [[Int]] {
         if nums.isEmpty { return [] }
         if nums.count == 1 { return [nums] }
         

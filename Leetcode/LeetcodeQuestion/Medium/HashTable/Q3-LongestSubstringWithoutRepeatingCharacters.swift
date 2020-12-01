@@ -8,17 +8,24 @@
 
 import Foundation
 
-class Q3_LongestSubstringWithoutRepeatingCharacters:Executable {
+class Q3_LongestSubstringWithoutRepeatingCharacters: Executable {
+    
+    typealias I = String
+    typealias O = Int
+    
     func execute() {
         let output = lengthOfLongestSubstring("dvdf")
         print("leetcode3 output: \(output)")
     }
     
-    //Leetcode - 3 Longest Substring Without Repeating Characters
-    private func lengthOfLongestSubstring(_ s: String) -> Int {
+    func lengthOfLongestSubstring(_ s: String) -> Int {
+        return solution(s)
+    }
+    
+    func solution(_ input: String) -> Int {
         var ary = [String]()
         var length = 0
-        for i in s {
+        for i in input {
             if var substr = ary.last {
                 if substr.contains(i) {
                     let index = substr.firstIndex(of: i)!

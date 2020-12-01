@@ -45,6 +45,8 @@
 		F05C92072330C1A6003DB2EB /* Leetcode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05C92062330C1A6003DB2EB /* Leetcode.swift */; };
 		F05C92092330C469003DB2EB /* LeetcodeStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05C92082330C469003DB2EB /* LeetcodeStack.swift */; };
 		F082AD44256BB6A800DE5AAD /* Q500-KeyboardRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F082AD43256BB6A800DE5AAD /* Q500-KeyboardRow.swift */; };
+		F082AD7C25760EB700DE5AAD /* SYBaseTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F082AD7B25760EB700DE5AAD /* SYBaseTestCase.swift */; };
+		F082AD7E25760EF800DE5AAD /* Testable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F082AD7D25760EF800DE5AAD /* Testable.swift */; };
 		F0E80F562342F9AC00808912 /* ClosurePractice.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E80F552342F9AC00808912 /* ClosurePractice.swift */; };
 		F0E80F582342FA5600808912 /* Others.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E80F572342FA5600808912 /* Others.swift */; };
 		F0FDA5E625621E6500522381 /* Q11-ContainerWithMostWater_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FDA5E525621E6500522381 /* Q11-ContainerWithMostWater_Test.swift */; };
@@ -103,6 +105,8 @@
 		F05C92062330C1A6003DB2EB /* Leetcode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Leetcode.swift; sourceTree = "<group>"; };
 		F05C92082330C469003DB2EB /* LeetcodeStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeetcodeStack.swift; sourceTree = "<group>"; };
 		F082AD43256BB6A800DE5AAD /* Q500-KeyboardRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q500-KeyboardRow.swift"; sourceTree = "<group>"; };
+		F082AD7B25760EB700DE5AAD /* SYBaseTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SYBaseTestCase.swift; path = LeetcodeTests/SYBaseTestCase.swift; sourceTree = SOURCE_ROOT; };
+		F082AD7D25760EF800DE5AAD /* Testable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Testable.swift; sourceTree = "<group>"; };
 		F0E80F552342F9AC00808912 /* ClosurePractice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosurePractice.swift; sourceTree = "<group>"; };
 		F0E80F572342FA5600808912 /* Others.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Others.swift; sourceTree = "<group>"; };
 		F0FDA5E525621E6500522381 /* Q11-ContainerWithMostWater_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q11-ContainerWithMostWater_Test.swift"; sourceTree = "<group>"; };
@@ -166,8 +170,11 @@
 		BC82426E217B175E0011CA7F /* LeetcodeTests */ = {
 			isa = PBXGroup;
 			children = (
+				F0FDA5E525621E6500522381 /* Q11-ContainerWithMostWater_Test.swift */,
+				F082AD7B25760EB700DE5AAD /* SYBaseTestCase.swift */,
 				BC82426F217B175E0011CA7F /* LeetcodeTests.swift */,
 				BC824271217B175E0011CA7F /* Info.plist */,
+				F082AD7D25760EF800DE5AAD /* Testable.swift */,
 			);
 			path = LeetcodeTests;
 			sourceTree = "<group>";
@@ -398,7 +405,6 @@
 			isa = PBXGroup;
 			children = (
 				F02A32522548626300230EE9 /* Q11-ContainerWithMostWater.swift */,
-				F0FDA5E525621E6500522381 /* Q11-ContainerWithMostWater_Test.swift */,
 				F058E8EF25428845002885CC /* Q15-3Sum.swift */,
 				F058E8FC2542D612002885CC /* Q16-3SumClosest.swift */,
 				F00EE6352543D3EF004B5864 /* Q18-4Sum.swift */,
@@ -698,6 +704,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0FDA5E625621E6500522381 /* Q11-ContainerWithMostWater_Test.swift in Sources */,
+				F082AD7E25760EF800DE5AAD /* Testable.swift in Sources */,
+				F082AD7C25760EB700DE5AAD /* SYBaseTestCase.swift in Sources */,
 				BC824270217B175E0011CA7F /* LeetcodeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

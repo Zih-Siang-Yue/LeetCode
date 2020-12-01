@@ -44,6 +44,7 @@
 		F05C92052330C174003DB2EB /* YahooInterview.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05C92042330C174003DB2EB /* YahooInterview.swift */; };
 		F05C92072330C1A6003DB2EB /* Leetcode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05C92062330C1A6003DB2EB /* Leetcode.swift */; };
 		F05C92092330C469003DB2EB /* LeetcodeStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05C92082330C469003DB2EB /* LeetcodeStack.swift */; };
+		F082AD44256BB6A800DE5AAD /* Q500-KeyboardRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F082AD43256BB6A800DE5AAD /* Q500-KeyboardRow.swift */; };
 		F0E80F562342F9AC00808912 /* ClosurePractice.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E80F552342F9AC00808912 /* ClosurePractice.swift */; };
 		F0E80F582342FA5600808912 /* Others.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E80F572342FA5600808912 /* Others.swift */; };
 		F0FDA5E625621E6500522381 /* Q11-ContainerWithMostWater_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FDA5E525621E6500522381 /* Q11-ContainerWithMostWater_Test.swift */; };
@@ -101,6 +102,7 @@
 		F05C92042330C174003DB2EB /* YahooInterview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YahooInterview.swift; sourceTree = "<group>"; };
 		F05C92062330C1A6003DB2EB /* Leetcode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Leetcode.swift; sourceTree = "<group>"; };
 		F05C92082330C469003DB2EB /* LeetcodeStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeetcodeStack.swift; sourceTree = "<group>"; };
+		F082AD43256BB6A800DE5AAD /* Q500-KeyboardRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q500-KeyboardRow.swift"; sourceTree = "<group>"; };
 		F0E80F552342F9AC00808912 /* ClosurePractice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosurePractice.swift; sourceTree = "<group>"; };
 		F0E80F572342FA5600808912 /* Others.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Others.swift; sourceTree = "<group>"; };
 		F0FDA5E525621E6500522381 /* Q11-ContainerWithMostWater_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q11-ContainerWithMostWater_Test.swift"; sourceTree = "<group>"; };
@@ -268,6 +270,7 @@
 		F058E8CC25428645002885CC /* HashTable */ = {
 			isa = PBXGroup;
 			children = (
+				F082AD43256BB6A800DE5AAD /* Q500-KeyboardRow.swift */,
 			);
 			path = HashTable;
 			sourceTree = "<group>";
@@ -666,6 +669,7 @@
 				BC82425D217B17590011CA7F /* ViewController.swift in Sources */,
 				F04989DD255F80B300FDE8DC /* Q264-UglyNumberII.swift in Sources */,
 				BC82425B217B17590011CA7F /* AppDelegate.swift in Sources */,
+				F082AD44256BB6A800DE5AAD /* Q500-KeyboardRow.swift in Sources */,
 				F048219525237E4400740590 /* Extension_Int.swift in Sources */,
 				F02A3255254E8AD500230EE9 /* Q46-Permutations.swift in Sources */,
 				F058E90B2546797D002885CC /* Q260_SingleNumber|||.swift in Sources */,

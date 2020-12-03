@@ -47,6 +47,15 @@
 		F082AD44256BB6A800DE5AAD /* Q500-KeyboardRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F082AD43256BB6A800DE5AAD /* Q500-KeyboardRow.swift */; };
 		F082AD7C25760EB700DE5AAD /* SYBaseTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F082AD7B25760EB700DE5AAD /* SYBaseTestCase.swift */; };
 		F082AD7E25760EF800DE5AAD /* Testable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F082AD7D25760EF800DE5AAD /* Testable.swift */; };
+		F082AD8525777BB600DE5AAD /* Executable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F058E8F1254288D0002885CC /* Executable.swift */; };
+		F0C83F4A257791F4002C06D2 /* Q11-ContainerWithMostWater.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02A32522548626300230EE9 /* Q11-ContainerWithMostWater.swift */; };
+		F0D623572577A48F004AF4AD /* Q15-3Sum_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D623562577A48F004AF4AD /* Q15-3Sum_Test.swift */; };
+		F0D6235A2578D887004AF4AD /* whereClause.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D623592578D887004AF4AD /* whereClause.swift */; };
+		F0D6235E2578DA5A004AF4AD /* Q16-3SumClosest_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D6235D2578DA5A004AF4AD /* Q16-3SumClosest_Test.swift */; };
+		F0D623602578EBEF004AF4AD /* Q18-4Sum_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D6235F2578EBEF004AF4AD /* Q18-4Sum_Test.swift */; };
+		F0D623622578F105004AF4AD /* Q39_CombinationSum_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D623612578F105004AF4AD /* Q39_CombinationSum_Test.swift */; };
+		F0D623642578F405004AF4AD /* Q48_RotateImage_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D623632578F405004AF4AD /* Q48_RotateImage_Test.swift */; };
+		F0D623662578F63B004AF4AD /* Q62-UniquePaths_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D623652578F63B004AF4AD /* Q62-UniquePaths_Test.swift */; };
 		F0E80F562342F9AC00808912 /* ClosurePractice.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E80F552342F9AC00808912 /* ClosurePractice.swift */; };
 		F0E80F582342FA5600808912 /* Others.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E80F572342FA5600808912 /* Others.swift */; };
 		F0FDA5E625621E6500522381 /* Q11-ContainerWithMostWater_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FDA5E525621E6500522381 /* Q11-ContainerWithMostWater_Test.swift */; };
@@ -107,6 +116,13 @@
 		F082AD43256BB6A800DE5AAD /* Q500-KeyboardRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q500-KeyboardRow.swift"; sourceTree = "<group>"; };
 		F082AD7B25760EB700DE5AAD /* SYBaseTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SYBaseTestCase.swift; path = LeetcodeTests/SYBaseTestCase.swift; sourceTree = SOURCE_ROOT; };
 		F082AD7D25760EF800DE5AAD /* Testable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Testable.swift; sourceTree = "<group>"; };
+		F0D623562577A48F004AF4AD /* Q15-3Sum_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q15-3Sum_Test.swift"; sourceTree = "<group>"; };
+		F0D623592578D887004AF4AD /* whereClause.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = whereClause.swift; sourceTree = "<group>"; };
+		F0D6235D2578DA5A004AF4AD /* Q16-3SumClosest_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q16-3SumClosest_Test.swift"; sourceTree = "<group>"; };
+		F0D6235F2578EBEF004AF4AD /* Q18-4Sum_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q18-4Sum_Test.swift"; sourceTree = "<group>"; };
+		F0D623612578F105004AF4AD /* Q39_CombinationSum_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Q39_CombinationSum_Test.swift; sourceTree = "<group>"; };
+		F0D623632578F405004AF4AD /* Q48_RotateImage_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Q48_RotateImage_Test.swift; sourceTree = "<group>"; };
+		F0D623652578F63B004AF4AD /* Q62-UniquePaths_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q62-UniquePaths_Test.swift"; sourceTree = "<group>"; };
 		F0E80F552342F9AC00808912 /* ClosurePractice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosurePractice.swift; sourceTree = "<group>"; };
 		F0E80F572342FA5600808912 /* Others.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Others.swift; sourceTree = "<group>"; };
 		F0FDA5E525621E6500522381 /* Q11-ContainerWithMostWater_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q11-ContainerWithMostWater_Test.swift"; sourceTree = "<group>"; };
@@ -163,6 +179,7 @@
 				F0E80F572342FA5600808912 /* Others.swift */,
 				F048218F250687A000740590 /* Definition.swift */,
 				F058E8C725428562002885CC /* Extensions */,
+				F0D623592578D887004AF4AD /* whereClause.swift */,
 			);
 			path = Leetcode;
 			sourceTree = "<group>";
@@ -170,7 +187,7 @@
 		BC82426E217B175E0011CA7F /* LeetcodeTests */ = {
 			isa = PBXGroup;
 			children = (
-				F0FDA5E525621E6500522381 /* Q11-ContainerWithMostWater_Test.swift */,
+				F0D6235C2578DA2A004AF4AD /* Medium */,
 				F082AD7B25760EB700DE5AAD /* SYBaseTestCase.swift */,
 				BC82426F217B175E0011CA7F /* LeetcodeTests.swift */,
 				BC824271217B175E0011CA7F /* Info.plist */,
@@ -546,6 +563,28 @@
 			path = "Bit Manipulation ";
 			sourceTree = "<group>";
 		};
+		F0D6235B2578DA1C004AF4AD /* Array */ = {
+			isa = PBXGroup;
+			children = (
+				F0FDA5E525621E6500522381 /* Q11-ContainerWithMostWater_Test.swift */,
+				F0D623562577A48F004AF4AD /* Q15-3Sum_Test.swift */,
+				F0D6235D2578DA5A004AF4AD /* Q16-3SumClosest_Test.swift */,
+				F0D6235F2578EBEF004AF4AD /* Q18-4Sum_Test.swift */,
+				F0D623612578F105004AF4AD /* Q39_CombinationSum_Test.swift */,
+				F0D623632578F405004AF4AD /* Q48_RotateImage_Test.swift */,
+				F0D623652578F63B004AF4AD /* Q62-UniquePaths_Test.swift */,
+			);
+			path = Array;
+			sourceTree = "<group>";
+		};
+		F0D6235C2578DA2A004AF4AD /* Medium */ = {
+			isa = PBXGroup;
+			children = (
+				F0D6235B2578DA1C004AF4AD /* Array */,
+			);
+			path = Medium;
+			sourceTree = "<group>";
+		};
 		F0E80F592342FAF300808912 /* LeetcodeQuestion */ = {
 			isa = PBXGroup;
 			children = (
@@ -683,6 +722,7 @@
 				F02A325B254EB42700230EE9 /* Q22-GenerateParentheses.swift in Sources */,
 				F058E8F025428845002885CC /* Q15-3Sum.swift in Sources */,
 				F05C92072330C1A6003DB2EB /* Leetcode.swift in Sources */,
+				F0D6235A2578D887004AF4AD /* whereClause.swift in Sources */,
 				F02A3264255ADFF400230EE9 /* Q62-UniquePaths.swift in Sources */,
 				F0E80F582342FA5600808912 /* Others.swift in Sources */,
 				F02A3257254E9D2500230EE9 /* Q48-RotateImage.swift in Sources */,
@@ -703,10 +743,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0D623602578EBEF004AF4AD /* Q18-4Sum_Test.swift in Sources */,
+				F0D623622578F105004AF4AD /* Q39_CombinationSum_Test.swift in Sources */,
+				F0D623572577A48F004AF4AD /* Q15-3Sum_Test.swift in Sources */,
 				F0FDA5E625621E6500522381 /* Q11-ContainerWithMostWater_Test.swift in Sources */,
 				F082AD7E25760EF800DE5AAD /* Testable.swift in Sources */,
+				F0D623662578F63B004AF4AD /* Q62-UniquePaths_Test.swift in Sources */,
+				F0C83F4A257791F4002C06D2 /* Q11-ContainerWithMostWater.swift in Sources */,
 				F082AD7C25760EB700DE5AAD /* SYBaseTestCase.swift in Sources */,
 				BC824270217B175E0011CA7F /* LeetcodeTests.swift in Sources */,
+				F0D623642578F405004AF4AD /* Q48_RotateImage_Test.swift in Sources */,
+				F0D6235E2578DA5A004AF4AD /* Q16-3SumClosest_Test.swift in Sources */,
+				F082AD8525777BB600DE5AAD /* Executable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

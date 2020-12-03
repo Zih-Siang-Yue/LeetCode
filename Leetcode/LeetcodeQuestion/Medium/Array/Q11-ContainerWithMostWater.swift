@@ -12,19 +12,7 @@ class Q11_ContainerWithMostWater: Executable {
     
     typealias I = [Int]
     typealias O = Int
-    
-    func execute() {
-        //[1,1]
-        //[4,3,2,1,4]
-        //[1,8,6,2,5,4,8,3,7]
-        let output:Int = maxArea([1,8,6,2,5,4,8,3,7])
-        print("leetcode11 output: \(output)")
-    }
-    
-    func maxArea(_ height: [Int]) -> Int {
-        return solution(height)
-    }
-    
+        
     //Runtime: 144 ms, faster than 43.85%, Memory Usage: 14.5 MB, less than 39.87%
     func solution(_ height: [Int]) -> Int {
         if height.isEmpty { return 0 }

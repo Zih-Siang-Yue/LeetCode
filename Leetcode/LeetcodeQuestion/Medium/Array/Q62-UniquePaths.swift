@@ -12,16 +12,7 @@ class Q62_UniquePaths: Executable {
     
     typealias I = (Int, Int)
     typealias O = Int
-    
-    func execute() {
-        let pathOutput = uniquePaths(3, 3)
-        print("leetcode62 uniquePaths output: \(pathOutput)")
-    }
-    
-    func uniquePaths(_ m: Int, _ n: Int) -> Int {
-        return solution((m, n))
-    }
-    
+        
     func solution(_ input: (Int, Int)) -> Int {
         return solution1(input.0, input.1)
 //        return solution2(input.0, input.1)

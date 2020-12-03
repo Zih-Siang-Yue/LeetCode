@@ -10,24 +10,21 @@ import Foundation
 
 class Q39_CombinationSum: Executable {
     
+    typealias I = ([Int], Int)
+    typealias O = [[Int]]
+
     var sortedCandidates:[Int] = []
     
-    func execute() {
-        let output:[[Int]] = combinationSum([2, 3, 5], 8)
-        print("leetcode39 Combination Sum output: \(output)")
-    }
-    
-
-    func combinationSum(_ candidates: [Int], _ target: Int) -> [[Int]] {
-        /*
+    func solution(_ input: ([Int], Int)) -> [[Int]] {
+         /*
          Step1: 將排序過後的 candidates 存在一個全域ary 裡
          Step2: 因回傳值是 2維陣列，故各準備一個 answerAry, currentAry
          Step3: 因為要不停往下探尋加總的值是否符合target, 要設計一個遞迴方法
          */
-        self.sortedCandidates = candidates.sorted()
+        self.sortedCandidates = input.0.sorted()
         var answer:[[Int]] = []
         var current:[Int] = []
-        dfs(&answer, &current, target, 0)
+        dfs(&answer, &current, input.1, 0)
         return answer
     }
     

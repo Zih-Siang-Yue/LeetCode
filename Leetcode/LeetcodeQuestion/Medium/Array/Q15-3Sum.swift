@@ -13,15 +13,6 @@ class Q15_3Sum: Executable {
     typealias I = [Int]
     typealias O = [[Int]]
     
-    func execute() {
-        let output:[[Int]] = threeSum([-2,0,1,1,2])
-        print("leetcode15 output: \(output)")
-    }
-    
-    func threeSum(_ nums: [Int]) -> [[Int]] {
-        return solution(nums)
-    }
-    
     func solution(_ input: [Int]) -> [[Int]] {
         /**
         Runtime: 292 ms, faster than 67.58%, Memory Usage: 18.6 MB, less than 29.86%

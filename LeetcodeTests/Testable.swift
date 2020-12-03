@@ -12,7 +12,7 @@ protocol Testable  {
     associatedtype I
     associatedtype O
     
-    var input: I { get set }    //TODO:(Sean) 不能用 let
+    var input: I { get set }
     var output: O { get set }
 }
 
@@ -20,7 +20,7 @@ protocol Verifiable {
     associatedtype I
     associatedtype O
 
-    func verify(with quesNum: Int, desc: String, solution: (I) -> (O))    //TODO:(Sean) 考慮改成 return result(封裝過後的結果, 可能包含相關資訊 bool, errMsg, etc.)
+    func verify(with quesNum: String, desc: String, solution: (I) -> (O))
 }
 
 
@@ -42,11 +42,11 @@ struct TestCase<InputType, OutputType: Equatable>: Testable, Verifiable {
     var input: InputType
     var output: OutputType
     
-    func verify(with quesNum: Int = -1, desc: String = "", solution: (I) -> (O)) {
+    func verify(with quesNum: String = "?", desc: String = "", solution: (I) -> (O)) {
         let result = solution(input)
-        let prefix = quesNum != -1 ? "Q\(quesNum)" : ""
+        let prefix = quesNum != "?" ? "Q\(quesNum)" : "Q?"
         let text = result == output ? "[\(prefix)] testing passed" : "[\(prefix)] testing failed: \(desc)"
-        print(input, text)
+        print(text, "input: \(input)")
     }
 }
 
@@ -57,12 +57,12 @@ struct TestGroup<InputType, OutputType: Equatable>: Verifiable {
 
     var testCases: [TestCase<InputType, OutputType>]
     
-    func verify(with quesNum: Int = -1, desc: String = "", solution: (I) -> (O)) {
+    func verify(with quesNum: String = "?", desc: String = "", solution: (I) -> (O)) {
         testCases.forEach { (testCase) in
             let result = solution(testCase.input)
-            let prefix = quesNum != -1 ? "Q\(quesNum)" : ""
+            let prefix = quesNum != "?" ? "Q\(quesNum)" : "Q?"
             let text = result == testCase.output ? "[\(prefix)] testing passed" : "[\(prefix)] testing failed: \(desc)"
-            print(testCase.input, text)
+            print(text, "textCase input: \(testCase.input)")
         }
     }
 }

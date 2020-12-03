@@ -12,16 +12,7 @@ class Q18_4Sum: Executable {
     
     typealias I = ([Int], Int)
     typealias O = [[Int]]
-    
-    func execute() {
-        let output = fourSum([-2,-1,-1,1,1,2,2], 0)
-        print("leetcode18 output: \(output)")
-    }
-    
-    func fourSum(_ nums: [Int], _ target: Int) -> [[Int]] {
-       return solution((nums, target))
-    }
-    
+        
     func solution(_ input: ([Int], Int)) -> [[Int]] {
         return solution1(input.0, input.1)
     }

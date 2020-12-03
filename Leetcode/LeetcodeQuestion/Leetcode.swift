@@ -110,7 +110,7 @@ class Leetcode {
         //35
         let insertTarget = searchInsert([1, 3, 5, 6], 5)
         print("leetcode35 output: \(insertTarget)")
-        
+
         //50
         let pow = myPow(0.423, 1)
         print("leetcode50 output: \(pow)")

@@ -7,26 +7,33 @@
 //
 
 import XCTest
+@testable import Leetcode
 
 class SYBaseTestCase: XCTestCase {
+    
+    /* TODO:(Sean)
+     var sut: Executable?
+     
+     override func setUp() {
+        //override
+        sut = 實際型別()
+     }
+     
+     override func tearDown() {
+        sut = nil
+        super.tearDown()
+     }
 
+     
+     */
     override func setUp() {
     }
 
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
-
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    
+    func testProblem() {
+        
     }
 
 }

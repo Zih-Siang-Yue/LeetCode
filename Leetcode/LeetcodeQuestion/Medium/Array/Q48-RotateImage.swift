@@ -12,18 +12,12 @@ class Q48_RotateImage: Executable {
     
     typealias I = [[Int]]
     typealias O = [[Int]]
-    
-//    func execute() {
-//        var ary:[[Int]] = [[1,2,3,4], [5,6,7,8], [9,10,11,12], [13,14,15,16]]
-//        rotate(&ary)
-//        print("==> leetcode Q48 output: \(ary)")
-//    }
-    
-//    func rotate(_ matrix: inout [[Int]]) {
+        
+    //Original
+    func rotate(_ matrix: inout [[Int]]) {
 //        var localInput = matrix
 //        solution(&localInput)
-//        return localInput
-//    }
+    }
     
     func solution(_ input: [[Int]]) -> [[Int]] {
         var localInput = input

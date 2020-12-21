@@ -48,7 +48,9 @@
 		F082AD7C25760EB700DE5AAD /* SYBaseTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F082AD7B25760EB700DE5AAD /* SYBaseTestCase.swift */; };
 		F082AD7E25760EF800DE5AAD /* Testable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F082AD7D25760EF800DE5AAD /* Testable.swift */; };
 		F082AD8525777BB600DE5AAD /* Executable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F058E8F1254288D0002885CC /* Executable.swift */; };
-		F09452CC25907DBC004042AC /* Q415_AddStrings_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09452CB25907DBC004042AC /* Q415_AddStrings_Test.swift */; };
+		F09452CC25907DBC004042AC /* Q415-AddStrings_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09452CB25907DBC004042AC /* Q415-AddStrings_Test.swift */; };
+		F09452E2259085E5004042AC /* Q459-RepeatedSubstringPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09452E1259085E5004042AC /* Q459-RepeatedSubstringPattern.swift */; };
+		F09452E8259088A5004042AC /* Q459-RepeatedSubstringPattern_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09452E7259088A5004042AC /* Q459-RepeatedSubstringPattern_Test.swift */; };
 		F0C83F4A257791F4002C06D2 /* Q11-ContainerWithMostWater.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02A32522548626300230EE9 /* Q11-ContainerWithMostWater.swift */; };
 		F0D623572577A48F004AF4AD /* Q15-3Sum_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D623562577A48F004AF4AD /* Q15-3Sum_Test.swift */; };
 		F0D6235A2578D887004AF4AD /* whereClause.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D623592578D887004AF4AD /* whereClause.swift */; };
@@ -118,7 +120,9 @@
 		F082AD43256BB6A800DE5AAD /* Q500-KeyboardRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q500-KeyboardRow.swift"; sourceTree = "<group>"; };
 		F082AD7B25760EB700DE5AAD /* SYBaseTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SYBaseTestCase.swift; path = LeetcodeTests/SYBaseTestCase.swift; sourceTree = SOURCE_ROOT; };
 		F082AD7D25760EF800DE5AAD /* Testable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Testable.swift; sourceTree = "<group>"; };
-		F09452CB25907DBC004042AC /* Q415_AddStrings_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Q415_AddStrings_Test.swift; sourceTree = "<group>"; };
+		F09452CB25907DBC004042AC /* Q415-AddStrings_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q415-AddStrings_Test.swift"; sourceTree = "<group>"; };
+		F09452E1259085E5004042AC /* Q459-RepeatedSubstringPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q459-RepeatedSubstringPattern.swift"; sourceTree = "<group>"; };
+		F09452E7259088A5004042AC /* Q459-RepeatedSubstringPattern_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q459-RepeatedSubstringPattern_Test.swift"; sourceTree = "<group>"; };
 		F0D623562577A48F004AF4AD /* Q15-3Sum_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q15-3Sum_Test.swift"; sourceTree = "<group>"; };
 		F0D623592578D887004AF4AD /* whereClause.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = whereClause.swift; sourceTree = "<group>"; };
 		F0D6235D2578DA5A004AF4AD /* Q16-3SumClosest_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q16-3SumClosest_Test.swift"; sourceTree = "<group>"; };
@@ -359,6 +363,7 @@
 			children = (
 				F02A3267255AE5E200230EE9 /* Q383-RansomNote.swift */,
 				F0D62367257F1AFC004AF4AD /* Q415-AddStrings.swift */,
+				F09452E1259085E5004042AC /* Q459-RepeatedSubstringPattern.swift */,
 			);
 			path = String;
 			sourceTree = "<group>";
@@ -580,7 +585,8 @@
 		F09452CA25907DA8004042AC /* String */ = {
 			isa = PBXGroup;
 			children = (
-				F09452CB25907DBC004042AC /* Q415_AddStrings_Test.swift */,
+				F09452CB25907DBC004042AC /* Q415-AddStrings_Test.swift */,
+				F09452E7259088A5004042AC /* Q459-RepeatedSubstringPattern_Test.swift */,
 			);
 			path = String;
 			sourceTree = "<group>";
@@ -725,6 +731,7 @@
 				F058E8FF2542D6B6002885CC /* Q39-CombinationSum.swift in Sources */,
 				F058E9032542DA04002885CC /* Q2_AddTwoNumbers.swift in Sources */,
 				F0D62368257F1AFC004AF4AD /* Q415-AddStrings.swift in Sources */,
+				F09452E2259085E5004042AC /* Q459-RepeatedSubstringPattern.swift in Sources */,
 				F058E8F2254288D0002885CC /* Executable.swift in Sources */,
 				F02A3266255AE0DB00230EE9 /* Q412-FizzBuzz.swift in Sources */,
 				F0482190250687A000740590 /* Definition.swift in Sources */,
@@ -776,7 +783,8 @@
 				F082AD7C25760EB700DE5AAD /* SYBaseTestCase.swift in Sources */,
 				BC824270217B175E0011CA7F /* LeetcodeTests.swift in Sources */,
 				F0D623642578F405004AF4AD /* Q48_RotateImage_Test.swift in Sources */,
-				F09452CC25907DBC004042AC /* Q415_AddStrings_Test.swift in Sources */,
+				F09452CC25907DBC004042AC /* Q415-AddStrings_Test.swift in Sources */,
+				F09452E8259088A5004042AC /* Q459-RepeatedSubstringPattern_Test.swift in Sources */,
 				F0D6235E2578DA5A004AF4AD /* Q16-3SumClosest_Test.swift in Sources */,
 				F082AD8525777BB600DE5AAD /* Executable.swift in Sources */,
 			);

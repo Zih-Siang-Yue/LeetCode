@@ -10,18 +10,16 @@ import Foundation
 
 class Q40_CombinationSum2: Executable {
     
+    typealias I = ([Int], Int)
+    typealias O = [[Int]]
+    
     var sortedAry: [Int] = []
-    
-    func execute() {
-        let output = combinationSum2([10,1,2,7,6,1,5], 8)
-        print("leetcode40 Combination Sum 2 output: \(output)")
-    }
-    
-    func combinationSum2(_ candidates: [Int], _ target: Int) -> [[Int]] {
-        self.sortedAry = candidates.sorted()
+        
+    func solution(_ input: ([Int], Int)) -> [[Int]] {
+        self.sortedAry = input.0.sorted()
         var ans: Set<[Int]> = []
         var com: [Int] = []
-        solution(&ans, combination: &com, target, 0)
+        solution(&ans, combination: &com, input.1, 0)
         return Array(ans)
     }
     

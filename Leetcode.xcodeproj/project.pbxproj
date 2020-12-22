@@ -51,6 +51,8 @@
 		F09452CC25907DBC004042AC /* Q415-AddStrings_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09452CB25907DBC004042AC /* Q415-AddStrings_Test.swift */; };
 		F09452E2259085E5004042AC /* Q459-RepeatedSubstringPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09452E1259085E5004042AC /* Q459-RepeatedSubstringPattern.swift */; };
 		F09452E8259088A5004042AC /* Q459-RepeatedSubstringPattern_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09452E7259088A5004042AC /* Q459-RepeatedSubstringPattern_Test.swift */; };
+		F09453102591C567004042AC /* Q520-DetectCapital.swift in Sources */ = {isa = PBXBuildFile; fileRef = F094530F2591C567004042AC /* Q520-DetectCapital.swift */; };
+		F09453142591C8BA004042AC /* Q520_DetectCapital_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09453132591C8BA004042AC /* Q520_DetectCapital_Test.swift */; };
 		F0C83F4A257791F4002C06D2 /* Q11-ContainerWithMostWater.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02A32522548626300230EE9 /* Q11-ContainerWithMostWater.swift */; };
 		F0D623572577A48F004AF4AD /* Q15-3Sum_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D623562577A48F004AF4AD /* Q15-3Sum_Test.swift */; };
 		F0D6235A2578D887004AF4AD /* whereClause.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D623592578D887004AF4AD /* whereClause.swift */; };
@@ -123,6 +125,8 @@
 		F09452CB25907DBC004042AC /* Q415-AddStrings_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q415-AddStrings_Test.swift"; sourceTree = "<group>"; };
 		F09452E1259085E5004042AC /* Q459-RepeatedSubstringPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q459-RepeatedSubstringPattern.swift"; sourceTree = "<group>"; };
 		F09452E7259088A5004042AC /* Q459-RepeatedSubstringPattern_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q459-RepeatedSubstringPattern_Test.swift"; sourceTree = "<group>"; };
+		F094530F2591C567004042AC /* Q520-DetectCapital.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q520-DetectCapital.swift"; sourceTree = "<group>"; };
+		F09453132591C8BA004042AC /* Q520_DetectCapital_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Q520_DetectCapital_Test.swift; sourceTree = "<group>"; };
 		F0D623562577A48F004AF4AD /* Q15-3Sum_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q15-3Sum_Test.swift"; sourceTree = "<group>"; };
 		F0D623592578D887004AF4AD /* whereClause.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = whereClause.swift; sourceTree = "<group>"; };
 		F0D6235D2578DA5A004AF4AD /* Q16-3SumClosest_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q16-3SumClosest_Test.swift"; sourceTree = "<group>"; };
@@ -205,20 +209,20 @@
 			path = LeetcodeTests;
 			sourceTree = "<group>";
 		};
-		F043BCF92568B67E00B14544 /* BitManipulation  */ = {
-			isa = PBXGroup;
-			children = (
-				F043BCF72568B67600B14544 /* Q461-HammingDistance .swift */,
-			);
-			path = "BitManipulation ";
-            sourceTree = "<group>";
-		};
 		F0194717254FD8AD00F1AA09 /* Tree */ = {
 			isa = PBXGroup;
 			children = (
 				F0194715254FD8A900F1AA09 /* Q404-SumOfLeftLeaves.swift */,
 			);
 			path = Tree;
+			sourceTree = "<group>";
+		};
+		F043BCF92568B67E00B14544 /* BitManipulation  */ = {
+			isa = PBXGroup;
+			children = (
+				F043BCF72568B67600B14544 /* Q461-HammingDistance .swift */,
+			);
+			path = "BitManipulation ";
 			sourceTree = "<group>";
 		};
 		F058E8C725428562002885CC /* Extensions */ = {
@@ -364,6 +368,7 @@
 				F02A3267255AE5E200230EE9 /* Q383-RansomNote.swift */,
 				F0D62367257F1AFC004AF4AD /* Q415-AddStrings.swift */,
 				F09452E1259085E5004042AC /* Q459-RepeatedSubstringPattern.swift */,
+				F094530F2591C567004042AC /* Q520-DetectCapital.swift */,
 			);
 			path = String;
 			sourceTree = "<group>";
@@ -587,6 +592,7 @@
 			children = (
 				F09452CB25907DBC004042AC /* Q415-AddStrings_Test.swift */,
 				F09452E7259088A5004042AC /* Q459-RepeatedSubstringPattern_Test.swift */,
+				F09453132591C8BA004042AC /* Q520_DetectCapital_Test.swift */,
 			);
 			path = String;
 			sourceTree = "<group>";
@@ -750,6 +756,7 @@
 				F058E90B2546797D002885CC /* Q260_SingleNumber|||.swift in Sources */,
 				F04989DF255F85A900FDE8DC /* Q40-CombinationSumII.swift in Sources */,
 				F02A325B254EB42700230EE9 /* Q22-GenerateParentheses.swift in Sources */,
+				F09453102591C567004042AC /* Q520-DetectCapital.swift in Sources */,
 				F058E8F025428845002885CC /* Q15-3Sum.swift in Sources */,
 				F05C92072330C1A6003DB2EB /* Leetcode.swift in Sources */,
 				F0D6235A2578D887004AF4AD /* whereClause.swift in Sources */,
@@ -781,6 +788,7 @@
 				F0D623662578F63B004AF4AD /* Q62-UniquePaths_Test.swift in Sources */,
 				F0C83F4A257791F4002C06D2 /* Q11-ContainerWithMostWater.swift in Sources */,
 				F082AD7C25760EB700DE5AAD /* SYBaseTestCase.swift in Sources */,
+				F09453142591C8BA004042AC /* Q520_DetectCapital_Test.swift in Sources */,
 				BC824270217B175E0011CA7F /* LeetcodeTests.swift in Sources */,
 				F0D623642578F405004AF4AD /* Q48_RotateImage_Test.swift in Sources */,
 				F09452CC25907DBC004042AC /* Q415-AddStrings_Test.swift in Sources */,

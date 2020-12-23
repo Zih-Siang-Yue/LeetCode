@@ -53,6 +53,10 @@
 		F09452E8259088A5004042AC /* Q459-RepeatedSubstringPattern_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09452E7259088A5004042AC /* Q459-RepeatedSubstringPattern_Test.swift */; };
 		F09453102591C567004042AC /* Q520-DetectCapital.swift in Sources */ = {isa = PBXBuildFile; fileRef = F094530F2591C567004042AC /* Q520-DetectCapital.swift */; };
 		F09453142591C8BA004042AC /* Q520_DetectCapital_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09453132591C8BA004042AC /* Q520_DetectCapital_Test.swift */; };
+		F09453192592E868004042AC /* Q551-StudentAttendanceRecord1.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09453182592E868004042AC /* Q551-StudentAttendanceRecord1.swift */; };
+		F094531D25931BB2004042AC /* Q551_StudentAttendanceRecord1_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F094531C25931BB2004042AC /* Q551_StudentAttendanceRecord1_Test.swift */; };
+		F094532125931EE3004042AC /* Q557-ReverseWordsinaString3.swift in Sources */ = {isa = PBXBuildFile; fileRef = F094532025931EE3004042AC /* Q557-ReverseWordsinaString3.swift */; };
+		F094532525931F20004042AC /* Q557_ReverseWordsinaString3_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F094532425931F20004042AC /* Q557_ReverseWordsinaString3_Test.swift */; };
 		F0C83F4A257791F4002C06D2 /* Q11-ContainerWithMostWater.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02A32522548626300230EE9 /* Q11-ContainerWithMostWater.swift */; };
 		F0D623572577A48F004AF4AD /* Q15-3Sum_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D623562577A48F004AF4AD /* Q15-3Sum_Test.swift */; };
 		F0D6235A2578D887004AF4AD /* whereClause.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D623592578D887004AF4AD /* whereClause.swift */; };
@@ -127,6 +131,10 @@
 		F09452E7259088A5004042AC /* Q459-RepeatedSubstringPattern_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q459-RepeatedSubstringPattern_Test.swift"; sourceTree = "<group>"; };
 		F094530F2591C567004042AC /* Q520-DetectCapital.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q520-DetectCapital.swift"; sourceTree = "<group>"; };
 		F09453132591C8BA004042AC /* Q520_DetectCapital_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Q520_DetectCapital_Test.swift; sourceTree = "<group>"; };
+		F09453182592E868004042AC /* Q551-StudentAttendanceRecord1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q551-StudentAttendanceRecord1.swift"; sourceTree = "<group>"; };
+		F094531C25931BB2004042AC /* Q551_StudentAttendanceRecord1_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Q551_StudentAttendanceRecord1_Test.swift; sourceTree = "<group>"; };
+		F094532025931EE3004042AC /* Q557-ReverseWordsinaString3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q557-ReverseWordsinaString3.swift"; sourceTree = "<group>"; };
+		F094532425931F20004042AC /* Q557_ReverseWordsinaString3_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Q557_ReverseWordsinaString3_Test.swift; sourceTree = "<group>"; };
 		F0D623562577A48F004AF4AD /* Q15-3Sum_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q15-3Sum_Test.swift"; sourceTree = "<group>"; };
 		F0D623592578D887004AF4AD /* whereClause.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = whereClause.swift; sourceTree = "<group>"; };
 		F0D6235D2578DA5A004AF4AD /* Q16-3SumClosest_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q16-3SumClosest_Test.swift"; sourceTree = "<group>"; };
@@ -369,6 +377,8 @@
 				F0D62367257F1AFC004AF4AD /* Q415-AddStrings.swift */,
 				F09452E1259085E5004042AC /* Q459-RepeatedSubstringPattern.swift */,
 				F094530F2591C567004042AC /* Q520-DetectCapital.swift */,
+				F09453182592E868004042AC /* Q551-StudentAttendanceRecord1.swift */,
+				F094532025931EE3004042AC /* Q557-ReverseWordsinaString3.swift */,
 			);
 			path = String;
 			sourceTree = "<group>";
@@ -593,6 +603,8 @@
 				F09452CB25907DBC004042AC /* Q415-AddStrings_Test.swift */,
 				F09452E7259088A5004042AC /* Q459-RepeatedSubstringPattern_Test.swift */,
 				F09453132591C8BA004042AC /* Q520_DetectCapital_Test.swift */,
+				F094531C25931BB2004042AC /* Q551_StudentAttendanceRecord1_Test.swift */,
+				F094532425931F20004042AC /* Q557_ReverseWordsinaString3_Test.swift */,
 			);
 			path = String;
 			sourceTree = "<group>";
@@ -746,6 +758,7 @@
 				F0482192250FBA2000740590 /* Extension_String.swift in Sources */,
 				F058E8FD2542D612002885CC /* Q16-3SumClosest.swift in Sources */,
 				F00EE63825440274004B5864 /* Q219_ContainsDuplicateII.swift in Sources */,
+				F09453192592E868004042AC /* Q551-StudentAttendanceRecord1.swift in Sources */,
 				F058E90D25467BCD002885CC /* Q392_IsSubsequence.swift in Sources */,
 				BC82425D217B17590011CA7F /* ViewController.swift in Sources */,
 				F04989DD255F80B300FDE8DC /* Q264-UglyNumberII.swift in Sources */,
@@ -758,6 +771,7 @@
 				F02A325B254EB42700230EE9 /* Q22-GenerateParentheses.swift in Sources */,
 				F09453102591C567004042AC /* Q520-DetectCapital.swift in Sources */,
 				F058E8F025428845002885CC /* Q15-3Sum.swift in Sources */,
+				F094532125931EE3004042AC /* Q557-ReverseWordsinaString3.swift in Sources */,
 				F05C92072330C1A6003DB2EB /* Leetcode.swift in Sources */,
 				F0D6235A2578D887004AF4AD /* whereClause.swift in Sources */,
 				F02A3264255ADFF400230EE9 /* Q62-UniquePaths.swift in Sources */,
@@ -791,7 +805,9 @@
 				F09453142591C8BA004042AC /* Q520_DetectCapital_Test.swift in Sources */,
 				BC824270217B175E0011CA7F /* LeetcodeTests.swift in Sources */,
 				F0D623642578F405004AF4AD /* Q48_RotateImage_Test.swift in Sources */,
+				F094531D25931BB2004042AC /* Q551_StudentAttendanceRecord1_Test.swift in Sources */,
 				F09452CC25907DBC004042AC /* Q415-AddStrings_Test.swift in Sources */,
+				F094532525931F20004042AC /* Q557_ReverseWordsinaString3_Test.swift in Sources */,
 				F09452E8259088A5004042AC /* Q459-RepeatedSubstringPattern_Test.swift in Sources */,
 				F0D6235E2578DA5A004AF4AD /* Q16-3SumClosest_Test.swift in Sources */,
 				F082AD8525777BB600DE5AAD /* Executable.swift in Sources */,

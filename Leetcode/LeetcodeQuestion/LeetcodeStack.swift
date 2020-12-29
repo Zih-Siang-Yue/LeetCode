@@ -9,12 +9,12 @@
 import Foundation
 
 //Leetcode - Stack design
-class LeetcodeStack {
-    private var items: [Double] = [Double]()
-    private var mins: [Double] = [Double]()
-    private var maxes: [Double] = [Double]()
+class LeetcodeStack<T: Comparable> {
+    private var items: [T] = [T]()
+    private var mins: [T] = [T]()
+    private var maxes: [T] = [T]()
     
-    public func push(_ x: Double) {
+    public func push(_ x: T) {
         items.append(x)
         
         if let min = mins.last {
@@ -31,25 +31,26 @@ class LeetcodeStack {
         }
     }
     
-    public func pop(_ x: Double) {
-        if !items.isEmpty { items.removeLast() }
+    public func pop() -> T? {
         if !mins.isEmpty { self.mins.removeLast() }
         if !maxes.isEmpty { self.maxes.removeLast() }
+        if !items.isEmpty { return items.removeLast() }
+        return nil
     }
     
-    public func getMax() -> Double? {
+    public func getMax() -> T? {
         return maxes.last
     }
     
-    public func getMin() -> Double? {
+    public func getMin() -> T? {
         return mins.last
     }
     
-    public func getFirst() -> Double? {
+    public func getFirst() -> T? {
         return items.first
     }
     
-    public func getLast() -> Double? {
+    public func getLast() -> T? {
         return items.last
     }
 }

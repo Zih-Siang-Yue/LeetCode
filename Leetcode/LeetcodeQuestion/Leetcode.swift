@@ -301,7 +301,7 @@ class Leetcode {
     }
     
     func stackDesign() {
-        let stack = LeetcodeStack()
+        let stack = LeetcodeStack<Double>()
         stack.push(2.3); stack.push(4); stack.push(8); stack.push(1); stack.push(10.2)
         print("stack last:\(stack.getLast()!), first: \(stack.getFirst()!), max: \(stack.getMax()!), min: \(stack.getMin()!)")
     }

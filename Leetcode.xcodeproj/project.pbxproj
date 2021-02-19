@@ -57,6 +57,20 @@
 		F094531D25931BB2004042AC /* Q551_StudentAttendanceRecord1_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F094531C25931BB2004042AC /* Q551_StudentAttendanceRecord1_Test.swift */; };
 		F094532125931EE3004042AC /* Q557-ReverseWordsinaString3.swift in Sources */ = {isa = PBXBuildFile; fileRef = F094532025931EE3004042AC /* Q557-ReverseWordsinaString3.swift */; };
 		F094532525931F20004042AC /* Q557_ReverseWordsinaString3_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F094532425931F20004042AC /* Q557_ReverseWordsinaString3_Test.swift */; };
+		F09453B5259AD174004042AC /* Q38-CountandSay.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09453B4259AD174004042AC /* Q38-CountandSay.swift */; };
+		F09453B9259AD8E3004042AC /* Q917-ReverseOnlyLetters.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09453B8259AD8E3004042AC /* Q917-ReverseOnlyLetters.swift */; };
+		F09453BD259ADBD4004042AC /* Q917_ReverseOnlyLetters_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09453BC259ADBD4004042AC /* Q917_ReverseOnlyLetters_Test.swift */; };
+		F09453D8259C92C5004042AC /* Q925-LongPressedName.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09453D7259C92C5004042AC /* Q925-LongPressedName.swift */; };
+		F09453DC259C9A67004042AC /* Q925_LongPressedName_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09453DB259C9A67004042AC /* Q925_LongPressedName_Test.swift */; };
+		F09453F6259D9AE3004042AC /* Q696-CountBinarySubstrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09453F5259D9AE3004042AC /* Q696-CountBinarySubstrings.swift */; };
+		F09453FA259DA83C004042AC /* Q345-ReverseVowelsofaString.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09453F9259DA83C004042AC /* Q345-ReverseVowelsofaString.swift */; };
+		F09453FE259DAE19004042AC /* Q345_ReverseVowelsofaString_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09453FD259DAE19004042AC /* Q345_ReverseVowelsofaString_Test.swift */; };
+		F094540425A2C229004042AC /* Q434-NumberofSegmentsinaString.swift in Sources */ = {isa = PBXBuildFile; fileRef = F094540325A2C229004042AC /* Q434-NumberofSegmentsinaString.swift */; };
+		F094540825A2C26A004042AC /* Q434_NumberofSegmentsinaString_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F094540725A2C26A004042AC /* Q434_NumberofSegmentsinaString_Test.swift */; };
+		F0BECE3725DD0226004960D9 /* Q696-CountBinarySubstrings_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BECE3625DD0226004960D9 /* Q696-CountBinarySubstrings_Test.swift */; };
+		F0BECE3B25DE5DC8004960D9 /* Q521-LongestUncommonSubsequenceI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BECE3A25DE5DC8004960D9 /* Q521-LongestUncommonSubsequenceI.swift */; };
+		F0BECE3F25DE5F16004960D9 /* Q521-LongestUncommonSubsequenceI_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BECE3E25DE5F16004960D9 /* Q521-LongestUncommonSubsequenceI_Test.swift */; };
+		F0BECE4825DF9FF9004960D9 /* Q38-CountandSay_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BECE4725DF9FF9004960D9 /* Q38-CountandSay_Test.swift */; };
 		F0C83F4A257791F4002C06D2 /* Q11-ContainerWithMostWater.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02A32522548626300230EE9 /* Q11-ContainerWithMostWater.swift */; };
 		F0D623572577A48F004AF4AD /* Q15-3Sum_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D623562577A48F004AF4AD /* Q15-3Sum_Test.swift */; };
 		F0D6235A2578D887004AF4AD /* whereClause.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D623592578D887004AF4AD /* whereClause.swift */; };
@@ -135,6 +149,20 @@
 		F094531C25931BB2004042AC /* Q551_StudentAttendanceRecord1_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Q551_StudentAttendanceRecord1_Test.swift; sourceTree = "<group>"; };
 		F094532025931EE3004042AC /* Q557-ReverseWordsinaString3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q557-ReverseWordsinaString3.swift"; sourceTree = "<group>"; };
 		F094532425931F20004042AC /* Q557_ReverseWordsinaString3_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Q557_ReverseWordsinaString3_Test.swift; sourceTree = "<group>"; };
+		F09453B4259AD174004042AC /* Q38-CountandSay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q38-CountandSay.swift"; sourceTree = "<group>"; };
+		F09453B8259AD8E3004042AC /* Q917-ReverseOnlyLetters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q917-ReverseOnlyLetters.swift"; sourceTree = "<group>"; };
+		F09453BC259ADBD4004042AC /* Q917_ReverseOnlyLetters_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Q917_ReverseOnlyLetters_Test.swift; sourceTree = "<group>"; };
+		F09453D7259C92C5004042AC /* Q925-LongPressedName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q925-LongPressedName.swift"; sourceTree = "<group>"; };
+		F09453DB259C9A67004042AC /* Q925_LongPressedName_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Q925_LongPressedName_Test.swift; sourceTree = "<group>"; };
+		F09453F5259D9AE3004042AC /* Q696-CountBinarySubstrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q696-CountBinarySubstrings.swift"; sourceTree = "<group>"; };
+		F09453F9259DA83C004042AC /* Q345-ReverseVowelsofaString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q345-ReverseVowelsofaString.swift"; sourceTree = "<group>"; };
+		F09453FD259DAE19004042AC /* Q345_ReverseVowelsofaString_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Q345_ReverseVowelsofaString_Test.swift; sourceTree = "<group>"; };
+		F094540325A2C229004042AC /* Q434-NumberofSegmentsinaString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q434-NumberofSegmentsinaString.swift"; sourceTree = "<group>"; };
+		F094540725A2C26A004042AC /* Q434_NumberofSegmentsinaString_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Q434_NumberofSegmentsinaString_Test.swift; sourceTree = "<group>"; };
+		F0BECE3625DD0226004960D9 /* Q696-CountBinarySubstrings_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q696-CountBinarySubstrings_Test.swift"; sourceTree = "<group>"; };
+		F0BECE3A25DE5DC8004960D9 /* Q521-LongestUncommonSubsequenceI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q521-LongestUncommonSubsequenceI.swift"; sourceTree = "<group>"; };
+		F0BECE3E25DE5F16004960D9 /* Q521-LongestUncommonSubsequenceI_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q521-LongestUncommonSubsequenceI_Test.swift"; sourceTree = "<group>"; };
+		F0BECE4725DF9FF9004960D9 /* Q38-CountandSay_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q38-CountandSay_Test.swift"; sourceTree = "<group>"; };
 		F0D623562577A48F004AF4AD /* Q15-3Sum_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q15-3Sum_Test.swift"; sourceTree = "<group>"; };
 		F0D623592578D887004AF4AD /* whereClause.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = whereClause.swift; sourceTree = "<group>"; };
 		F0D6235D2578DA5A004AF4AD /* Q16-3SumClosest_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q16-3SumClosest_Test.swift"; sourceTree = "<group>"; };
@@ -379,6 +407,12 @@
 				F094530F2591C567004042AC /* Q520-DetectCapital.swift */,
 				F09453182592E868004042AC /* Q551-StudentAttendanceRecord1.swift */,
 				F094532025931EE3004042AC /* Q557-ReverseWordsinaString3.swift */,
+				F09453B8259AD8E3004042AC /* Q917-ReverseOnlyLetters.swift */,
+				F09453D7259C92C5004042AC /* Q925-LongPressedName.swift */,
+				F09453F5259D9AE3004042AC /* Q696-CountBinarySubstrings.swift */,
+				F09453F9259DA83C004042AC /* Q345-ReverseVowelsofaString.swift */,
+				F094540325A2C229004042AC /* Q434-NumberofSegmentsinaString.swift */,
+				F0BECE3A25DE5DC8004960D9 /* Q521-LongestUncommonSubsequenceI.swift */,
 			);
 			path = String;
 			sourceTree = "<group>";
@@ -426,6 +460,7 @@
 		F058E8DA25428743002885CC /* String */ = {
 			isa = PBXGroup;
 			children = (
+				F09453B4259AD174004042AC /* Q38-CountandSay.swift */,
 			);
 			path = String;
 			sourceTree = "<group>";
@@ -605,6 +640,20 @@
 				F09453132591C8BA004042AC /* Q520_DetectCapital_Test.swift */,
 				F094531C25931BB2004042AC /* Q551_StudentAttendanceRecord1_Test.swift */,
 				F094532425931F20004042AC /* Q557_ReverseWordsinaString3_Test.swift */,
+				F09453BC259ADBD4004042AC /* Q917_ReverseOnlyLetters_Test.swift */,
+				F09453DB259C9A67004042AC /* Q925_LongPressedName_Test.swift */,
+				F09453FD259DAE19004042AC /* Q345_ReverseVowelsofaString_Test.swift */,
+				F094540725A2C26A004042AC /* Q434_NumberofSegmentsinaString_Test.swift */,
+				F0BECE3625DD0226004960D9 /* Q696-CountBinarySubstrings_Test.swift */,
+				F0BECE3E25DE5F16004960D9 /* Q521-LongestUncommonSubsequenceI_Test.swift */,
+			);
+			path = String;
+			sourceTree = "<group>";
+		};
+		F0BECE4B25DFA010004960D9 /* String */ = {
+			isa = PBXGroup;
+			children = (
+				F0BECE4725DF9FF9004960D9 /* Q38-CountandSay_Test.swift */,
 			);
 			path = String;
 			sourceTree = "<group>";
@@ -626,6 +675,7 @@
 		F0D6235C2578DA2A004AF4AD /* Medium */ = {
 			isa = PBXGroup;
 			children = (
+				F0BECE4B25DFA010004960D9 /* String */,
 				F0D6235B2578DA1C004AF4AD /* Array */,
 			);
 			path = Medium;
@@ -756,8 +806,10 @@
 				F02A3268255AE5E200230EE9 /* Q383-RansomNote.swift in Sources */,
 				F043BCF82568B67600B14544 /* Q461-HammingDistance .swift in Sources */,
 				F0482192250FBA2000740590 /* Extension_String.swift in Sources */,
+				F094540425A2C229004042AC /* Q434-NumberofSegmentsinaString.swift in Sources */,
 				F058E8FD2542D612002885CC /* Q16-3SumClosest.swift in Sources */,
 				F00EE63825440274004B5864 /* Q219_ContainsDuplicateII.swift in Sources */,
+				F09453D8259C92C5004042AC /* Q925-LongPressedName.swift in Sources */,
 				F09453192592E868004042AC /* Q551-StudentAttendanceRecord1.swift in Sources */,
 				F058E90D25467BCD002885CC /* Q392_IsSubsequence.swift in Sources */,
 				BC82425D217B17590011CA7F /* ViewController.swift in Sources */,
@@ -765,7 +817,9 @@
 				BC82425B217B17590011CA7F /* AppDelegate.swift in Sources */,
 				F082AD44256BB6A800DE5AAD /* Q500-KeyboardRow.swift in Sources */,
 				F048219525237E4400740590 /* Extension_Int.swift in Sources */,
+				F09453FA259DA83C004042AC /* Q345-ReverseVowelsofaString.swift in Sources */,
 				F02A3255254E8AD500230EE9 /* Q46-Permutations.swift in Sources */,
+				F0BECE3B25DE5DC8004960D9 /* Q521-LongestUncommonSubsequenceI.swift in Sources */,
 				F058E90B2546797D002885CC /* Q260_SingleNumber|||.swift in Sources */,
 				F04989DF255F85A900FDE8DC /* Q40-CombinationSumII.swift in Sources */,
 				F02A325B254EB42700230EE9 /* Q22-GenerateParentheses.swift in Sources */,
@@ -774,9 +828,11 @@
 				F094532125931EE3004042AC /* Q557-ReverseWordsinaString3.swift in Sources */,
 				F05C92072330C1A6003DB2EB /* Leetcode.swift in Sources */,
 				F0D6235A2578D887004AF4AD /* whereClause.swift in Sources */,
+				F09453F6259D9AE3004042AC /* Q696-CountBinarySubstrings.swift in Sources */,
 				F02A3264255ADFF400230EE9 /* Q62-UniquePaths.swift in Sources */,
 				F0E80F582342FA5600808912 /* Others.swift in Sources */,
 				F02A3257254E9D2500230EE9 /* Q48-RotateImage.swift in Sources */,
+				F09453B9259AD8E3004042AC /* Q917-ReverseOnlyLetters.swift in Sources */,
 				F02A3259254EB32800230EE9 /* Q17-LetterCombinationsOfAPhoneNumber.swift in Sources */,
 				F00EE6362543D3EF004B5864 /* Q18-4Sum.swift in Sources */,
 				F0E80F562342F9AC00808912 /* ClosurePractice.swift in Sources */,
@@ -787,6 +843,7 @@
 				F02A325F2555A1AE00230EE9 /* Q47-Permutations2.swift in Sources */,
 				F04989E12562C44200FDE8DC /* Q414-ThirdMaximumNumber.swift in Sources */,
 				F058E9012542D90F002885CC /* Q3-LongestSubstringWithoutRepeatingCharacters.swift in Sources */,
+				F09453B5259AD174004042AC /* Q38-CountandSay.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -798,13 +855,20 @@
 				F0D623622578F105004AF4AD /* Q39_CombinationSum_Test.swift in Sources */,
 				F0D623572577A48F004AF4AD /* Q15-3Sum_Test.swift in Sources */,
 				F0FDA5E625621E6500522381 /* Q11-ContainerWithMostWater_Test.swift in Sources */,
+				F0BECE3725DD0226004960D9 /* Q696-CountBinarySubstrings_Test.swift in Sources */,
+				F094540825A2C26A004042AC /* Q434_NumberofSegmentsinaString_Test.swift in Sources */,
 				F082AD7E25760EF800DE5AAD /* Testable.swift in Sources */,
 				F0D623662578F63B004AF4AD /* Q62-UniquePaths_Test.swift in Sources */,
 				F0C83F4A257791F4002C06D2 /* Q11-ContainerWithMostWater.swift in Sources */,
 				F082AD7C25760EB700DE5AAD /* SYBaseTestCase.swift in Sources */,
+				F09453DC259C9A67004042AC /* Q925_LongPressedName_Test.swift in Sources */,
+				F09453BD259ADBD4004042AC /* Q917_ReverseOnlyLetters_Test.swift in Sources */,
+				F0BECE3F25DE5F16004960D9 /* Q521-LongestUncommonSubsequenceI_Test.swift in Sources */,
 				F09453142591C8BA004042AC /* Q520_DetectCapital_Test.swift in Sources */,
+				F0BECE4825DF9FF9004960D9 /* Q38-CountandSay_Test.swift in Sources */,
 				BC824270217B175E0011CA7F /* LeetcodeTests.swift in Sources */,
 				F0D623642578F405004AF4AD /* Q48_RotateImage_Test.swift in Sources */,
+				F09453FE259DAE19004042AC /* Q345_ReverseVowelsofaString_Test.swift in Sources */,
 				F094531D25931BB2004042AC /* Q551_StudentAttendanceRecord1_Test.swift in Sources */,
 				F09452CC25907DBC004042AC /* Q415-AddStrings_Test.swift in Sources */,
 				F094532525931F20004042AC /* Q557_ReverseWordsinaString3_Test.swift in Sources */,
@@ -962,16 +1026,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2PJ29662SU;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Leetcode/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ZihSiangYue.Leetcode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -981,16 +1047,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2PJ29662SU;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Leetcode/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ZihSiangYue.Leetcode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

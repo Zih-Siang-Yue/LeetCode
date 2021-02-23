@@ -71,6 +71,10 @@
 		F0BECE3B25DE5DC8004960D9 /* Q521-LongestUncommonSubsequenceI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BECE3A25DE5DC8004960D9 /* Q521-LongestUncommonSubsequenceI.swift */; };
 		F0BECE3F25DE5F16004960D9 /* Q521-LongestUncommonSubsequenceI_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BECE3E25DE5F16004960D9 /* Q521-LongestUncommonSubsequenceI_Test.swift */; };
 		F0BECE4825DF9FF9004960D9 /* Q38-CountandSay_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BECE4725DF9FF9004960D9 /* Q38-CountandSay_Test.swift */; };
+		F0BECE5C25E35856004960D9 /* Q929-UniqueEmailAddresses.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BECE5825E35847004960D9 /* Q929-UniqueEmailAddresses.swift */; };
+		F0BECE6225E38DEC004960D9 /* Q929-UniqueEmailAddresses_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BECE6125E38DEC004960D9 /* Q929-UniqueEmailAddresses_Test.swift */; };
+		F0BECE6A25E4EE98004960D9 /* Q566-ReshapetheMatrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BECE6925E4EE98004960D9 /* Q566-ReshapetheMatrix.swift */; };
+		F0BECE6E25E4F41E004960D9 /* Q566-ReshapetheMatrix_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BECE6D25E4F41E004960D9 /* Q566-ReshapetheMatrix_Test.swift */; };
 		F0C83F4A257791F4002C06D2 /* Q11-ContainerWithMostWater.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02A32522548626300230EE9 /* Q11-ContainerWithMostWater.swift */; };
 		F0D623572577A48F004AF4AD /* Q15-3Sum_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D623562577A48F004AF4AD /* Q15-3Sum_Test.swift */; };
 		F0D6235A2578D887004AF4AD /* whereClause.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D623592578D887004AF4AD /* whereClause.swift */; };
@@ -163,6 +167,10 @@
 		F0BECE3A25DE5DC8004960D9 /* Q521-LongestUncommonSubsequenceI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q521-LongestUncommonSubsequenceI.swift"; sourceTree = "<group>"; };
 		F0BECE3E25DE5F16004960D9 /* Q521-LongestUncommonSubsequenceI_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q521-LongestUncommonSubsequenceI_Test.swift"; sourceTree = "<group>"; };
 		F0BECE4725DF9FF9004960D9 /* Q38-CountandSay_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q38-CountandSay_Test.swift"; sourceTree = "<group>"; };
+		F0BECE5825E35847004960D9 /* Q929-UniqueEmailAddresses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q929-UniqueEmailAddresses.swift"; sourceTree = "<group>"; };
+		F0BECE6125E38DEC004960D9 /* Q929-UniqueEmailAddresses_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q929-UniqueEmailAddresses_Test.swift"; sourceTree = "<group>"; };
+		F0BECE6925E4EE98004960D9 /* Q566-ReshapetheMatrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q566-ReshapetheMatrix.swift"; sourceTree = "<group>"; };
+		F0BECE6D25E4F41E004960D9 /* Q566-ReshapetheMatrix_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q566-ReshapetheMatrix_Test.swift"; sourceTree = "<group>"; };
 		F0D623562577A48F004AF4AD /* Q15-3Sum_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q15-3Sum_Test.swift"; sourceTree = "<group>"; };
 		F0D623592578D887004AF4AD /* whereClause.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = whereClause.swift; sourceTree = "<group>"; };
 		F0D6235D2578DA5A004AF4AD /* Q16-3SumClosest_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q16-3SumClosest_Test.swift"; sourceTree = "<group>"; };
@@ -336,6 +344,7 @@
 				F00EE63725440274004B5864 /* Q219_ContainsDuplicateII.swift */,
 				F02A3265255AE0DB00230EE9 /* Q412-FizzBuzz.swift */,
 				F04989E02562C44200FDE8DC /* Q414-ThirdMaximumNumber.swift */,
+				F0BECE6925E4EE98004960D9 /* Q566-ReshapetheMatrix.swift */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -413,6 +422,7 @@
 				F09453F9259DA83C004042AC /* Q345-ReverseVowelsofaString.swift */,
 				F094540325A2C229004042AC /* Q434-NumberofSegmentsinaString.swift */,
 				F0BECE3A25DE5DC8004960D9 /* Q521-LongestUncommonSubsequenceI.swift */,
+				F0BECE5825E35847004960D9 /* Q929-UniqueEmailAddresses.swift */,
 			);
 			path = String;
 			sourceTree = "<group>";
@@ -628,6 +638,7 @@
 			isa = PBXGroup;
 			children = (
 				F09452CA25907DA8004042AC /* String */,
+				F0BECE7125E4F422004960D9 /* Array */,
 			);
 			path = Easy;
 			sourceTree = "<group>";
@@ -646,6 +657,7 @@
 				F094540725A2C26A004042AC /* Q434_NumberofSegmentsinaString_Test.swift */,
 				F0BECE3625DD0226004960D9 /* Q696-CountBinarySubstrings_Test.swift */,
 				F0BECE3E25DE5F16004960D9 /* Q521-LongestUncommonSubsequenceI_Test.swift */,
+				F0BECE6125E38DEC004960D9 /* Q929-UniqueEmailAddresses_Test.swift */,
 			);
 			path = String;
 			sourceTree = "<group>";
@@ -656,6 +668,14 @@
 				F0BECE4725DF9FF9004960D9 /* Q38-CountandSay_Test.swift */,
 			);
 			path = String;
+			sourceTree = "<group>";
+		};
+		F0BECE7125E4F422004960D9 /* Array */ = {
+			isa = PBXGroup;
+			children = (
+				F0BECE6D25E4F41E004960D9 /* Q566-ReshapetheMatrix_Test.swift */,
+			);
+			path = Array;
 			sourceTree = "<group>";
 		};
 		F0D6235B2578DA1C004AF4AD /* Array */ = {
@@ -802,6 +822,7 @@
 				F09452E2259085E5004042AC /* Q459-RepeatedSubstringPattern.swift in Sources */,
 				F058E8F2254288D0002885CC /* Executable.swift in Sources */,
 				F02A3266255AE0DB00230EE9 /* Q412-FizzBuzz.swift in Sources */,
+				F0BECE5C25E35856004960D9 /* Q929-UniqueEmailAddresses.swift in Sources */,
 				F0482190250687A000740590 /* Definition.swift in Sources */,
 				F02A3268255AE5E200230EE9 /* Q383-RansomNote.swift in Sources */,
 				F043BCF82568B67600B14544 /* Q461-HammingDistance .swift in Sources */,
@@ -836,6 +857,7 @@
 				F02A3259254EB32800230EE9 /* Q17-LetterCombinationsOfAPhoneNumber.swift in Sources */,
 				F00EE6362543D3EF004B5864 /* Q18-4Sum.swift in Sources */,
 				F0E80F562342F9AC00808912 /* ClosurePractice.swift in Sources */,
+				F0BECE6A25E4EE98004960D9 /* Q566-ReshapetheMatrix.swift in Sources */,
 				F0194716254FD8A900F1AA09 /* Q404-SumOfLeftLeaves.swift in Sources */,
 				F05C92052330C174003DB2EB /* YahooInterview.swift in Sources */,
 				F02A32622557C9AD00230EE9 /* Q49-GroupAnagrams.swift in Sources */,
@@ -851,6 +873,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0BECE6E25E4F41E004960D9 /* Q566-ReshapetheMatrix_Test.swift in Sources */,
 				F0D623602578EBEF004AF4AD /* Q18-4Sum_Test.swift in Sources */,
 				F0D623622578F105004AF4AD /* Q39_CombinationSum_Test.swift in Sources */,
 				F0D623572577A48F004AF4AD /* Q15-3Sum_Test.swift in Sources */,
@@ -870,6 +893,7 @@
 				F0D623642578F405004AF4AD /* Q48_RotateImage_Test.swift in Sources */,
 				F09453FE259DAE19004042AC /* Q345_ReverseVowelsofaString_Test.swift in Sources */,
 				F094531D25931BB2004042AC /* Q551_StudentAttendanceRecord1_Test.swift in Sources */,
+				F0BECE6225E38DEC004960D9 /* Q929-UniqueEmailAddresses_Test.swift in Sources */,
 				F09452CC25907DBC004042AC /* Q415-AddStrings_Test.swift in Sources */,
 				F094532525931F20004042AC /* Q557_ReverseWordsinaString3_Test.swift in Sources */,
 				F09452E8259088A5004042AC /* Q459-RepeatedSubstringPattern_Test.swift in Sources */,

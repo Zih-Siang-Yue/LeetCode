@@ -79,6 +79,10 @@
 		F0BECF3925EDE92B004960D9 /* Q922-SortArraybyParity_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BECF3825EDE92B004960D9 /* Q922-SortArraybyParity_Test.swift */; };
 		F0BECF3D25EE0FE1004960D9 /* Q832-FlippinganImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BECF3C25EE0FE1004960D9 /* Q832-FlippinganImage.swift */; };
 		F0BECF4125EE1190004960D9 /* Q832-FlippinganImage_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BECF4025EE1190004960D9 /* Q832-FlippinganImage_Test.swift */; };
+		F0BECF6225F0BFE8004960D9 /* Q118-PascalsTriangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BECF6125F0BFE7004960D9 /* Q118-PascalsTriangle.swift */; };
+		F0BECF6625F0C2E0004960D9 /* Q118-PascalsTriangle_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BECF6525F0C2E0004960D9 /* Q118-PascalsTriangle_Test.swift */; };
+		F0BECF6A25F0C560004960D9 /* Q119-PascalsTriangle2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BECF6925F0C560004960D9 /* Q119-PascalsTriangle2.swift */; };
+		F0BECF7025F0C71B004960D9 /* Q119-PascalsTriangle2_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BECF6F25F0C71B004960D9 /* Q119-PascalsTriangle2_Test.swift */; };
 		F0C83F4A257791F4002C06D2 /* Q11-ContainerWithMostWater.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02A32522548626300230EE9 /* Q11-ContainerWithMostWater.swift */; };
 		F0D623572577A48F004AF4AD /* Q15-3Sum_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D623562577A48F004AF4AD /* Q15-3Sum_Test.swift */; };
 		F0D6235A2578D887004AF4AD /* whereClause.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D623592578D887004AF4AD /* whereClause.swift */; };
@@ -179,6 +183,10 @@
 		F0BECF3825EDE92B004960D9 /* Q922-SortArraybyParity_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q922-SortArraybyParity_Test.swift"; sourceTree = "<group>"; };
 		F0BECF3C25EE0FE1004960D9 /* Q832-FlippinganImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q832-FlippinganImage.swift"; sourceTree = "<group>"; };
 		F0BECF4025EE1190004960D9 /* Q832-FlippinganImage_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q832-FlippinganImage_Test.swift"; sourceTree = "<group>"; };
+		F0BECF6125F0BFE7004960D9 /* Q118-PascalsTriangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q118-PascalsTriangle.swift"; sourceTree = "<group>"; };
+		F0BECF6525F0C2E0004960D9 /* Q118-PascalsTriangle_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q118-PascalsTriangle_Test.swift"; sourceTree = "<group>"; };
+		F0BECF6925F0C560004960D9 /* Q119-PascalsTriangle2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q119-PascalsTriangle2.swift"; sourceTree = "<group>"; };
+		F0BECF6F25F0C71B004960D9 /* Q119-PascalsTriangle2_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q119-PascalsTriangle2_Test.swift"; sourceTree = "<group>"; };
 		F0D623562577A48F004AF4AD /* Q15-3Sum_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q15-3Sum_Test.swift"; sourceTree = "<group>"; };
 		F0D623592578D887004AF4AD /* whereClause.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = whereClause.swift; sourceTree = "<group>"; };
 		F0D6235D2578DA5A004AF4AD /* Q16-3SumClosest_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q16-3SumClosest_Test.swift"; sourceTree = "<group>"; };
@@ -355,6 +363,8 @@
 				F0BECE6925E4EE98004960D9 /* Q566-ReshapetheMatrix.swift */,
 				F0BECF3425EDE7F1004960D9 /* Q922-SortArraybyParity.swift */,
 				F0BECF3C25EE0FE1004960D9 /* Q832-FlippinganImage.swift */,
+				F0BECF6125F0BFE7004960D9 /* Q118-PascalsTriangle.swift */,
+				F0BECF6925F0C560004960D9 /* Q119-PascalsTriangle2.swift */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -686,6 +696,8 @@
 				F0BECE6D25E4F41E004960D9 /* Q566-ReshapetheMatrix_Test.swift */,
 				F0BECF3825EDE92B004960D9 /* Q922-SortArraybyParity_Test.swift */,
 				F0BECF4025EE1190004960D9 /* Q832-FlippinganImage_Test.swift */,
+				F0BECF6525F0C2E0004960D9 /* Q118-PascalsTriangle_Test.swift */,
+				F0BECF6F25F0C71B004960D9 /* Q119-PascalsTriangle2_Test.swift */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -827,6 +839,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0BECF6225F0BFE8004960D9 /* Q118-PascalsTriangle.swift in Sources */,
 				F05C92092330C469003DB2EB /* LeetcodeStack.swift in Sources */,
 				F0BECF3D25EE0FE1004960D9 /* Q832-FlippinganImage.swift in Sources */,
 				F058E8FF2542D6B6002885CC /* Q39-CombinationSum.swift in Sources */,
@@ -847,6 +860,7 @@
 				F09453D8259C92C5004042AC /* Q925-LongPressedName.swift in Sources */,
 				F09453192592E868004042AC /* Q551-StudentAttendanceRecord1.swift in Sources */,
 				F058E90D25467BCD002885CC /* Q392_IsSubsequence.swift in Sources */,
+				F0BECF6A25F0C560004960D9 /* Q119-PascalsTriangle2.swift in Sources */,
 				BC82425D217B17590011CA7F /* ViewController.swift in Sources */,
 				F04989DD255F80B300FDE8DC /* Q264-UglyNumberII.swift in Sources */,
 				BC82425B217B17590011CA7F /* AppDelegate.swift in Sources */,
@@ -890,6 +904,7 @@
 				F0BECE6E25E4F41E004960D9 /* Q566-ReshapetheMatrix_Test.swift in Sources */,
 				F0D623602578EBEF004AF4AD /* Q18-4Sum_Test.swift in Sources */,
 				F0D623622578F105004AF4AD /* Q39_CombinationSum_Test.swift in Sources */,
+				F0BECF6625F0C2E0004960D9 /* Q118-PascalsTriangle_Test.swift in Sources */,
 				F0D623572577A48F004AF4AD /* Q15-3Sum_Test.swift in Sources */,
 				F0FDA5E625621E6500522381 /* Q11-ContainerWithMostWater_Test.swift in Sources */,
 				F0BECE3725DD0226004960D9 /* Q696-CountBinarySubstrings_Test.swift in Sources */,
@@ -898,6 +913,7 @@
 				F0D623662578F63B004AF4AD /* Q62-UniquePaths_Test.swift in Sources */,
 				F0C83F4A257791F4002C06D2 /* Q11-ContainerWithMostWater.swift in Sources */,
 				F082AD7C25760EB700DE5AAD /* SYBaseTestCase.swift in Sources */,
+				F0BECF7025F0C71B004960D9 /* Q119-PascalsTriangle2_Test.swift in Sources */,
 				F0BECF4125EE1190004960D9 /* Q832-FlippinganImage_Test.swift in Sources */,
 				F09453DC259C9A67004042AC /* Q925_LongPressedName_Test.swift in Sources */,
 				F09453BD259ADBD4004042AC /* Q917_ReverseOnlyLetters_Test.swift in Sources */,

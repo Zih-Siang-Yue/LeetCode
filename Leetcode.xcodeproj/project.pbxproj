@@ -84,6 +84,8 @@
 		F0BECF6A25F0C560004960D9 /* Q119-PascalsTriangle2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BECF6925F0C560004960D9 /* Q119-PascalsTriangle2.swift */; };
 		F0BECF7025F0C71B004960D9 /* Q119-PascalsTriangle2_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BECF6F25F0C71B004960D9 /* Q119-PascalsTriangle2_Test.swift */; };
 		F0C83F4A257791F4002C06D2 /* Q11-ContainerWithMostWater.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02A32522548626300230EE9 /* Q11-ContainerWithMostWater.swift */; };
+		F0D4CBF825F21EFD007CEC68 /* Q830-PositionsofLargeGroups.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D4CBF725F21EFD007CEC68 /* Q830-PositionsofLargeGroups.swift */; };
+		F0D4CBFC25F2368A007CEC68 /* Q830-PositionsofLargeGroups_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D4CBFB25F2368A007CEC68 /* Q830-PositionsofLargeGroups_Test.swift */; };
 		F0D623572577A48F004AF4AD /* Q15-3Sum_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D623562577A48F004AF4AD /* Q15-3Sum_Test.swift */; };
 		F0D6235A2578D887004AF4AD /* whereClause.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D623592578D887004AF4AD /* whereClause.swift */; };
 		F0D6235E2578DA5A004AF4AD /* Q16-3SumClosest_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D6235D2578DA5A004AF4AD /* Q16-3SumClosest_Test.swift */; };
@@ -187,6 +189,8 @@
 		F0BECF6525F0C2E0004960D9 /* Q118-PascalsTriangle_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q118-PascalsTriangle_Test.swift"; sourceTree = "<group>"; };
 		F0BECF6925F0C560004960D9 /* Q119-PascalsTriangle2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q119-PascalsTriangle2.swift"; sourceTree = "<group>"; };
 		F0BECF6F25F0C71B004960D9 /* Q119-PascalsTriangle2_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q119-PascalsTriangle2_Test.swift"; sourceTree = "<group>"; };
+		F0D4CBF725F21EFD007CEC68 /* Q830-PositionsofLargeGroups.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q830-PositionsofLargeGroups.swift"; sourceTree = "<group>"; };
+		F0D4CBFB25F2368A007CEC68 /* Q830-PositionsofLargeGroups_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q830-PositionsofLargeGroups_Test.swift"; sourceTree = "<group>"; };
 		F0D623562577A48F004AF4AD /* Q15-3Sum_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q15-3Sum_Test.swift"; sourceTree = "<group>"; };
 		F0D623592578D887004AF4AD /* whereClause.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = whereClause.swift; sourceTree = "<group>"; };
 		F0D6235D2578DA5A004AF4AD /* Q16-3SumClosest_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q16-3SumClosest_Test.swift"; sourceTree = "<group>"; };
@@ -365,6 +369,7 @@
 				F0BECF3C25EE0FE1004960D9 /* Q832-FlippinganImage.swift */,
 				F0BECF6125F0BFE7004960D9 /* Q118-PascalsTriangle.swift */,
 				F0BECF6925F0C560004960D9 /* Q119-PascalsTriangle2.swift */,
+				F0D4CBF725F21EFD007CEC68 /* Q830-PositionsofLargeGroups.swift */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -698,6 +703,7 @@
 				F0BECF4025EE1190004960D9 /* Q832-FlippinganImage_Test.swift */,
 				F0BECF6525F0C2E0004960D9 /* Q118-PascalsTriangle_Test.swift */,
 				F0BECF6F25F0C71B004960D9 /* Q119-PascalsTriangle2_Test.swift */,
+				F0D4CBFB25F2368A007CEC68 /* Q830-PositionsofLargeGroups_Test.swift */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -894,6 +900,7 @@
 				F04989E12562C44200FDE8DC /* Q414-ThirdMaximumNumber.swift in Sources */,
 				F058E9012542D90F002885CC /* Q3-LongestSubstringWithoutRepeatingCharacters.swift in Sources */,
 				F09453B5259AD174004042AC /* Q38-CountandSay.swift in Sources */,
+				F0D4CBF825F21EFD007CEC68 /* Q830-PositionsofLargeGroups.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -911,6 +918,7 @@
 				F094540825A2C26A004042AC /* Q434_NumberofSegmentsinaString_Test.swift in Sources */,
 				F082AD7E25760EF800DE5AAD /* Testable.swift in Sources */,
 				F0D623662578F63B004AF4AD /* Q62-UniquePaths_Test.swift in Sources */,
+				F0D4CBFC25F2368A007CEC68 /* Q830-PositionsofLargeGroups_Test.swift in Sources */,
 				F0C83F4A257791F4002C06D2 /* Q11-ContainerWithMostWater.swift in Sources */,
 				F082AD7C25760EB700DE5AAD /* SYBaseTestCase.swift in Sources */,
 				F0BECF7025F0C71B004960D9 /* Q119-PascalsTriangle2_Test.swift in Sources */,

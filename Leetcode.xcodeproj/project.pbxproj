@@ -88,6 +88,12 @@
 		F0D4CBFC25F2368A007CEC68 /* Q830-PositionsofLargeGroups_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D4CBFB25F2368A007CEC68 /* Q830-PositionsofLargeGroups_Test.swift */; };
 		F0D4CC0425F5F9BA007CEC68 /* Q867-TransposeMatrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D4CC0325F5F9BA007CEC68 /* Q867-TransposeMatrix.swift */; };
 		F0D4CC0825F5FC4A007CEC68 /* Q867-TransposeMatrix_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D4CC0725F5FC4A007CEC68 /* Q867-TransposeMatrix_Test.swift */; };
+		F0D4EDFA25F74F2F00037B39 /* Q561-ArrayPartition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D4EDF925F74F2F00037B39 /* Q561-ArrayPartition.swift */; };
+		F0D4EDFE25F7500500037B39 /* Q561-ArrayPartition_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D4EDFD25F7500500037B39 /* Q561-ArrayPartition_Test.swift */; };
+		F0D4EE1625F9F01900037B39 /* Q985-SumofEvenNumbersAfterQueries.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D4EE1525F9F01900037B39 /* Q985-SumofEvenNumbersAfterQueries.swift */; };
+		F0D4EE1A25F9F1C500037B39 /* Q985-SumofEvenNumbersAfterQueries_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D4EE1925F9F1C500037B39 /* Q985-SumofEvenNumbersAfterQueries_Test.swift */; };
+		F0D4EE4225FB4EFB00037B39 /* Q238-ProductofArrayExceptSelf.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D4EE4125FB4EFB00037B39 /* Q238-ProductofArrayExceptSelf.swift */; };
+		F0D4EE4625FB507900037B39 /* Q238-ProductofArrayExceptSelf_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D4EE4525FB507900037B39 /* Q238-ProductofArrayExceptSelf_Test.swift */; };
 		F0D623572577A48F004AF4AD /* Q15-3Sum_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D623562577A48F004AF4AD /* Q15-3Sum_Test.swift */; };
 		F0D6235A2578D887004AF4AD /* whereClause.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D623592578D887004AF4AD /* whereClause.swift */; };
 		F0D6235E2578DA5A004AF4AD /* Q16-3SumClosest_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D6235D2578DA5A004AF4AD /* Q16-3SumClosest_Test.swift */; };
@@ -195,6 +201,12 @@
 		F0D4CBFB25F2368A007CEC68 /* Q830-PositionsofLargeGroups_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q830-PositionsofLargeGroups_Test.swift"; sourceTree = "<group>"; };
 		F0D4CC0325F5F9BA007CEC68 /* Q867-TransposeMatrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q867-TransposeMatrix.swift"; sourceTree = "<group>"; };
 		F0D4CC0725F5FC4A007CEC68 /* Q867-TransposeMatrix_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q867-TransposeMatrix_Test.swift"; sourceTree = "<group>"; };
+		F0D4EDF925F74F2F00037B39 /* Q561-ArrayPartition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q561-ArrayPartition.swift"; sourceTree = "<group>"; };
+		F0D4EDFD25F7500500037B39 /* Q561-ArrayPartition_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q561-ArrayPartition_Test.swift"; sourceTree = "<group>"; };
+		F0D4EE1525F9F01900037B39 /* Q985-SumofEvenNumbersAfterQueries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q985-SumofEvenNumbersAfterQueries.swift"; sourceTree = "<group>"; };
+		F0D4EE1925F9F1C500037B39 /* Q985-SumofEvenNumbersAfterQueries_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q985-SumofEvenNumbersAfterQueries_Test.swift"; sourceTree = "<group>"; };
+		F0D4EE4125FB4EFB00037B39 /* Q238-ProductofArrayExceptSelf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q238-ProductofArrayExceptSelf.swift"; sourceTree = "<group>"; };
+		F0D4EE4525FB507900037B39 /* Q238-ProductofArrayExceptSelf_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q238-ProductofArrayExceptSelf_Test.swift"; sourceTree = "<group>"; };
 		F0D623562577A48F004AF4AD /* Q15-3Sum_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q15-3Sum_Test.swift"; sourceTree = "<group>"; };
 		F0D623592578D887004AF4AD /* whereClause.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = whereClause.swift; sourceTree = "<group>"; };
 		F0D6235D2578DA5A004AF4AD /* Q16-3SumClosest_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q16-3SumClosest_Test.swift"; sourceTree = "<group>"; };
@@ -375,6 +387,8 @@
 				F0BECF6925F0C560004960D9 /* Q119-PascalsTriangle2.swift */,
 				F0D4CBF725F21EFD007CEC68 /* Q830-PositionsofLargeGroups.swift */,
 				F0D4CC0325F5F9BA007CEC68 /* Q867-TransposeMatrix.swift */,
+				F0D4EDF925F74F2F00037B39 /* Q561-ArrayPartition.swift */,
+				F0D4EE1525F9F01900037B39 /* Q985-SumofEvenNumbersAfterQueries.swift */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -530,6 +544,7 @@
 				F02A3256254E9D2500230EE9 /* Q48-RotateImage.swift */,
 				F02A3263255ADFF400230EE9 /* Q62-UniquePaths.swift */,
 				F04989DE255F85A900FDE8DC /* Q40-CombinationSumII.swift */,
+				F0D4EE4125FB4EFB00037B39 /* Q238-ProductofArrayExceptSelf.swift */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -710,6 +725,8 @@
 				F0BECF6F25F0C71B004960D9 /* Q119-PascalsTriangle2_Test.swift */,
 				F0D4CBFB25F2368A007CEC68 /* Q830-PositionsofLargeGroups_Test.swift */,
 				F0D4CC0725F5FC4A007CEC68 /* Q867-TransposeMatrix_Test.swift */,
+				F0D4EDFD25F7500500037B39 /* Q561-ArrayPartition_Test.swift */,
+				F0D4EE1925F9F1C500037B39 /* Q985-SumofEvenNumbersAfterQueries_Test.swift */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -724,6 +741,7 @@
 				F0D623612578F105004AF4AD /* Q39_CombinationSum_Test.swift */,
 				F0D623632578F405004AF4AD /* Q48_RotateImage_Test.swift */,
 				F0D623652578F63B004AF4AD /* Q62-UniquePaths_Test.swift */,
+				F0D4EE4525FB507900037B39 /* Q238-ProductofArrayExceptSelf_Test.swift */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -856,6 +874,7 @@
 				F0BECF3D25EE0FE1004960D9 /* Q832-FlippinganImage.swift in Sources */,
 				F058E8FF2542D6B6002885CC /* Q39-CombinationSum.swift in Sources */,
 				F058E9032542DA04002885CC /* Q2_AddTwoNumbers.swift in Sources */,
+				F0D4EE4225FB4EFB00037B39 /* Q238-ProductofArrayExceptSelf.swift in Sources */,
 				F0D62368257F1AFC004AF4AD /* Q415-AddStrings.swift in Sources */,
 				F09452E2259085E5004042AC /* Q459-RepeatedSubstringPattern.swift in Sources */,
 				F058E8F2254288D0002885CC /* Executable.swift in Sources */,
@@ -874,6 +893,7 @@
 				F058E90D25467BCD002885CC /* Q392_IsSubsequence.swift in Sources */,
 				F0BECF6A25F0C560004960D9 /* Q119-PascalsTriangle2.swift in Sources */,
 				BC82425D217B17590011CA7F /* ViewController.swift in Sources */,
+				F0D4EDFA25F74F2F00037B39 /* Q561-ArrayPartition.swift in Sources */,
 				F04989DD255F80B300FDE8DC /* Q264-UglyNumberII.swift in Sources */,
 				BC82425B217B17590011CA7F /* AppDelegate.swift in Sources */,
 				F082AD44256BB6A800DE5AAD /* Q500-KeyboardRow.swift in Sources */,
@@ -886,6 +906,7 @@
 				F04989DF255F85A900FDE8DC /* Q40-CombinationSumII.swift in Sources */,
 				F02A325B254EB42700230EE9 /* Q22-GenerateParentheses.swift in Sources */,
 				F09453102591C567004042AC /* Q520-DetectCapital.swift in Sources */,
+				F0D4EE1625F9F01900037B39 /* Q985-SumofEvenNumbersAfterQueries.swift in Sources */,
 				F058E8F025428845002885CC /* Q15-3Sum.swift in Sources */,
 				F094532125931EE3004042AC /* Q557-ReverseWordsinaString3.swift in Sources */,
 				F05C92072330C1A6003DB2EB /* Leetcode.swift in Sources */,
@@ -922,6 +943,7 @@
 				F0D623572577A48F004AF4AD /* Q15-3Sum_Test.swift in Sources */,
 				F0FDA5E625621E6500522381 /* Q11-ContainerWithMostWater_Test.swift in Sources */,
 				F0BECE3725DD0226004960D9 /* Q696-CountBinarySubstrings_Test.swift in Sources */,
+				F0D4EDFE25F7500500037B39 /* Q561-ArrayPartition_Test.swift in Sources */,
 				F094540825A2C26A004042AC /* Q434_NumberofSegmentsinaString_Test.swift in Sources */,
 				F082AD7E25760EF800DE5AAD /* Testable.swift in Sources */,
 				F0D623662578F63B004AF4AD /* Q62-UniquePaths_Test.swift in Sources */,
@@ -936,6 +958,7 @@
 				F0BECE3F25DE5F16004960D9 /* Q521-LongestUncommonSubsequenceI_Test.swift in Sources */,
 				F09453142591C8BA004042AC /* Q520_DetectCapital_Test.swift in Sources */,
 				F0BECE4825DF9FF9004960D9 /* Q38-CountandSay_Test.swift in Sources */,
+				F0D4EE1A25F9F1C500037B39 /* Q985-SumofEvenNumbersAfterQueries_Test.swift in Sources */,
 				BC824270217B175E0011CA7F /* LeetcodeTests.swift in Sources */,
 				F0D623642578F405004AF4AD /* Q48_RotateImage_Test.swift in Sources */,
 				F09453FE259DAE19004042AC /* Q345_ReverseVowelsofaString_Test.swift in Sources */,
@@ -945,6 +968,7 @@
 				F09452CC25907DBC004042AC /* Q415-AddStrings_Test.swift in Sources */,
 				F094532525931F20004042AC /* Q557_ReverseWordsinaString3_Test.swift in Sources */,
 				F09452E8259088A5004042AC /* Q459-RepeatedSubstringPattern_Test.swift in Sources */,
+				F0D4EE4625FB507900037B39 /* Q238-ProductofArrayExceptSelf_Test.swift in Sources */,
 				F0D6235E2578DA5A004AF4AD /* Q16-3SumClosest_Test.swift in Sources */,
 				F082AD8525777BB600DE5AAD /* Executable.swift in Sources */,
 			);

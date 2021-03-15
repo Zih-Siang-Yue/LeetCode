@@ -94,6 +94,8 @@
 		F0D4EE1A25F9F1C500037B39 /* Q985-SumofEvenNumbersAfterQueries_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D4EE1925F9F1C500037B39 /* Q985-SumofEvenNumbersAfterQueries_Test.swift */; };
 		F0D4EE4225FB4EFB00037B39 /* Q238-ProductofArrayExceptSelf.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D4EE4125FB4EFB00037B39 /* Q238-ProductofArrayExceptSelf.swift */; };
 		F0D4EE4625FB507900037B39 /* Q238-ProductofArrayExceptSelf_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D4EE4525FB507900037B39 /* Q238-ProductofArrayExceptSelf_Test.swift */; };
+		F0D4EE5225FF32E400037B39 /* Q347-TopKFrequentElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D4EE5125FF32E400037B39 /* Q347-TopKFrequentElements.swift */; };
+		F0D4EE5625FF37B700037B39 /* Q347-TopKFrequentElements_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D4EE5525FF37B700037B39 /* Q347-TopKFrequentElements_Test.swift */; };
 		F0D623572577A48F004AF4AD /* Q15-3Sum_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D623562577A48F004AF4AD /* Q15-3Sum_Test.swift */; };
 		F0D6235A2578D887004AF4AD /* whereClause.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D623592578D887004AF4AD /* whereClause.swift */; };
 		F0D6235E2578DA5A004AF4AD /* Q16-3SumClosest_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D6235D2578DA5A004AF4AD /* Q16-3SumClosest_Test.swift */; };
@@ -207,6 +209,8 @@
 		F0D4EE1925F9F1C500037B39 /* Q985-SumofEvenNumbersAfterQueries_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q985-SumofEvenNumbersAfterQueries_Test.swift"; sourceTree = "<group>"; };
 		F0D4EE4125FB4EFB00037B39 /* Q238-ProductofArrayExceptSelf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q238-ProductofArrayExceptSelf.swift"; sourceTree = "<group>"; };
 		F0D4EE4525FB507900037B39 /* Q238-ProductofArrayExceptSelf_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q238-ProductofArrayExceptSelf_Test.swift"; sourceTree = "<group>"; };
+		F0D4EE5125FF32E400037B39 /* Q347-TopKFrequentElements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q347-TopKFrequentElements.swift"; sourceTree = "<group>"; };
+		F0D4EE5525FF37B700037B39 /* Q347-TopKFrequentElements_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q347-TopKFrequentElements_Test.swift"; sourceTree = "<group>"; };
 		F0D623562577A48F004AF4AD /* Q15-3Sum_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q15-3Sum_Test.swift"; sourceTree = "<group>"; };
 		F0D623592578D887004AF4AD /* whereClause.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = whereClause.swift; sourceTree = "<group>"; };
 		F0D6235D2578DA5A004AF4AD /* Q16-3SumClosest_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q16-3SumClosest_Test.swift"; sourceTree = "<group>"; };
@@ -576,6 +580,7 @@
 			children = (
 				F058E9002542D90F002885CC /* Q3-LongestSubstringWithoutRepeatingCharacters.swift */,
 				F02A32612557C9AD00230EE9 /* Q49-GroupAnagrams.swift */,
+				F0D4EE5125FF32E400037B39 /* Q347-TopKFrequentElements.swift */,
 			);
 			path = HashTable;
 			sourceTree = "<group>";
@@ -731,6 +736,14 @@
 			path = Array;
 			sourceTree = "<group>";
 		};
+		F0D4EE5925FF37BD00037B39 /* HashTable */ = {
+			isa = PBXGroup;
+			children = (
+				F0D4EE5525FF37B700037B39 /* Q347-TopKFrequentElements_Test.swift */,
+			);
+			path = HashTable;
+			sourceTree = "<group>";
+		};
 		F0D6235B2578DA1C004AF4AD /* Array */ = {
 			isa = PBXGroup;
 			children = (
@@ -751,6 +764,7 @@
 			children = (
 				F0BECE4B25DFA010004960D9 /* String */,
 				F0D6235B2578DA1C004AF4AD /* Array */,
+				F0D4EE5925FF37BD00037B39 /* HashTable */,
 			);
 			path = Medium;
 			sourceTree = "<group>";
@@ -896,6 +910,7 @@
 				F0D4EDFA25F74F2F00037B39 /* Q561-ArrayPartition.swift in Sources */,
 				F04989DD255F80B300FDE8DC /* Q264-UglyNumberII.swift in Sources */,
 				BC82425B217B17590011CA7F /* AppDelegate.swift in Sources */,
+				F0D4EE5225FF32E400037B39 /* Q347-TopKFrequentElements.swift in Sources */,
 				F082AD44256BB6A800DE5AAD /* Q500-KeyboardRow.swift in Sources */,
 				F048219525237E4400740590 /* Extension_Int.swift in Sources */,
 				F09453FA259DA83C004042AC /* Q345-ReverseVowelsofaString.swift in Sources */,
@@ -959,6 +974,7 @@
 				F09453142591C8BA004042AC /* Q520_DetectCapital_Test.swift in Sources */,
 				F0BECE4825DF9FF9004960D9 /* Q38-CountandSay_Test.swift in Sources */,
 				F0D4EE1A25F9F1C500037B39 /* Q985-SumofEvenNumbersAfterQueries_Test.swift in Sources */,
+				F0D4EE5625FF37B700037B39 /* Q347-TopKFrequentElements_Test.swift in Sources */,
 				BC824270217B175E0011CA7F /* LeetcodeTests.swift in Sources */,
 				F0D623642578F405004AF4AD /* Q48_RotateImage_Test.swift in Sources */,
 				F09453FE259DAE19004042AC /* Q345_ReverseVowelsofaString_Test.swift in Sources */,

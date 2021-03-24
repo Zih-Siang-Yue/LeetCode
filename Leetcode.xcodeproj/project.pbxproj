@@ -798,9 +798,7 @@
 		F0D4EEA6260B4B1700037B39 /* Interview_Questions_Test */ = {
 			isa = PBXGroup;
 			children = (
-				F0D4EE9E260B1C9C00037B39 /* KKDay_1_Test.swift */,
-				F0D4EEA2260B1D5900037B39 /* KKDay_2_Test.swift */,
-				F0D4EEAE260B4D3700037B39 /* KKDay_3_Test.swift */,
+				F0D4EEFD2615661C00037B39 /* KKDay */,
 			);
 			path = Interview_Questions_Test;
 			sourceTree = "<group>";
@@ -808,11 +806,29 @@
 		F0D4EEA7260B4B3D00037B39 /* Interview_Questions */ = {
 			isa = PBXGroup;
 			children = (
+				F0D4EF022615662500037B39 /* KKDay */,
+			);
+			path = Interview_Questions;
+			sourceTree = "<group>";
+		};
+		F0D4EEFD2615661C00037B39 /* KKDay */ = {
+			isa = PBXGroup;
+			children = (
+				F0D4EE9E260B1C9C00037B39 /* KKDay_1_Test.swift */,
+				F0D4EEA2260B1D5900037B39 /* KKDay_2_Test.swift */,
+				F0D4EEAE260B4D3700037B39 /* KKDay_3_Test.swift */,
+			);
+			path = KKDay;
+			sourceTree = "<group>";
+		};
+		F0D4EF022615662500037B39 /* KKDay */ = {
+			isa = PBXGroup;
+			children = (
 				F0D4EE96260B1C4D00037B39 /* KKDay_1.swift */,
 				F0D4EE9A260B1C8300037B39 /* KKDay_2.swift */,
 				F0D4EEAA260B4B6400037B39 /* KKDay_3.swift */,
 			);
-			path = Interview_Questions;
+			path = KKDay;
 			sourceTree = "<group>";
 		};
 		F0D6235B2578DA1C004AF4AD /* Array */ = {

@@ -112,6 +112,8 @@
 		F0D4EEA3260B1D5900037B39 /* KKDay_2_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D4EEA2260B1D5900037B39 /* KKDay_2_Test.swift */; };
 		F0D4EEAB260B4B6400037B39 /* KKDay_3.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D4EEAA260B4B6400037B39 /* KKDay_3.swift */; };
 		F0D4EEAF260B4D3700037B39 /* KKDay_3_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D4EEAE260B4D3700037B39 /* KKDay_3_Test.swift */; };
+		F0D4EEBB260C399F00037B39 /* Q1694-ReformatPhoneNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D4EEBA260C399F00037B39 /* Q1694-ReformatPhoneNumber.swift */; };
+		F0D4EEBF260C39E400037B39 /* Q1694-ReformatPhoneNumber_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D4EEBE260C39E400037B39 /* Q1694-ReformatPhoneNumber_Test.swift */; };
 		F0D623572577A48F004AF4AD /* Q15-3Sum_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D623562577A48F004AF4AD /* Q15-3Sum_Test.swift */; };
 		F0D6235A2578D887004AF4AD /* whereClause.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D623592578D887004AF4AD /* whereClause.swift */; };
 		F0D6235E2578DA5A004AF4AD /* Q16-3SumClosest_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D6235D2578DA5A004AF4AD /* Q16-3SumClosest_Test.swift */; };
@@ -243,6 +245,8 @@
 		F0D4EEA2260B1D5900037B39 /* KKDay_2_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKDay_2_Test.swift; sourceTree = "<group>"; };
 		F0D4EEAA260B4B6400037B39 /* KKDay_3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKDay_3.swift; sourceTree = "<group>"; };
 		F0D4EEAE260B4D3700037B39 /* KKDay_3_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKDay_3_Test.swift; sourceTree = "<group>"; };
+		F0D4EEBA260C399F00037B39 /* Q1694-ReformatPhoneNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q1694-ReformatPhoneNumber.swift"; sourceTree = "<group>"; };
+		F0D4EEBE260C39E400037B39 /* Q1694-ReformatPhoneNumber_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q1694-ReformatPhoneNumber_Test.swift"; sourceTree = "<group>"; };
 		F0D623562577A48F004AF4AD /* Q15-3Sum_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q15-3Sum_Test.swift"; sourceTree = "<group>"; };
 		F0D623592578D887004AF4AD /* whereClause.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = whereClause.swift; sourceTree = "<group>"; };
 		F0D6235D2578DA5A004AF4AD /* Q16-3SumClosest_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q16-3SumClosest_Test.swift"; sourceTree = "<group>"; };
@@ -509,6 +513,7 @@
 				F094540325A2C229004042AC /* Q434-NumberofSegmentsinaString.swift */,
 				F0BECE3A25DE5DC8004960D9 /* Q521-LongestUncommonSubsequenceI.swift */,
 				F0BECE5825E35847004960D9 /* Q929-UniqueEmailAddresses.swift */,
+				F0D4EEBA260C399F00037B39 /* Q1694-ReformatPhoneNumber.swift */,
 			);
 			path = String;
 			sourceTree = "<group>";
@@ -748,6 +753,7 @@
 				F0BECE3625DD0226004960D9 /* Q696-CountBinarySubstrings_Test.swift */,
 				F0BECE3E25DE5F16004960D9 /* Q521-LongestUncommonSubsequenceI_Test.swift */,
 				F0BECE6125E38DEC004960D9 /* Q929-UniqueEmailAddresses_Test.swift */,
+				F0D4EEBE260C39E400037B39 /* Q1694-ReformatPhoneNumber_Test.swift */,
 			);
 			path = String;
 			sourceTree = "<group>";
@@ -1026,6 +1032,7 @@
 				F02A3259254EB32800230EE9 /* Q17-LetterCombinationsOfAPhoneNumber.swift in Sources */,
 				F00EE6362543D3EF004B5864 /* Q18-4Sum.swift in Sources */,
 				F0E80F562342F9AC00808912 /* ClosurePractice.swift in Sources */,
+				F0D4EEBB260C399F00037B39 /* Q1694-ReformatPhoneNumber.swift in Sources */,
 				F0BECE6A25E4EE98004960D9 /* Q566-ReshapetheMatrix.swift in Sources */,
 				F0194716254FD8A900F1AA09 /* Q404-SumOfLeftLeaves.swift in Sources */,
 				F05C92052330C174003DB2EB /* YahooInterview.swift in Sources */,
@@ -1056,6 +1063,7 @@
 				F0FDA5E625621E6500522381 /* Q11-ContainerWithMostWater_Test.swift in Sources */,
 				F0BECE3725DD0226004960D9 /* Q696-CountBinarySubstrings_Test.swift in Sources */,
 				F0D4EE9F260B1C9C00037B39 /* KKDay_1_Test.swift in Sources */,
+				F0D4EEBF260C39E400037B39 /* Q1694-ReformatPhoneNumber_Test.swift in Sources */,
 				F0D4EE8226049BFC00037B39 /* Q409-LongestPalindrome_Test.swift in Sources */,
 				F0D4EDFE25F7500500037B39 /* Q561-ArrayPartition_Test.swift in Sources */,
 				F0D4EE7226032F2000037B39 /* Q1002-FindCommonCharacters_Test.swift in Sources */,

@@ -18,6 +18,12 @@ public class ListNode {
     }
 }
 
+extension ListNode: Equatable {
+    public static func == (lhs: ListNode, rhs: ListNode) -> Bool {
+        return lhs.val == rhs.val
+    }
+}
+
 //Definition for a binary tree node.
 public class TreeNode {
     public var val: Int

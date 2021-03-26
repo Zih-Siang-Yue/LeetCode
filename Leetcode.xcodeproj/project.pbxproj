@@ -114,6 +114,8 @@
 		F0D4EEAF260B4D3700037B39 /* KKDay_3_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D4EEAE260B4D3700037B39 /* KKDay_3_Test.swift */; };
 		F0D4EEBB260C399F00037B39 /* Q1694-ReformatPhoneNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D4EEBA260C399F00037B39 /* Q1694-ReformatPhoneNumber.swift */; };
 		F0D4EEBF260C39E400037B39 /* Q1694-ReformatPhoneNumber_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D4EEBE260C39E400037B39 /* Q1694-ReformatPhoneNumber_Test.swift */; };
+		F0D4EECF260D7E6800037B39 /* Q876-MiddleoftheLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D4EECE260D7E6800037B39 /* Q876-MiddleoftheLinkedList.swift */; };
+		F0D4EED3260D81AB00037B39 /* Q876-MiddleoftheLinkedList_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D4EED2260D81AA00037B39 /* Q876-MiddleoftheLinkedList_Test.swift */; };
 		F0D623572577A48F004AF4AD /* Q15-3Sum_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D623562577A48F004AF4AD /* Q15-3Sum_Test.swift */; };
 		F0D6235A2578D887004AF4AD /* whereClause.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D623592578D887004AF4AD /* whereClause.swift */; };
 		F0D6235E2578DA5A004AF4AD /* Q16-3SumClosest_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D6235D2578DA5A004AF4AD /* Q16-3SumClosest_Test.swift */; };
@@ -247,6 +249,8 @@
 		F0D4EEAE260B4D3700037B39 /* KKDay_3_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKDay_3_Test.swift; sourceTree = "<group>"; };
 		F0D4EEBA260C399F00037B39 /* Q1694-ReformatPhoneNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q1694-ReformatPhoneNumber.swift"; sourceTree = "<group>"; };
 		F0D4EEBE260C39E400037B39 /* Q1694-ReformatPhoneNumber_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q1694-ReformatPhoneNumber_Test.swift"; sourceTree = "<group>"; };
+		F0D4EECE260D7E6800037B39 /* Q876-MiddleoftheLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q876-MiddleoftheLinkedList.swift"; sourceTree = "<group>"; };
+		F0D4EED2260D81AA00037B39 /* Q876-MiddleoftheLinkedList_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q876-MiddleoftheLinkedList_Test.swift"; sourceTree = "<group>"; };
 		F0D623562577A48F004AF4AD /* Q15-3Sum_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q15-3Sum_Test.swift"; sourceTree = "<group>"; };
 		F0D623592578D887004AF4AD /* whereClause.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = whereClause.swift; sourceTree = "<group>"; };
 		F0D6235D2578DA5A004AF4AD /* Q16-3SumClosest_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q16-3SumClosest_Test.swift"; sourceTree = "<group>"; };
@@ -457,6 +461,7 @@
 			isa = PBXGroup;
 			children = (
 				F0D4EE8D26086A0B00037B39 /* Q1103-DistributeCandiestoPeople.swift */,
+				F0D4EECE260D7E6800037B39 /* Q876-MiddleoftheLinkedList.swift */,
 			);
 			path = Math;
 			sourceTree = "<group>";
@@ -734,6 +739,7 @@
 				F0BECE7125E4F422004960D9 /* Array */,
 				F0D4EE6626007FAA00037B39 /* HashTable */,
 				F0D4EE912608749800037B39 /* Q1103-DistributeCandiestoPeople_Test.swift */,
+				F0D4EED2260D81AA00037B39 /* Q876-MiddleoftheLinkedList_Test.swift */,
 			);
 			path = Easy;
 			sourceTree = "<group>";
@@ -1022,6 +1028,7 @@
 				F0D4EE8E26086A0B00037B39 /* Q1103-DistributeCandiestoPeople.swift in Sources */,
 				F058E8F025428845002885CC /* Q15-3Sum.swift in Sources */,
 				F094532125931EE3004042AC /* Q557-ReverseWordsinaString3.swift in Sources */,
+				F0D4EECF260D7E6800037B39 /* Q876-MiddleoftheLinkedList.swift in Sources */,
 				F05C92072330C1A6003DB2EB /* Leetcode.swift in Sources */,
 				F0D6235A2578D887004AF4AD /* whereClause.swift in Sources */,
 				F09453F6259D9AE3004042AC /* Q696-CountBinarySubstrings.swift in Sources */,
@@ -1076,6 +1083,7 @@
 				F0BECF7025F0C71B004960D9 /* Q119-PascalsTriangle2_Test.swift in Sources */,
 				F0D4EE6326007FA700037B39 /* Q961-N-RepeatedElementinSize2NArray_Test.swift in Sources */,
 				F0BECF4125EE1190004960D9 /* Q832-FlippinganImage_Test.swift in Sources */,
+				F0D4EED3260D81AB00037B39 /* Q876-MiddleoftheLinkedList_Test.swift in Sources */,
 				F09453DC259C9A67004042AC /* Q925_LongPressedName_Test.swift in Sources */,
 				F0D4CC0825F5FC4A007CEC68 /* Q867-TransposeMatrix_Test.swift in Sources */,
 				F09453BD259ADBD4004042AC /* Q917_ReverseOnlyLetters_Test.swift in Sources */,

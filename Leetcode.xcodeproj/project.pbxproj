@@ -126,6 +126,8 @@
 		F0D623642578F405004AF4AD /* Q48_RotateImage_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D623632578F405004AF4AD /* Q48_RotateImage_Test.swift */; };
 		F0D623662578F63B004AF4AD /* Q62-UniquePaths_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D623652578F63B004AF4AD /* Q62-UniquePaths_Test.swift */; };
 		F0D62368257F1AFC004AF4AD /* Q415-AddStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D62367257F1AFC004AF4AD /* Q415-AddStrings.swift */; };
+		F0E41BF9262434520083ABAF /* Binance-ShortestStr.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E41BF8262434520083ABAF /* Binance-ShortestStr.swift */; };
+		F0E41BFD262436560083ABAF /* Binance-ShortestStr_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E41BFC262436560083ABAF /* Binance-ShortestStr_Test.swift */; };
 		F0E80F562342F9AC00808912 /* ClosurePractice.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E80F552342F9AC00808912 /* ClosurePractice.swift */; };
 		F0E80F582342FA5600808912 /* Others.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E80F572342FA5600808912 /* Others.swift */; };
 		F0FDA5E625621E6500522381 /* Q11-ContainerWithMostWater_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FDA5E525621E6500522381 /* Q11-ContainerWithMostWater_Test.swift */; };
@@ -263,6 +265,8 @@
 		F0D623632578F405004AF4AD /* Q48_RotateImage_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Q48_RotateImage_Test.swift; sourceTree = "<group>"; };
 		F0D623652578F63B004AF4AD /* Q62-UniquePaths_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q62-UniquePaths_Test.swift"; sourceTree = "<group>"; };
 		F0D62367257F1AFC004AF4AD /* Q415-AddStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q415-AddStrings.swift"; sourceTree = "<group>"; };
+		F0E41BF8262434520083ABAF /* Binance-ShortestStr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binance-ShortestStr.swift"; sourceTree = "<group>"; };
+		F0E41BFC262436560083ABAF /* Binance-ShortestStr_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binance-ShortestStr_Test.swift"; sourceTree = "<group>"; };
 		F0E80F552342F9AC00808912 /* ClosurePractice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosurePractice.swift; sourceTree = "<group>"; };
 		F0E80F572342FA5600808912 /* Others.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Others.swift; sourceTree = "<group>"; };
 		F0FDA5E525621E6500522381 /* Q11-ContainerWithMostWater_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q11-ContainerWithMostWater_Test.swift"; sourceTree = "<group>"; };
@@ -814,6 +818,7 @@
 		F0D4EEA6260B4B1700037B39 /* Interview_Questions_Test */ = {
 			isa = PBXGroup;
 			children = (
+				F0E41C022627DB220083ABAF /* Binance */,
 				F0D4EEFD2615661C00037B39 /* KKDay */,
 			);
 			path = Interview_Questions_Test;
@@ -822,9 +827,20 @@
 		F0D4EEA7260B4B3D00037B39 /* Interview_Questions */ = {
 			isa = PBXGroup;
 			children = (
+				F0E41C0D2627DB8D0083ABAF /* Binance */,
 				F0D4EF022615662500037B39 /* KKDay */,
 			);
 			path = Interview_Questions;
+			sourceTree = "<group>";
+		};
+		F0D4EEDA260D8F8300037B39 /* Math */ = {
+			isa = PBXGroup;
+			children = (
+				F0D4EE912608749800037B39 /* Q1103-DistributeCandiestoPeople_Test.swift */,
+				F0D4EED2260D81AA00037B39 /* Q876-MiddleoftheLinkedList_Test.swift */,
+				F0D4EEDF260D8F9300037B39 /* Q453-MinimumMovestoEqualArrayElements_Test.swift */,
+			);
+			path = Math;
 			sourceTree = "<group>";
 		};
 		F0D4EEFD2615661C00037B39 /* KKDay */ = {
@@ -845,16 +861,6 @@
 				F0D4EEAA260B4B6400037B39 /* KKDay_3.swift */,
 			);
 			path = KKDay;
-			sourceTree = "<group>";
-		};
-		F0D4EEDA260D8F8300037B39 /* Math */ = {
-			isa = PBXGroup;
-			children = (
-				F0D4EE912608749800037B39 /* Q1103-DistributeCandiestoPeople_Test.swift */,
-				F0D4EED2260D81AA00037B39 /* Q876-MiddleoftheLinkedList_Test.swift */,
-				F0D4EEDF260D8F9300037B39 /* Q453-MinimumMovestoEqualArrayElements_Test.swift */,
-			);
-			path = Math;
 			sourceTree = "<group>";
 		};
 		F0D6235B2578DA1C004AF4AD /* Array */ = {
@@ -880,6 +886,22 @@
 				F0D4EE5925FF37BD00037B39 /* HashTable */,
 			);
 			path = Medium;
+			sourceTree = "<group>";
+		};
+		F0E41C022627DB220083ABAF /* Binance */ = {
+			isa = PBXGroup;
+			children = (
+				F0E41BFC262436560083ABAF /* Binance-ShortestStr_Test.swift */,
+			);
+			path = Binance;
+			sourceTree = "<group>";
+		};
+		F0E41C0D2627DB8D0083ABAF /* Binance */ = {
+			isa = PBXGroup;
+			children = (
+				F0E41BF8262434520083ABAF /* Binance-ShortestStr.swift */,
+			);
+			path = Binance;
 			sourceTree = "<group>";
 		};
 		F0E80F592342FAF300808912 /* LeetcodeQuestion */ = {
@@ -1026,6 +1048,7 @@
 				F0D4EDFA25F74F2F00037B39 /* Q561-ArrayPartition.swift in Sources */,
 				F04989DD255F80B300FDE8DC /* Q264-UglyNumberII.swift in Sources */,
 				BC82425B217B17590011CA7F /* AppDelegate.swift in Sources */,
+				F0E41BF9262434520083ABAF /* Binance-ShortestStr.swift in Sources */,
 				F0D4EE5225FF32E400037B39 /* Q347-TopKFrequentElements.swift in Sources */,
 				F082AD44256BB6A800DE5AAD /* Q500-KeyboardRow.swift in Sources */,
 				F048219525237E4400740590 /* Extension_Int.swift in Sources */,
@@ -1093,6 +1116,7 @@
 				F082AD7E25760EF800DE5AAD /* Testable.swift in Sources */,
 				F0D623662578F63B004AF4AD /* Q62-UniquePaths_Test.swift in Sources */,
 				F0D4CBFC25F2368A007CEC68 /* Q830-PositionsofLargeGroups_Test.swift in Sources */,
+				F0E41BFD262436560083ABAF /* Binance-ShortestStr_Test.swift in Sources */,
 				F0C83F4A257791F4002C06D2 /* Q11-ContainerWithMostWater.swift in Sources */,
 				F082AD7C25760EB700DE5AAD /* SYBaseTestCase.swift in Sources */,
 				F0BECF7025F0C71B004960D9 /* Q119-PascalsTriangle2_Test.swift in Sources */,

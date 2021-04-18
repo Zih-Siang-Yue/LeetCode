@@ -24,6 +24,32 @@ extension ListNode: Equatable {
     }
 }
 
+public class List {
+    var head: ListNode?
+    var tail: ListNode?
+    
+    func apppendToTail(_ val: Int) {
+        if tail == nil {
+            tail = ListNode(val)
+            head = tail
+        } else {
+            tail?.next = ListNode(val)
+            tail = tail?.next
+        }
+    }
+    
+    func appendToHead(_ val: Int) {
+        if head == nil {
+            head = ListNode(val)
+            tail = head
+        } else {
+            let temp = ListNode(val)
+            head?.next = head
+            head = temp
+        }
+    }
+}
+
 //Definition for a binary tree node.
 public class TreeNode {
     public var val: Int

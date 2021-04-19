@@ -128,6 +128,7 @@
 		F0D62368257F1AFC004AF4AD /* Q415-AddStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D62367257F1AFC004AF4AD /* Q415-AddStrings.swift */; };
 		F0E41BF9262434520083ABAF /* Binance-ShortestStr.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E41BF8262434520083ABAF /* Binance-ShortestStr.swift */; };
 		F0E41BFD262436560083ABAF /* Binance-ShortestStr_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E41BFC262436560083ABAF /* Binance-ShortestStr_Test.swift */; };
+		F0E41C44262D271D0083ABAF /* LeetcodeQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E41C43262D271D0083ABAF /* LeetcodeQueue.swift */; };
 		F0E80F562342F9AC00808912 /* ClosurePractice.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E80F552342F9AC00808912 /* ClosurePractice.swift */; };
 		F0E80F582342FA5600808912 /* Others.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E80F572342FA5600808912 /* Others.swift */; };
 		F0FDA5E625621E6500522381 /* Q11-ContainerWithMostWater_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FDA5E525621E6500522381 /* Q11-ContainerWithMostWater_Test.swift */; };
@@ -267,6 +268,7 @@
 		F0D62367257F1AFC004AF4AD /* Q415-AddStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q415-AddStrings.swift"; sourceTree = "<group>"; };
 		F0E41BF8262434520083ABAF /* Binance-ShortestStr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binance-ShortestStr.swift"; sourceTree = "<group>"; };
 		F0E41BFC262436560083ABAF /* Binance-ShortestStr_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binance-ShortestStr_Test.swift"; sourceTree = "<group>"; };
+		F0E41C43262D271D0083ABAF /* LeetcodeQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeetcodeQueue.swift; sourceTree = "<group>"; };
 		F0E80F552342F9AC00808912 /* ClosurePractice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosurePractice.swift; sourceTree = "<group>"; };
 		F0E80F572342FA5600808912 /* Others.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Others.swift; sourceTree = "<group>"; };
 		F0FDA5E525621E6500522381 /* Q11-ContainerWithMostWater_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q11-ContainerWithMostWater_Test.swift"; sourceTree = "<group>"; };
@@ -912,6 +914,15 @@
 			path = Yahoo;
 			sourceTree = "<group>";
 		};
+		F0E41C40262D27060083ABAF /* DataStructure */ = {
+			isa = PBXGroup;
+			children = (
+				F05C92082330C469003DB2EB /* LeetcodeStack.swift */,
+				F0E41C43262D271D0083ABAF /* LeetcodeQueue.swift */,
+			);
+			path = DataStructure;
+			sourceTree = "<group>";
+		};
 		F0E80F592342FAF300808912 /* LeetcodeQuestion */ = {
 			isa = PBXGroup;
 			children = (
@@ -920,7 +931,7 @@
 				F058E8CA254285AC002885CC /* Hard */,
 				F0D4EEA7260B4B3D00037B39 /* Interview_Questions */,
 				F05C92062330C1A6003DB2EB /* Leetcode.swift */,
-				F05C92082330C469003DB2EB /* LeetcodeStack.swift */,
+				F0E41C40262D27060083ABAF /* DataStructure */,
 				F058E8F1254288D0002885CC /* Executable.swift */,
 			);
 			path = LeetcodeQuestion;
@@ -1027,6 +1038,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0E41C44262D271D0083ABAF /* LeetcodeQueue.swift in Sources */,
 				F0BECF6225F0BFE8004960D9 /* Q118-PascalsTriangle.swift in Sources */,
 				F05C92092330C469003DB2EB /* LeetcodeStack.swift in Sources */,
 				F0BECF3D25EE0FE1004960D9 /* Q832-FlippinganImage.swift in Sources */,

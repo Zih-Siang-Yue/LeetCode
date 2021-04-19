@@ -317,7 +317,6 @@
 				BC824261217B175D0011CA7F /* Assets.xcassets */,
 				BC824263217B175D0011CA7F /* LaunchScreen.storyboard */,
 				BC824266217B175D0011CA7F /* Info.plist */,
-				F05C92042330C174003DB2EB /* YahooInterview.swift */,
 				F0E80F592342FAF300808912 /* LeetcodeQuestion */,
 				F0E80F552342F9AC00808912 /* ClosurePractice.swift */,
 				F0E80F572342FA5600808912 /* Others.swift */,
@@ -827,6 +826,7 @@
 		F0D4EEA7260B4B3D00037B39 /* Interview_Questions */ = {
 			isa = PBXGroup;
 			children = (
+				F0E41C3D262D26AC0083ABAF /* Yahoo */,
 				F0E41C0D2627DB8D0083ABAF /* Binance */,
 				F0D4EF022615662500037B39 /* KKDay */,
 			);
@@ -902,6 +902,14 @@
 				F0E41BF8262434520083ABAF /* Binance-ShortestStr.swift */,
 			);
 			path = Binance;
+			sourceTree = "<group>";
+		};
+		F0E41C3D262D26AC0083ABAF /* Yahoo */ = {
+			isa = PBXGroup;
+			children = (
+				F05C92042330C174003DB2EB /* YahooInterview.swift */,
+			);
+			path = Yahoo;
 			sourceTree = "<group>";
 		};
 		F0E80F592342FAF300808912 /* LeetcodeQuestion */ = {

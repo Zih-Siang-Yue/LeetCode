@@ -50,6 +50,41 @@ public class List {
     }
 }
 
+public class ListNodeG<T> {
+    public var val: T
+    public var next: ListNodeG<T>?
+    public init(_ val: T) {
+        self.val = val
+        self.next = nil
+    }
+}
+
+public class ListG<T> {
+    var head: ListNodeG<T>?
+    var tail: ListNodeG<T>?
+    
+    func apppendToTail(_ val: T) {
+        if tail == nil {
+            tail = ListNodeG(val)
+            head = tail
+        } else {
+            tail?.next = ListNodeG(val)
+            tail = tail?.next
+        }
+    }
+    
+    func appendToHead(_ val: T) {
+        if head == nil {
+            head = ListNodeG(val)
+            tail = head
+        } else {
+            let temp = ListNodeG(val)
+            head?.next = head
+            head = temp
+        }
+    }
+}
+
 //Definition for a binary tree node.
 public class TreeNode {
     public var val: Int

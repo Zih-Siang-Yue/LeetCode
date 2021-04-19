@@ -22,7 +22,7 @@ class Q917_ReverseOnlyLetters: Executable {
      3. 再for loop一次, 這次若遇到英文字母則從stack pop出最後一個, 不然就直接加入該符號
      */
     func solution(_ input: String) -> String {
-        let stack = LeetcodeStack<Character>()
+        var stack = LeetcodeStack<Character>()
         for char in input {
             if char.isLetter {
                 stack.push(char)

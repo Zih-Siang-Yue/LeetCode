@@ -14,7 +14,6 @@ class Leetcode {
 
     init() {
         execute()
-        stackDesign()
     }
     
     func execute() {
@@ -298,12 +297,6 @@ class Leetcode {
         let factorList = factors(of: 16)
         print("all factors: \(factorList)")
 
-    }
-    
-    func stackDesign() {
-        let stack = LeetcodeStack<Double>()
-        stack.push(2.3); stack.push(4); stack.push(8); stack.push(1); stack.push(10.2)
-        print("stack last:\(stack.getLast()!), first: \(stack.getFirst()!), max: \(stack.getMax()!), min: \(stack.getMin()!)")
     }
     
     //Leetcode - 0.0 移除指定Int remove element, 回傳移除之後的陣列數
@@ -2001,45 +1994,6 @@ class Leetcode {
             j -= 1
         }
         return factors
-    }
-}
-
-/*
- //Leetcode - 155 Min Stack
- Runtime: 132 ms, faster than 26.94% of Swift online submissions for Min Stack.
- Memory Usage: 21.7 MB, less than 72.60% of Swift online submissions for Min Stack.
- */
-class MinStack {
-    var stack: [Int]
-    var minList: [Int]
-
-    init() {
-        self.stack = [Int]()
-        self.minList = [Int]()
-    }
-    
-    func push(_ x: Int) {
-        self.stack.append(x)
-        
-        guard let preMin = self.minList.last else {
-            self.minList.append(x)
-            return
-        }
-        let minimum = preMin < x ? preMin : x
-        self.minList.append(minimum)
-    }
-    
-    func pop() {
-        _ = self.stack.popLast()
-        _ = self.minList.popLast()
-    }
-    
-    func top() -> Int {
-        return self.stack.last ?? 0
-    }
-    
-    func getMin() -> Int {
-        return self.minList.last ?? 0
     }
 }
 

@@ -11,11 +11,11 @@ import XCTest
 
 class Binance_ShortestStr_Test: SYBaseTestCase {
 
-    var sut: Bin?
+    var sut: Binance_ShortestStr?
 
     override func setUp() {
         super.setUp()
-        sut = Bin()
+        sut = Binance_ShortestStr()
     }
     
     override func tearDown() {

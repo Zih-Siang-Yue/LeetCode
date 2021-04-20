@@ -131,6 +131,8 @@
 		F0E41C44262D271D0083ABAF /* LeetcodeQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E41C43262D271D0083ABAF /* LeetcodeQueue.swift */; };
 		F0E41C87262E6F2A0083ABAF /* Q24-SwapNodesinPairs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E41C86262E6F2A0083ABAF /* Q24-SwapNodesinPairs.swift */; };
 		F0E41C8C262E716B0083ABAF /* Q24-SwapNodesinPairs_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E41C8B262E716B0083ABAF /* Q24-SwapNodesinPairs_Test.swift */; };
+		F0E41C92262E75790083ABAF /* Q100-SameTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E41C91262E75790083ABAF /* Q100-SameTree.swift */; };
+		F0E41C96262E78CA0083ABAF /* Q100-SameTree_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E41C95262E78CA0083ABAF /* Q100-SameTree_Test.swift */; };
 		F0E80F562342F9AC00808912 /* ClosurePractice.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E80F552342F9AC00808912 /* ClosurePractice.swift */; };
 		F0E80F582342FA5600808912 /* Others.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E80F572342FA5600808912 /* Others.swift */; };
 		F0FDA5E625621E6500522381 /* Q11-ContainerWithMostWater_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FDA5E525621E6500522381 /* Q11-ContainerWithMostWater_Test.swift */; };
@@ -273,6 +275,8 @@
 		F0E41C43262D271D0083ABAF /* LeetcodeQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeetcodeQueue.swift; sourceTree = "<group>"; };
 		F0E41C86262E6F2A0083ABAF /* Q24-SwapNodesinPairs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q24-SwapNodesinPairs.swift"; sourceTree = "<group>"; };
 		F0E41C8B262E716B0083ABAF /* Q24-SwapNodesinPairs_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q24-SwapNodesinPairs_Test.swift"; sourceTree = "<group>"; };
+		F0E41C91262E75790083ABAF /* Q100-SameTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q100-SameTree.swift"; sourceTree = "<group>"; };
+		F0E41C95262E78CA0083ABAF /* Q100-SameTree_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q100-SameTree_Test.swift"; sourceTree = "<group>"; };
 		F0E80F552342F9AC00808912 /* ClosurePractice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosurePractice.swift; sourceTree = "<group>"; };
 		F0E80F572342FA5600808912 /* Others.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Others.swift; sourceTree = "<group>"; };
 		F0FDA5E525621E6500522381 /* Q11-ContainerWithMostWater_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q11-ContainerWithMostWater_Test.swift"; sourceTree = "<group>"; };
@@ -351,6 +355,7 @@
 			isa = PBXGroup;
 			children = (
 				F0194715254FD8A900F1AA09 /* Q404-SumOfLeftLeaves.swift */,
+				F0E41C91262E75790083ABAF /* Q100-SameTree.swift */,
 			);
 			path = Tree;
 			sourceTree = "<group>";
@@ -754,6 +759,7 @@
 				F0BECE7125E4F422004960D9 /* Array */,
 				F0D4EE6626007FAA00037B39 /* HashTable */,
 				F0D4EEDA260D8F8300037B39 /* Math */,
+				F0E41C95262E78CA0083ABAF /* Q100-SameTree_Test.swift */,
 			);
 			path = Easy;
 			sourceTree = "<group>";
@@ -1079,6 +1085,7 @@
 				F058E90D25467BCD002885CC /* Q392_IsSubsequence.swift in Sources */,
 				F0BECF6A25F0C560004960D9 /* Q119-PascalsTriangle2.swift in Sources */,
 				BC82425D217B17590011CA7F /* ViewController.swift in Sources */,
+				F0E41C92262E75790083ABAF /* Q100-SameTree.swift in Sources */,
 				F0D4EDFA25F74F2F00037B39 /* Q561-ArrayPartition.swift in Sources */,
 				F04989DD255F80B300FDE8DC /* Q264-UglyNumberII.swift in Sources */,
 				BC82425B217B17590011CA7F /* AppDelegate.swift in Sources */,
@@ -1173,6 +1180,7 @@
 				F09453FE259DAE19004042AC /* Q345_ReverseVowelsofaString_Test.swift in Sources */,
 				F0BECF3925EDE92B004960D9 /* Q922-SortArraybyParity_Test.swift in Sources */,
 				F094531D25931BB2004042AC /* Q551_StudentAttendanceRecord1_Test.swift in Sources */,
+				F0E41C96262E78CA0083ABAF /* Q100-SameTree_Test.swift in Sources */,
 				F0BECE6225E38DEC004960D9 /* Q929-UniqueEmailAddresses_Test.swift in Sources */,
 				F0D4EE7A26033CD100037B39 /* Q1365-HowManyNumbersAreSmallerThantheCurrentNumber_Test.swift in Sources */,
 				F0D4EEA3260B1D5900037B39 /* KKDay_2_Test.swift in Sources */,

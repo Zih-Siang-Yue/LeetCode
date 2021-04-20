@@ -77,21 +77,6 @@ class Leetcode {
         let isValid = isValidParentheses("[](){}")
         print("leetcode20 output: \(isValid)")
         
-        //21
-        let l1nextNext = ListNode(3)
-        l1nextNext.next = ListNode(5)
-        let l1next = ListNode(4)
-        l1next.next = l1nextNext
-        let l1 = ListNode(2)
-        l1.next = l1next
-        
-        let l2next = ListNode(6)
-        l2next.next = ListNode(4)
-        let l2 = ListNode(5)
-        l2.next = l2next
-        let mergeTwoNode = mergeTwoLists(l1, l2)
-        print("leetcode21 output: \(mergeTwoNode!)")
-        
         //26
         var duplicates = [1, 1, 2]
         let removeDuplicatesLen = removeDuplicates(&duplicates)
@@ -756,26 +741,6 @@ class Leetcode {
         return stack.isEmpty
     }
     
-    //Leetcode - 21    //Warning - Compile Error (use of unresolved identifier Int_Max)
-    func mergeTwoLists(_ l1: ListNode?, _ l2: ListNode?) -> ListNode? {
-        guard l1?.val != nil || l2?.val != nil else {
-            return nil
-        }
-        
-        let node:ListNode
-        let value1 = l1?.val ?? Int(INT_MAX)
-        let value2 = l2?.val ?? Int(INT_MAX)
-        if value1 < value2 {
-            node = ListNode.init(value1)
-            node.next = mergeTwoLists(l1?.next, l2)
-        }
-        else {
-            node = ListNode.init(value2)
-            node.next = mergeTwoLists(l1, l2?.next)
-        }
-        return node
-    }
-    
     //Leetcode - 26    //Almost the same as No.0.1
     func removeDuplicates(_ nums: inout [Int]) -> Int {
         if nums.count == 0 { return 0 }
@@ -1146,21 +1111,6 @@ class Leetcode {
             bIndex -= 1
             mIndex -= 1
         }
-    }
-    
-    //Leetcode 100 Same Tree
-    func isSameTree(_ p: TreeNode?, _ q: TreeNode?) -> Bool {
-        if p == nil && q == nil {
-            return true
-        }
-        else if p == nil || q == nil {
-            return false
-        }
-        
-        if p?.val != q?.val {
-            return false
-        }
-        return isSameTree(p?.left, q?.left) && isSameTree(p?.right, q?.right)
     }
     
     //Leetcode 101 Symmetric Tree

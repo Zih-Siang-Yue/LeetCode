@@ -40,7 +40,7 @@ class Q876_MiddleoftheLinkedList: Executable {
         return node
     }
     
-    // Runtime: 0 ms, faster than 100.00%
+    // Runtime: 0 ms, faster than 100.00% 快慢指針
     func thefastestSolution(_ input: ListNode?) -> ListNode? {
         var slow = input
         var fast = input
@@ -51,4 +51,24 @@ class Q876_MiddleoftheLinkedList: Executable {
         return slow
     }
     
+    func findMiddleNodeByLenDivideTwo(_ head: ListNode?) -> ListNode? {
+        if head == nil { return head }
+        
+        var len = 0
+        var node: ListNode? = head
+        while node != nil {
+            len += 1
+            node = node?.next
+        }
+        
+        len /= 2
+        node = head
+        while len > 0 {
+            len -= 1
+            node = node?.next
+        }
+        
+        return node
+    }
+  
 }

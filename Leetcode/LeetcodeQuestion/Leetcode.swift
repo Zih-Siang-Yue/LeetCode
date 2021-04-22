@@ -160,24 +160,6 @@ class Leetcode {
         let happyNum = isHappy(37)
         print("leetcode202 output: \(happyNum)")
         
-        //203
-        let listNodeR1 = ListNode(1)
-        let listNodeR2 = ListNode(2)
-        let listNodeR3 = ListNode(6)
-        let listNodeR4 = ListNode(3)
-        let listNodeR5 = ListNode(4)
-        let listNodeR6 = ListNode(5)
-        let listNodeR7 = ListNode(6)
-        listNodeR1.next = listNodeR2
-        listNodeR2.next = listNodeR3
-        listNodeR3.next = listNodeR4
-        listNodeR4.next = listNodeR5
-        listNodeR5.next = listNodeR6
-        listNodeR6.next = listNodeR7
-
-        let removeListNodeElements = removeElements(listNodeR1, 6)
-        print("leetcode203 output: \(String(describing: removeListNodeElements))")
-        
         //204
         let primes = countPrimes(10)
         print("leetcode204 output: \(primes)")
@@ -1347,14 +1329,6 @@ class Leetcode {
             num /= 10
         }
         return sum
-    }
-    
-    //Leetcode - 203 Remove Linked List Elements
-    func removeElements(_ head: ListNode?, _ val: Int) -> ListNode? {
-        if head == nil { return nil }
-        if head?.val == val { return removeElements(head?.next, val) }
-        head?.next = removeElements(head?.next, val)
-        return head
     }
     
     //Leetcode - 204 Count Primes

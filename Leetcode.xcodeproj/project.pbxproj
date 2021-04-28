@@ -13,6 +13,8 @@
 		BC824262217B175D0011CA7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC824261217B175D0011CA7F /* Assets.xcassets */; };
 		BC824265217B175D0011CA7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC824263217B175D0011CA7F /* LaunchScreen.storyboard */; };
 		BC824270217B175E0011CA7F /* LeetcodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC82426F217B175E0011CA7F /* LeetcodeTests.swift */; };
+		F001B57A2639402B00EDFD39 /* Q78-Subsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = F001B5792639402B00EDFD39 /* Q78-Subsets.swift */; };
+		F001B57E2639437100EDFD39 /* Q78-Subsets_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F001B57D2639437100EDFD39 /* Q78-Subsets_Test.swift */; };
 		F00EE6362543D3EF004B5864 /* Q18-4Sum.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00EE6352543D3EF004B5864 /* Q18-4Sum.swift */; };
 		F00EE63825440274004B5864 /* Q219_ContainsDuplicateII.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00EE63725440274004B5864 /* Q219_ContainsDuplicateII.swift */; };
 		F0194716254FD8A900F1AA09 /* Q404-SumOfLeftLeaves.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0194715254FD8A900F1AA09 /* Q404-SumOfLeftLeaves.swift */; };
@@ -185,6 +187,8 @@
 		BC82426B217B175E0011CA7F /* LeetcodeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeetcodeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC82426F217B175E0011CA7F /* LeetcodeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeetcodeTests.swift; sourceTree = "<group>"; };
 		BC824271217B175E0011CA7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F001B5792639402B00EDFD39 /* Q78-Subsets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q78-Subsets.swift"; sourceTree = "<group>"; };
+		F001B57D2639437100EDFD39 /* Q78-Subsets_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q78-Subsets_Test.swift"; sourceTree = "<group>"; };
 		F00EE6352543D3EF004B5864 /* Q18-4Sum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q18-4Sum.swift"; sourceTree = "<group>"; };
 		F00EE63725440274004B5864 /* Q219_ContainsDuplicateII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Q219_ContainsDuplicateII.swift; path = Leetcode/LeetcodeQuestion/Medium/Array/Q219_ContainsDuplicateII.swift; sourceTree = SOURCE_ROOT; };
 		F0194715254FD8A900F1AA09 /* Q404-SumOfLeftLeaves.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q404-SumOfLeftLeaves.swift"; sourceTree = "<group>"; };
@@ -662,6 +666,7 @@
 				F02A3263255ADFF400230EE9 /* Q62-UniquePaths.swift */,
 				F04989DE255F85A900FDE8DC /* Q40-CombinationSumII.swift */,
 				F0D4EE4125FB4EFB00037B39 /* Q238-ProductofArrayExceptSelf.swift */,
+				F001B5792639402B00EDFD39 /* Q78-Subsets.swift */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -943,6 +948,7 @@
 				F0D623632578F405004AF4AD /* Q48_RotateImage_Test.swift */,
 				F0D623652578F63B004AF4AD /* Q62-UniquePaths_Test.swift */,
 				F0D4EE4525FB507900037B39 /* Q238-ProductofArrayExceptSelf_Test.swift */,
+				F001B57D2639437100EDFD39 /* Q78-Subsets_Test.swift */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -1188,6 +1194,7 @@
 				F00EE63825440274004B5864 /* Q219_ContainsDuplicateII.swift in Sources */,
 				F09453D8259C92C5004042AC /* Q925-LongPressedName.swift in Sources */,
 				F0D4EED7260D8F0400037B39 /* Q453-MinimumMovestoEqualArrayElements.swift in Sources */,
+				F001B57A2639402B00EDFD39 /* Q78-Subsets.swift in Sources */,
 				F09453192592E868004042AC /* Q551-StudentAttendanceRecord1.swift in Sources */,
 				F058E90D25467BCD002885CC /* Q392_IsSubsequence.swift in Sources */,
 				F0BECF6A25F0C560004960D9 /* Q119-PascalsTriangle2.swift in Sources */,
@@ -1270,6 +1277,7 @@
 				F0BECE3725DD0226004960D9 /* Q696-CountBinarySubstrings_Test.swift in Sources */,
 				F0D4EE9F260B1C9C00037B39 /* KKDay_1_Test.swift in Sources */,
 				F0D4EEBF260C39E400037B39 /* Q1694-ReformatPhoneNumber_Test.swift in Sources */,
+				F001B57E2639437100EDFD39 /* Q78-Subsets_Test.swift in Sources */,
 				F0D4EE8226049BFC00037B39 /* Q409-LongestPalindrome_Test.swift in Sources */,
 				F0E41CC126314F800083ABAF /* Q203-RemoveLinkedListElements_Test.swift in Sources */,
 				F0D4EDFE25F7500500037B39 /* Q561-ArrayPartition_Test.swift in Sources */,

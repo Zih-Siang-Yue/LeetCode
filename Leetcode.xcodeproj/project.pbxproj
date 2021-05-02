@@ -159,6 +159,8 @@
 		F0F28C38263E63F90060C328 /* Q20-ValidParentheses_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F28C37263E63F90060C328 /* Q20-ValidParentheses_Test.swift */; };
 		F0F28C3E263E65DC0060C328 /* Q26-RemoveDuplicatesfromSortedArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F28C3D263E65DC0060C328 /* Q26-RemoveDuplicatesfromSortedArray.swift */; };
 		F0F28C42263E66340060C328 /* Q26-RemoveDuplicatesfromSortedArray_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F28C41263E66340060C328 /* Q26-RemoveDuplicatesfromSortedArray_Test.swift */; };
+		F0F28C46263E680D0060C328 /* Q27-RemoveElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F28C45263E680D0060C328 /* Q27-RemoveElement.swift */; };
+		F0F28C4A263E68A00060C328 /* Q27-RemoveElement_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F28C49263E68A00060C328 /* Q27-RemoveElement_Test.swift */; };
 		F0FDA5E625621E6500522381 /* Q11-ContainerWithMostWater_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FDA5E525621E6500522381 /* Q11-ContainerWithMostWater_Test.swift */; };
 /* End PBXBuildFile section */
 
@@ -327,6 +329,8 @@
 		F0F28C37263E63F90060C328 /* Q20-ValidParentheses_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q20-ValidParentheses_Test.swift"; sourceTree = "<group>"; };
 		F0F28C3D263E65DC0060C328 /* Q26-RemoveDuplicatesfromSortedArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q26-RemoveDuplicatesfromSortedArray.swift"; sourceTree = "<group>"; };
 		F0F28C41263E66340060C328 /* Q26-RemoveDuplicatesfromSortedArray_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q26-RemoveDuplicatesfromSortedArray_Test.swift"; sourceTree = "<group>"; };
+		F0F28C45263E680D0060C328 /* Q27-RemoveElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q27-RemoveElement.swift"; sourceTree = "<group>"; };
+		F0F28C49263E68A00060C328 /* Q27-RemoveElement_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q27-RemoveElement_Test.swift"; sourceTree = "<group>"; };
 		F0FDA5E525621E6500522381 /* Q11-ContainerWithMostWater_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q11-ContainerWithMostWater_Test.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -502,6 +506,7 @@
 				F0D4EE1525F9F01900037B39 /* Q985-SumofEvenNumbersAfterQueries.swift */,
 				F0F28BFA263E542C0060C328 /* Q1-TwoSum .swift */,
 				F0F28C3D263E65DC0060C328 /* Q26-RemoveDuplicatesfromSortedArray.swift */,
+				F0F28C45263E680D0060C328 /* Q27-RemoveElement.swift */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -852,6 +857,7 @@
 				F0D4EE1925F9F1C500037B39 /* Q985-SumofEvenNumbersAfterQueries_Test.swift */,
 				F0F28BFE263E54E40060C328 /* Q1-TwoSum_Test.swift */,
 				F0F28C41263E66340060C328 /* Q26-RemoveDuplicatesfromSortedArray_Test.swift */,
+				F0F28C49263E68A00060C328 /* Q27-RemoveElement_Test.swift */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -1166,6 +1172,7 @@
 				F0D62368257F1AFC004AF4AD /* Q415-AddStrings.swift in Sources */,
 				F09452E2259085E5004042AC /* Q459-RepeatedSubstringPattern.swift in Sources */,
 				F058E8F2254288D0002885CC /* Executable.swift in Sources */,
+				F0F28C46263E680D0060C328 /* Q27-RemoveElement.swift in Sources */,
 				F02A3266255AE0DB00230EE9 /* Q412-FizzBuzz.swift in Sources */,
 				F0E1186D263BEA1B005AAC68 /* Q203-RemoveLinkedListElements.swift in Sources */,
 				F0BECE5C25E35856004960D9 /* Q929-UniqueEmailAddresses.swift in Sources */,
@@ -1279,6 +1286,7 @@
 				F0BECF7025F0C71B004960D9 /* Q119-PascalsTriangle2_Test.swift in Sources */,
 				F0D4EE6326007FA700037B39 /* Q961-N-RepeatedElementinSize2NArray_Test.swift in Sources */,
 				F0BECF4125EE1190004960D9 /* Q832-FlippinganImage_Test.swift in Sources */,
+				F0F28C4A263E68A00060C328 /* Q27-RemoveElement_Test.swift in Sources */,
 				F0D4EED3260D81AB00037B39 /* Q876-MiddleoftheLinkedList_Test.swift in Sources */,
 				F09453DC259C9A67004042AC /* Q925_LongPressedName_Test.swift in Sources */,
 				F0D4CC0825F5FC4A007CEC68 /* Q867-TransposeMatrix_Test.swift in Sources */,

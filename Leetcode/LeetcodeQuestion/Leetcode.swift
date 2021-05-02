@@ -44,12 +44,7 @@ class Leetcode {
         //5
         let longestPalind = longestPalindrome("bb")
         print("leetcode5 output: \(longestPalind)")
-        
-        //27
-        var elements = [2, 3, 3, 2]
-        let elementsAreRemoved = removeElement(&elements, 2)
-        print("leetcode27 output: \(elementsAreRemoved)")
-        
+                
         //28
         let subWhere = strStr("aaaaa", "bba")
         print("leetcode28 output: \(subWhere)")
@@ -470,35 +465,6 @@ class Leetcode {
     func isPalindrome(str: String) -> Bool {
         let rStr = String(str.reversed())
         return str == rStr ? true : false
-    }
-    
-    //Leetcode 27 - Remove Element
-    func removeElement(_ nums: inout [Int], _ val: Int) -> Int {
-        return removeElementSolution2(&nums, val)
-        //return removeElementSolution1(&nums, val)
-    }
-    
-    func removeElementSolution1(_ nums: inout [Int], _ val: Int) -> Int {
-        var ary = [Int]()
-        for value in nums {
-            if value != val {
-                ary.append(value)
-            }
-        }
-        nums = ary
-        return nums.count
-    }
-    
-    func removeElementSolution2(_ nums: inout [Int], _ val: Int) -> Int {
-        //Without array
-        var i = 0
-        for j in nums.indices {
-            if nums[j] != val {
-                nums[i] = nums[j]
-                i += 1
-            }
-        }
-        return nums.count
     }
     
     //Leetcode - 28 Implement strStr

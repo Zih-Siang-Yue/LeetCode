@@ -149,6 +149,8 @@
 		F0F28C09263E59C90060C328 /* Q7-ReverseInteger_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F28C08263E59C90060C328 /* Q7-ReverseInteger_Test.swift */; };
 		F0F28C0D263E5D0F0060C328 /* Q9-PalindromeNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F28C0C263E5D0F0060C328 /* Q9-PalindromeNumber.swift */; };
 		F0F28C11263E5E0F0060C328 /* Q9-PalindromeNumber_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F28C10263E5E0F0060C328 /* Q9-PalindromeNumber_Test.swift */; };
+		F0F28C17263E5F500060C328 /* Q12-IntegertoRoman.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F28C16263E5F500060C328 /* Q12-IntegertoRoman.swift */; };
+		F0F28C1B263E5F980060C328 /* Q12-IntegertoRoman_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F28C1A263E5F980060C328 /* Q12-IntegertoRoman_Test.swift */; };
 		F0FDA5E625621E6500522381 /* Q11-ContainerWithMostWater_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FDA5E525621E6500522381 /* Q11-ContainerWithMostWater_Test.swift */; };
 /* End PBXBuildFile section */
 
@@ -307,6 +309,8 @@
 		F0F28C08263E59C90060C328 /* Q7-ReverseInteger_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q7-ReverseInteger_Test.swift"; sourceTree = "<group>"; };
 		F0F28C0C263E5D0F0060C328 /* Q9-PalindromeNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q9-PalindromeNumber.swift"; sourceTree = "<group>"; };
 		F0F28C10263E5E0F0060C328 /* Q9-PalindromeNumber_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q9-PalindromeNumber_Test.swift"; sourceTree = "<group>"; };
+		F0F28C16263E5F500060C328 /* Q12-IntegertoRoman.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Q12-IntegertoRoman.swift"; path = "../../../../../../../../Q12-IntegertoRoman.swift"; sourceTree = "<group>"; };
+		F0F28C1A263E5F980060C328 /* Q12-IntegertoRoman_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q12-IntegertoRoman_Test.swift"; sourceTree = "<group>"; };
 		F0FDA5E525621E6500522381 /* Q11-ContainerWithMostWater_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q11-ContainerWithMostWater_Test.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -610,6 +614,7 @@
 			isa = PBXGroup;
 			children = (
 				F09453B4259AD174004042AC /* Q38-CountandSay.swift */,
+				F0F28C16263E5F500060C328 /* Q12-IntegertoRoman.swift */,
 			);
 			path = String;
 			sourceTree = "<group>";
@@ -813,6 +818,7 @@
 			isa = PBXGroup;
 			children = (
 				F0BECE4725DF9FF9004960D9 /* Q38-CountandSay_Test.swift */,
+				F0F28C1A263E5F980060C328 /* Q12-IntegertoRoman_Test.swift */,
 			);
 			path = String;
 			sourceTree = "<group>";
@@ -1194,6 +1200,7 @@
 				F04989E12562C44200FDE8DC /* Q414-ThirdMaximumNumber.swift in Sources */,
 				F058E9012542D90F002885CC /* Q3-LongestSubstringWithoutRepeatingCharacters.swift in Sources */,
 				F09453B5259AD174004042AC /* Q38-CountandSay.swift in Sources */,
+				F0F28C17263E5F500060C328 /* Q12-IntegertoRoman.swift in Sources */,
 				F0D4EE7E260497C800037B39 /* Q409-LongestPalindrome.swift in Sources */,
 				F0D4CBF825F21EFD007CEC68 /* Q830-PositionsofLargeGroups.swift in Sources */,
 				F0E41C87262E6F2A0083ABAF /* Q24-SwapNodesinPairs.swift in Sources */,
@@ -1248,6 +1255,7 @@
 				BC824270217B175E0011CA7F /* LeetcodeTests.swift in Sources */,
 				F0D623642578F405004AF4AD /* Q48_RotateImage_Test.swift in Sources */,
 				F09453FE259DAE19004042AC /* Q345_ReverseVowelsofaString_Test.swift in Sources */,
+				F0F28C1B263E5F980060C328 /* Q12-IntegertoRoman_Test.swift in Sources */,
 				F0BECF3925EDE92B004960D9 /* Q922-SortArraybyParity_Test.swift in Sources */,
 				F094531D25931BB2004042AC /* Q551_StudentAttendanceRecord1_Test.swift in Sources */,
 				F0E41C96262E78CA0083ABAF /* Q100-SameTree_Test.swift in Sources */,

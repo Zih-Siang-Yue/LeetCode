@@ -49,10 +49,6 @@ class Leetcode {
         let longestPalind = longestPalindrome("bb")
         print("leetcode5 output: \(longestPalind)")
         
-        //12
-        let romanStr:String = intToRoman(3)
-        print("leetcode12 output:\(romanStr)")
-        
         //13
         let romanInt:Int = romanToInt("D")
         print("leetcode13 output: \(romanInt)")
@@ -507,18 +503,7 @@ class Leetcode {
         let rStr = String(str.reversed())
         return str == rStr ? true : false
     }
-    
-    //Leetcode - 12, Int 轉換成羅馬數字
-    func intToRoman(_ num: Int) -> String {   ///3425 -> MMMCDXXV
-        //1. 先將10的倍數值都寫成ary
-        //2. 將int / 1000的倍數 + (int % 1000) / 100 + (int % 100 / 10) + int % 10
-        let M:[String] = ["", "M", "MM", "MMM"];
-        let C:[String] = ["", "C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM"];
-        let X:[String] = ["", "X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC"];
-        let I:[String] = ["", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"];
-        return M[num/1000] + C[(num%1000)/100] + X[(num%100)/10] + I[num%10];
-    }
-    
+ 
     //Leetcode - 13, 羅馬數字轉換成Int
     func romanToInt(_ s: String) -> Int {   // D
         let dic:[String: Int] = ["I": 1,

@@ -155,6 +155,8 @@
 		F0F28C25263E60D80060C328 /* Q13-RomantoInteger_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F28C24263E60D80060C328 /* Q13-RomantoInteger_Test.swift */; };
 		F0F28C2A263E62680060C328 /* Q14-LongestCommonPrefix.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F28C29263E62680060C328 /* Q14-LongestCommonPrefix.swift */; };
 		F0F28C2E263E62C90060C328 /* Q14-LongestCommonPrefix_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F28C2D263E62C90060C328 /* Q14-LongestCommonPrefix_Test.swift */; };
+		F0F28C33263E63A00060C328 /* Q20-ValidParentheses.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F28C32263E63A00060C328 /* Q20-ValidParentheses.swift */; };
+		F0F28C38263E63F90060C328 /* Q20-ValidParentheses_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F28C37263E63F90060C328 /* Q20-ValidParentheses_Test.swift */; };
 		F0FDA5E625621E6500522381 /* Q11-ContainerWithMostWater_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FDA5E525621E6500522381 /* Q11-ContainerWithMostWater_Test.swift */; };
 /* End PBXBuildFile section */
 
@@ -319,6 +321,8 @@
 		F0F28C24263E60D80060C328 /* Q13-RomantoInteger_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q13-RomantoInteger_Test.swift"; sourceTree = "<group>"; };
 		F0F28C29263E62680060C328 /* Q14-LongestCommonPrefix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q14-LongestCommonPrefix.swift"; sourceTree = "<group>"; };
 		F0F28C2D263E62C90060C328 /* Q14-LongestCommonPrefix_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q14-LongestCommonPrefix_Test.swift"; sourceTree = "<group>"; };
+		F0F28C32263E63A00060C328 /* Q20-ValidParentheses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q20-ValidParentheses.swift"; sourceTree = "<group>"; };
+		F0F28C37263E63F90060C328 /* Q20-ValidParentheses_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q20-ValidParentheses_Test.swift"; sourceTree = "<group>"; };
 		F0FDA5E525621E6500522381 /* Q11-ContainerWithMostWater_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q11-ContainerWithMostWater_Test.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -428,7 +432,7 @@
 				F058E8CC25428645002885CC /* HashTable */,
 				F058E8D6254286E8002885CC /* Heap */,
 				F058E8CE2542865F002885CC /* Math */,
-				F058E8D5254286DD002885CC /* Stack */,
+				F0F28C31263E638A0060C328 /* Stack */,
 				F058E8D4254286BC002885CC /* String */,
 				F058E8CF25428663002885CC /* TwoPointers */,
 				F043BCF92568B67E00B14544 /* BitManipulation  */,
@@ -578,13 +582,6 @@
 				F0F28C29263E62680060C328 /* Q14-LongestCommonPrefix.swift */,
 			);
 			path = String;
-			sourceTree = "<group>";
-		};
-		F058E8D5254286DD002885CC /* Stack */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Stack;
 			sourceTree = "<group>";
 		};
 		F058E8D6254286E8002885CC /* Heap */ = {
@@ -794,6 +791,7 @@
 		F09452C925907DA1004042AC /* Easy */ = {
 			isa = PBXGroup;
 			children = (
+				F0F28C36263E63EB0060C328 /* Stack */,
 				F09452CA25907DA8004042AC /* String */,
 				F0BECE7125E4F422004960D9 /* Array */,
 				F0D4EE6626007FAA00037B39 /* HashTable */,
@@ -1033,6 +1031,22 @@
 			path = LeetcodeQuestion;
 			sourceTree = "<group>";
 		};
+		F0F28C31263E638A0060C328 /* Stack */ = {
+			isa = PBXGroup;
+			children = (
+				F0F28C32263E63A00060C328 /* Q20-ValidParentheses.swift */,
+			);
+			path = Stack;
+			sourceTree = "<group>";
+		};
+		F0F28C36263E63EB0060C328 /* Stack */ = {
+			isa = PBXGroup;
+			children = (
+				F0F28C37263E63F90060C328 /* Q20-ValidParentheses_Test.swift */,
+			);
+			path = Stack;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1216,6 +1230,7 @@
 				F09453B5259AD174004042AC /* Q38-CountandSay.swift in Sources */,
 				F0F28C17263E5F500060C328 /* Q12-IntegertoRoman.swift in Sources */,
 				F0D4EE7E260497C800037B39 /* Q409-LongestPalindrome.swift in Sources */,
+				F0F28C33263E63A00060C328 /* Q20-ValidParentheses.swift in Sources */,
 				F0D4CBF825F21EFD007CEC68 /* Q830-PositionsofLargeGroups.swift in Sources */,
 				F0E41C87262E6F2A0083ABAF /* Q24-SwapNodesinPairs.swift in Sources */,
 				F0D4EE762603347E00037B39 /* Q1365-HowManyNumbersAreSmallerThantheCurrentNumber.swift in Sources */,
@@ -1269,6 +1284,7 @@
 				F0E41C8C262E716B0083ABAF /* Q24-SwapNodesinPairs_Test.swift in Sources */,
 				F0D4EE5625FF37B700037B39 /* Q347-TopKFrequentElements_Test.swift in Sources */,
 				BC824270217B175E0011CA7F /* LeetcodeTests.swift in Sources */,
+				F0F28C38263E63F90060C328 /* Q20-ValidParentheses_Test.swift in Sources */,
 				F0D623642578F405004AF4AD /* Q48_RotateImage_Test.swift in Sources */,
 				F09453FE259DAE19004042AC /* Q345_ReverseVowelsofaString_Test.swift in Sources */,
 				F0F28C1B263E5F980060C328 /* Q12-IntegertoRoman_Test.swift in Sources */,

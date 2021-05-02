@@ -17,10 +17,6 @@ class Leetcode {
     }
     
     func execute() {
-        //0.0
-        let length = removeElement([1, 2, 4, 4, 6, 7, 8, 8], element: 6)
-        print("leetcode0.0 output: \(length)")
-        
         //0.1
         let duplicates1 = removeDuplicates([1, 2, 2, 2, 3, 3, 4])
         print("leetcode0.1 output: \(duplicates1)")
@@ -48,11 +44,6 @@ class Leetcode {
         //5
         let longestPalind = longestPalindrome("bb")
         print("leetcode5 output: \(longestPalind)")
-                        
-        //26
-        var duplicates = [1, 1, 2]
-        let removeDuplicatesLen = removeDuplicates(&duplicates)
-        print("leetcode26 output: \(removeDuplicatesLen)")
         
         //27
         var elements = [2, 3, 3, 2]
@@ -236,17 +227,6 @@ class Leetcode {
         let factorList = factors(of: 16)
         print("all factors: \(factorList)")
 
-    }
-    
-    //Leetcode - 0.0 移除指定Int remove element, 回傳移除之後的陣列數
-    func removeElement(_ ary:[Int], element:Int) -> Int {
-        var mAry = ary
-        for (i, value) in mAry.enumerated() {
-            if value == element {
-                mAry.remove(at: i)
-            }
-        }
-        return mAry.count
     }
     
     //Leetcode - 0.1 移除重複的值 remove duplicates
@@ -490,21 +470,6 @@ class Leetcode {
     func isPalindrome(str: String) -> Bool {
         let rStr = String(str.reversed())
         return str == rStr ? true : false
-    }
-    
-    //Leetcode - 26    //Almost the same as No.0.1
-    func removeDuplicates(_ nums: inout [Int]) -> Int {
-        if nums.count == 0 { return 0 }
-        
-        var j = 0
-        for i in 1..<nums.count {
-            if nums[j] != nums[i] {
-                j += 1
-                nums[j] = nums[i]
-            }
-        }
-        nums = Array(nums[...j])
-        return nums.count
     }
     
     //Leetcode 27 - Remove Element

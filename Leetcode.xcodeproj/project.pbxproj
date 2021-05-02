@@ -157,6 +157,8 @@
 		F0F28C2E263E62C90060C328 /* Q14-LongestCommonPrefix_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F28C2D263E62C90060C328 /* Q14-LongestCommonPrefix_Test.swift */; };
 		F0F28C33263E63A00060C328 /* Q20-ValidParentheses.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F28C32263E63A00060C328 /* Q20-ValidParentheses.swift */; };
 		F0F28C38263E63F90060C328 /* Q20-ValidParentheses_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F28C37263E63F90060C328 /* Q20-ValidParentheses_Test.swift */; };
+		F0F28C3E263E65DC0060C328 /* Q26-RemoveDuplicatesfromSortedArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F28C3D263E65DC0060C328 /* Q26-RemoveDuplicatesfromSortedArray.swift */; };
+		F0F28C42263E66340060C328 /* Q26-RemoveDuplicatesfromSortedArray_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F28C41263E66340060C328 /* Q26-RemoveDuplicatesfromSortedArray_Test.swift */; };
 		F0FDA5E625621E6500522381 /* Q11-ContainerWithMostWater_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FDA5E525621E6500522381 /* Q11-ContainerWithMostWater_Test.swift */; };
 /* End PBXBuildFile section */
 
@@ -323,6 +325,8 @@
 		F0F28C2D263E62C90060C328 /* Q14-LongestCommonPrefix_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q14-LongestCommonPrefix_Test.swift"; sourceTree = "<group>"; };
 		F0F28C32263E63A00060C328 /* Q20-ValidParentheses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q20-ValidParentheses.swift"; sourceTree = "<group>"; };
 		F0F28C37263E63F90060C328 /* Q20-ValidParentheses_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q20-ValidParentheses_Test.swift"; sourceTree = "<group>"; };
+		F0F28C3D263E65DC0060C328 /* Q26-RemoveDuplicatesfromSortedArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q26-RemoveDuplicatesfromSortedArray.swift"; sourceTree = "<group>"; };
+		F0F28C41263E66340060C328 /* Q26-RemoveDuplicatesfromSortedArray_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q26-RemoveDuplicatesfromSortedArray_Test.swift"; sourceTree = "<group>"; };
 		F0FDA5E525621E6500522381 /* Q11-ContainerWithMostWater_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q11-ContainerWithMostWater_Test.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -497,6 +501,7 @@
 				F0D4EDF925F74F2F00037B39 /* Q561-ArrayPartition.swift */,
 				F0D4EE1525F9F01900037B39 /* Q985-SumofEvenNumbersAfterQueries.swift */,
 				F0F28BFA263E542C0060C328 /* Q1-TwoSum .swift */,
+				F0F28C3D263E65DC0060C328 /* Q26-RemoveDuplicatesfromSortedArray.swift */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -846,6 +851,7 @@
 				F0D4EDFD25F7500500037B39 /* Q561-ArrayPartition_Test.swift */,
 				F0D4EE1925F9F1C500037B39 /* Q985-SumofEvenNumbersAfterQueries_Test.swift */,
 				F0F28BFE263E54E40060C328 /* Q1-TwoSum_Test.swift */,
+				F0F28C41263E66340060C328 /* Q26-RemoveDuplicatesfromSortedArray_Test.swift */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -1214,6 +1220,7 @@
 				F09453B9259AD8E3004042AC /* Q917-ReverseOnlyLetters.swift in Sources */,
 				F02A3259254EB32800230EE9 /* Q17-LetterCombinationsOfAPhoneNumber.swift in Sources */,
 				F00EE6362543D3EF004B5864 /* Q18-4Sum.swift in Sources */,
+				F0F28C3E263E65DC0060C328 /* Q26-RemoveDuplicatesfromSortedArray.swift in Sources */,
 				F0E80F562342F9AC00808912 /* ClosurePractice.swift in Sources */,
 				F0D4EEBB260C399F00037B39 /* Q1694-ReformatPhoneNumber.swift in Sources */,
 				F0BECE6A25E4EE98004960D9 /* Q566-ReshapetheMatrix.swift in Sources */,
@@ -1244,6 +1251,7 @@
 			files = (
 				F0BECE6E25E4F41E004960D9 /* Q566-ReshapetheMatrix_Test.swift in Sources */,
 				F0D623602578EBEF004AF4AD /* Q18-4Sum_Test.swift in Sources */,
+				F0F28C42263E66340060C328 /* Q26-RemoveDuplicatesfromSortedArray_Test.swift in Sources */,
 				F0D623622578F105004AF4AD /* Q39_CombinationSum_Test.swift in Sources */,
 				F0F28C25263E60D80060C328 /* Q13-RomantoInteger_Test.swift in Sources */,
 				F0D4EE922608749800037B39 /* Q1103-DistributeCandiestoPeople_Test.swift in Sources */,

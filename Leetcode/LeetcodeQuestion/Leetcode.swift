@@ -48,11 +48,7 @@ class Leetcode {
         //5
         let longestPalind = longestPalindrome("bb")
         print("leetcode5 output: \(longestPalind)")
-        
-        //13
-        let romanInt:Int = romanToInt("D")
-        print("leetcode13 output: \(romanInt)")
-        
+                
         //14
         let longestPrefix:String = longestCommonPrefix(["leetcode", "leet", "lee", "lean"])
         print("leetcode14 ouput: \(longestPrefix)")
@@ -502,41 +498,6 @@ class Leetcode {
     func isPalindrome(str: String) -> Bool {
         let rStr = String(str.reversed())
         return str == rStr ? true : false
-    }
- 
-    //Leetcode - 13, 羅馬數字轉換成Int
-    func romanToInt(_ s: String) -> Int {   // D
-        let dic:[String: Int] = ["I": 1,
-                                 "V": 5,
-                                 "X": 10,
-                                 "L": 50,
-                                 "C": 100,
-                                 "D": 500,
-                                 "M": 1000]
-        
-        if s.count == 0 {
-            return 0
-        }
-        
-        let range = s.index(before: s.endIndex)
-        var sum = dic[String(s[range])]!
-        if s.count < 2 {
-            return sum
-        }
-        
-        for i in 2 ... s.count {
-            let range1 = s.index(s.endIndex, offsetBy: -i)
-            let range2 = s.index(s.endIndex, offsetBy: -i+1)
-            
-            if dic[String(s[range1])]! < dic[String(s[range2])]! {
-                sum -= dic[String(s[range1])]!
-            }
-            else {
-                sum += dic[String(s[range1])]!
-            }
-        }
-        
-        return sum;
     }
     
     //Leetcode - 14

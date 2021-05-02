@@ -49,10 +49,6 @@ class Leetcode {
         let longestPalind = longestPalindrome("bb")
         print("leetcode5 output: \(longestPalind)")
                 
-        //14
-        let longestPrefix:String = longestCommonPrefix(["leetcode", "leet", "lee", "lean"])
-        print("leetcode14 ouput: \(longestPrefix)")
-                
         //20
         let isValid = isValidParentheses("[](){}")
         print("leetcode20 output: \(isValid)")
@@ -498,32 +494,6 @@ class Leetcode {
     func isPalindrome(str: String) -> Bool {
         let rStr = String(str.reversed())
         return str == rStr ? true : false
-    }
-    
-    //Leetcode - 14
-    func longestCommonPrefix(_ strs: [String]) -> String {  //["leetcode", "leet", "lee", "lean"]
-        //1. 找到strs 裡最小的值, 並把它當作longestPrefix
-        //2. for loop strs
-        //3. 當 ！str[i].hasPrefex(目前最長的Prefix),longestPrefix.count > 0 進入迴圈 -> longestPrefix.removeLast()
-        //4. 在for loop裡面 若longestPrefix.count == 0 -> return "" 因為沒有相同的prefix
-        //5. 跳出for loop後 回傳longestPrefix
-        
-        guard let shortest = strs.min() else {
-            return "no prefix"
-        }
-        
-        var longestPrefix:String = shortest
-        
-        for str in strs {
-            
-            while !str.hasPrefix(longestPrefix), longestPrefix.count > 0 {
-                longestPrefix.removeLast()
-            }
-            
-            if longestPrefix.count == 0 { return longestPrefix }
-        }
-        
-        return longestPrefix
     }
     
     //Leetcode - 20

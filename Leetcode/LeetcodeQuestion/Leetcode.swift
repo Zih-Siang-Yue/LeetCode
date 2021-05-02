@@ -49,10 +49,6 @@ class Leetcode {
         let longestPalind = longestPalindrome("bb")
         print("leetcode5 output: \(longestPalind)")
         
-        //7
-        let rInt = reverseInt(-35983)
-        print("leetcode7 output: \(rInt)")
-        
         //9
         let isPalind:Bool = isPalindrome(1221)
         print("leetcode9 output: \(isPalind)")
@@ -514,29 +510,6 @@ class Leetcode {
     func isPalindrome(str: String) -> Bool {
         let rStr = String(str.reversed())
         return str == rStr ? true : false
-    }
-    
-    //Leetcode - 7, Int 反轉後仍是正常的Int
-    func reverseInt(_ x: Int) -> Int {
-        //1.先new reverse:Int
-        //2.當原本的值 == 0 -> 不再近迴圈, 所以 while origin != 0
-        //3.reverse = reverse * 10 + origin % 10
-        //4.origin /= 10
-        var origin = x
-        var reverse:Int = 0
-        while origin != 0 {
-            let remain = origin % 10
-            origin /= 10
-            //        if (reverse > Int.max / 10 || (reverse == Int.max / 10 && remain > 7)) {
-            //          return 0
-            //        }
-            //        if (reverse < Int.max / 10 || (reverse == Int.max / 10 && remain < -8)) {
-            //            return 0
-            //        }
-            
-            reverse = reverse * 10 + remain
-        }
-        return reverse
     }
     
     //Leetcode - 9, 判斷Int是否對稱

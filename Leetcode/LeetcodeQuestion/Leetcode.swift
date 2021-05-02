@@ -45,10 +45,6 @@ class Leetcode {
         let closest3 = sum3Closest(nums: [-2, 6, 0, 9, -4, 2, 7], target: 20)
         print("leetcode0.9 output: \(closest3)")
         
-        //1
-        let sumIndexes = twoSum([2, 7, 11, 18], 9)
-        print("leetcode1 output: \(sumIndexes)")
-                
         //5
         let longestPalind = longestPalindrome("bb")
         print("leetcode5 output: \(longestPalind)")
@@ -488,26 +484,6 @@ class Leetcode {
         }
         return min(ary[start], ary[stop])
     }
-    
-    //Leetcode - 1, ary裡的兩個數目加總 = target
-    func twoSum(_ nums: [Int], _ target: Int) -> [Int] {    //[2, 7, 11, 18], 18
-        //1.for loop
-        //2.key為target - ary[i]
-        //3.若dic裡面有此key -> 回傳, 若無 存入dic [原本的值, 索引值]
-        var dic:[Int:Int] = [Int:Int]()
-        for i in 0 ..< nums.count {
-            let key:Int = target - nums[i]
-            if dic[key] != nil {
-                return [dic[key]!, i]
-            }
-            else {
-                dic[nums[i]] = i
-            }
-        }
-        return [0]
-    }
-
-    
     
     
     //Leetcode - 5

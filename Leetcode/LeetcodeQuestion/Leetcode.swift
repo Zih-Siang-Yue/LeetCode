@@ -44,11 +44,7 @@ class Leetcode {
         //5
         let longestPalind = longestPalindrome("bb")
         print("leetcode5 output: \(longestPalind)")
-                
-        //28
-        let subWhere = strStr("aaaaa", "bba")
-        print("leetcode28 output: \(subWhere)")
-        
+                        
         //35
         let insertTarget = searchInsert([1, 3, 5, 6], 5)
         print("leetcode35 output: \(insertTarget)")
@@ -465,99 +461,6 @@ class Leetcode {
     func isPalindrome(str: String) -> Bool {
         let rStr = String(str.reversed())
         return str == rStr ? true : false
-    }
-    
-    //Leetcode - 28 Implement strStr
-    func strStr(_ haystack: String, _ needle: String) -> Int {
-        return strStrSolution0(haystack, needle)
-        return strStrSolution1(haystack, needle)
-        return strStrSolution2(haystack, needle)
-        return strStrSolution3(haystack, needle)
-    }
-    
-    func strStrSolution0(_ haystack: String, _ needle: String) -> Int {
-        // Runtime: 12 ms
-        if haystack.isEmpty {
-            if needle.isEmpty { return 0 }
-            return -1
-        }
-        
-        if needle.isEmpty { return 0 }
-        
-        let needleCount = needle.count
-        var start = 0
-        var end = needleCount - 1
-        while end < haystack.count {
-            let startIndex = haystack.index(haystack.startIndex, offsetBy: start)
-            let endIndex = haystack.index(haystack.startIndex, offsetBy: end)
-            let substring = haystack[startIndex...endIndex]
-            if substring == needle {
-                return start
-            }
-            
-            start += 1
-            end += 1
-        }
-        
-        return -1
-    }
-    
-    func strStrSolution1(_ haystack: String, _ needle: String) -> Int {
-        // Time Limit Exceeded
-        if needle.count == 0 {
-            return 0
-        }
-        if needle.count > haystack.count {
-            return -1
-        }
-        
-        let hStr = haystack
-        let nStr = needle
-        var i = 0
-        var j = 0
-        
-        while i < hStr.count {
-            if hStr[i] == nStr[j] {
-                j += 1
-                if j == nStr.count {
-                    return i - j + 1
-                }
-            } else {
-                i -= j
-                j = 0
-            }
-            i += 1
-        }
-        
-        return -1
-    }
-    
-    func strStrSolution2(_ haystack: String, _ needle: String) -> Int {
-        // Time Limit Exceeded
-        if needle.isEmpty {
-            return 0
-        }
-        else if let range = haystack.range(of: needle) {
-            return haystack.distance(from: haystack.startIndex, to: range.lowerBound)
-        }
-        return -1
-    }
-    
-    func strStrSolution3(_ haystack: String, _ needle: String) -> Int {
-        // Time Limit Exceeded
-        if needle.isEmpty { return 0 }
-        if haystack.count < needle.count { return -1 }
-        if haystack.contains(needle) {
-            for i in 0 ..< haystack.count {
-                let left = haystack.index(haystack.startIndex, offsetBy: i)
-                let right = haystack.index(haystack.startIndex, offsetBy: i + needle.count)
-                let subStr:String = String(haystack[left..<right])
-                if subStr == needle {
-                    return i
-                }
-            }
-        }
-        return -1
     }
     
     //Leetcode - 35 Search Insert Position

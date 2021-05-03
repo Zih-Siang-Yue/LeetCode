@@ -45,10 +45,6 @@ class Leetcode {
         let longestPalind = longestPalindrome("bb")
         print("leetcode5 output: \(longestPalind)")
                         
-        //35
-        let insertTarget = searchInsert([1, 3, 5, 6], 5)
-        print("leetcode35 output: \(insertTarget)")
-
         //50
         let pow = myPow(0.423, 1)
         print("leetcode50 output: \(pow)")
@@ -461,36 +457,6 @@ class Leetcode {
     func isPalindrome(str: String) -> Bool {
         let rStr = String(str.reversed())
         return str == rStr ? true : false
-    }
-    
-    //Leetcode - 35 Search Insert Position
-    func searchInsert(_ nums: [Int], _ target: Int) -> Int {    //[1, 3, 5, 6] , 7
-        return searchInsertSolution1(nums, target)
-        return searchInsertSolution2(nums, target)
-    }
-    
-    func searchInsertSolution1(_ nums: [Int], _ target: Int) -> Int {
-        for (i, v) in nums.enumerated() {
-            if v >= target {
-                return i
-            }
-        }
-        return nums.count
-    }
-    
-    func searchInsertSolution2(_ nums: [Int], _ target: Int) -> Int {
-        for i in 0 ..< nums.count {
-            if target <= nums[i] {
-                return i
-            }
-            else if target > nums[i] && i == nums.count - 1 {
-                return nums.count
-            }
-            else if target > nums[i] && target < nums[i+1] {
-                return i + 1
-            }
-        }
-        return nums.count
     }
     
     //Leetcode - 50 x的 ｎ次方

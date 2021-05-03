@@ -133,6 +133,8 @@
 		F0D7E989263FA96E00E378AA /* Q47-Permutations2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D7E985263FA96E00E378AA /* Q47-Permutations2.swift */; };
 		F0D7E98A263FA96E00E378AA /* Q17-LetterCombinationsOfAPhoneNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D7E986263FA96E00E378AA /* Q17-LetterCombinationsOfAPhoneNumber.swift */; };
 		F0D7E98C263FCDB700E378AA /* Q12-IntegertoRoman.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D7E98B263FCDB700E378AA /* Q12-IntegertoRoman.swift */; };
+		F0D7E98E263FD40400E378AA /* Q35-SearchInsertPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D7E98D263FD40400E378AA /* Q35-SearchInsertPosition.swift */; };
+		F0D7E992263FD4A500E378AA /* Q35-SearchInsertPosition_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D7E991263FD4A500E378AA /* Q35-SearchInsertPosition_Test.swift */; };
 		F0E11824263BE4CE005AAC68 /* Q142-LinkedListCycle2_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E11823263BE4CE005AAC68 /* Q142-LinkedListCycle2_Test.swift */; };
 		F0E11849263BE979005AAC68 /* Q141-LinkedListCycle_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E11848263BE979005AAC68 /* Q141-LinkedListCycle_Test.swift */; };
 		F0E11855263BE9FE005AAC68 /* Q21-MergeTwoSortedLists.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E11854263BE9FE005AAC68 /* Q21-MergeTwoSortedLists.swift */; };
@@ -307,6 +309,8 @@
 		F0D7E985263FA96E00E378AA /* Q47-Permutations2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Q47-Permutations2.swift"; sourceTree = "<group>"; };
 		F0D7E986263FA96E00E378AA /* Q17-LetterCombinationsOfAPhoneNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Q17-LetterCombinationsOfAPhoneNumber.swift"; sourceTree = "<group>"; };
 		F0D7E98B263FCDB700E378AA /* Q12-IntegertoRoman.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q12-IntegertoRoman.swift"; sourceTree = "<group>"; };
+		F0D7E98D263FD40400E378AA /* Q35-SearchInsertPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q35-SearchInsertPosition.swift"; sourceTree = "<group>"; };
+		F0D7E991263FD4A500E378AA /* Q35-SearchInsertPosition_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q35-SearchInsertPosition_Test.swift"; sourceTree = "<group>"; };
 		F0E11823263BE4CE005AAC68 /* Q142-LinkedListCycle2_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q142-LinkedListCycle2_Test.swift"; sourceTree = "<group>"; };
 		F0E11848263BE979005AAC68 /* Q141-LinkedListCycle_Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Q141-LinkedListCycle_Test.swift"; sourceTree = "<group>"; };
 		F0E11854263BE9FE005AAC68 /* Q21-MergeTwoSortedLists.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Q21-MergeTwoSortedLists.swift"; sourceTree = "<group>"; };
@@ -515,6 +519,7 @@
 				F0F28BFA263E542C0060C328 /* Q1-TwoSum .swift */,
 				F0F28C3D263E65DC0060C328 /* Q26-RemoveDuplicatesfromSortedArray.swift */,
 				F0F28C45263E680D0060C328 /* Q27-RemoveElement.swift */,
+				F0D7E98D263FD40400E378AA /* Q35-SearchInsertPosition.swift */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -858,6 +863,7 @@
 				F0F28BFE263E54E40060C328 /* Q1-TwoSum_Test.swift */,
 				F0F28C41263E66340060C328 /* Q26-RemoveDuplicatesfromSortedArray_Test.swift */,
 				F0F28C49263E68A00060C328 /* Q27-RemoveElement_Test.swift */,
+				F0D7E991263FD4A500E378AA /* Q35-SearchInsertPosition_Test.swift */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -1231,6 +1237,7 @@
 				F058E8F025428845002885CC /* Q15-3Sum.swift in Sources */,
 				F094532125931EE3004042AC /* Q557-ReverseWordsinaString3.swift in Sources */,
 				F0F28C21263E608A0060C328 /* Q13-RomantoInteger.swift in Sources */,
+				F0D7E98E263FD40400E378AA /* Q35-SearchInsertPosition.swift in Sources */,
 				F0D4EECF260D7E6800037B39 /* Q876-MiddleoftheLinkedList.swift in Sources */,
 				F05C92072330C1A6003DB2EB /* Leetcode.swift in Sources */,
 				F0D6235A2578D887004AF4AD /* whereClause.swift in Sources */,
@@ -1335,6 +1342,7 @@
 				F0F28C09263E59C90060C328 /* Q7-ReverseInteger_Test.swift in Sources */,
 				F0D4EEAF260B4D3700037B39 /* KKDay_3_Test.swift in Sources */,
 				F082AD8525777BB600DE5AAD /* Executable.swift in Sources */,
+				F0D7E992263FD4A500E378AA /* Q35-SearchInsertPosition_Test.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

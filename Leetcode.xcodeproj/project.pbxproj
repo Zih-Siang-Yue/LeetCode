@@ -135,6 +135,8 @@
 		F0D7E98C263FCDB700E378AA /* Q12-IntegertoRoman.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D7E98B263FCDB700E378AA /* Q12-IntegertoRoman.swift */; };
 		F0D7E98E263FD40400E378AA /* Q35-SearchInsertPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D7E98D263FD40400E378AA /* Q35-SearchInsertPosition.swift */; };
 		F0D7E992263FD4A500E378AA /* Q35-SearchInsertPosition_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D7E991263FD4A500E378AA /* Q35-SearchInsertPosition_Test.swift */; };
+		F0D7E994263FD5C800E378AA /* Q50_PowX_N.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D7E993263FD5C800E378AA /* Q50_PowX_N.swift */; };
+		F0D7E997263FD67D00E378AA /* Q50_PowX_N_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D7E996263FD67D00E378AA /* Q50_PowX_N_Test.swift */; };
 		F0E11824263BE4CE005AAC68 /* Q142-LinkedListCycle2_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E11823263BE4CE005AAC68 /* Q142-LinkedListCycle2_Test.swift */; };
 		F0E11849263BE979005AAC68 /* Q141-LinkedListCycle_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E11848263BE979005AAC68 /* Q141-LinkedListCycle_Test.swift */; };
 		F0E11855263BE9FE005AAC68 /* Q21-MergeTwoSortedLists.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E11854263BE9FE005AAC68 /* Q21-MergeTwoSortedLists.swift */; };
@@ -311,6 +313,8 @@
 		F0D7E98B263FCDB700E378AA /* Q12-IntegertoRoman.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q12-IntegertoRoman.swift"; sourceTree = "<group>"; };
 		F0D7E98D263FD40400E378AA /* Q35-SearchInsertPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q35-SearchInsertPosition.swift"; sourceTree = "<group>"; };
 		F0D7E991263FD4A500E378AA /* Q35-SearchInsertPosition_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q35-SearchInsertPosition_Test.swift"; sourceTree = "<group>"; };
+		F0D7E993263FD5C800E378AA /* Q50_PowX_N.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Q50_PowX_N.swift; sourceTree = "<group>"; };
+		F0D7E996263FD67D00E378AA /* Q50_PowX_N_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Q50_PowX_N_Test.swift; sourceTree = "<group>"; };
 		F0E11823263BE4CE005AAC68 /* Q142-LinkedListCycle2_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q142-LinkedListCycle2_Test.swift"; sourceTree = "<group>"; };
 		F0E11848263BE979005AAC68 /* Q141-LinkedListCycle_Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Q141-LinkedListCycle_Test.swift"; sourceTree = "<group>"; };
 		F0E11854263BE9FE005AAC68 /* Q21-MergeTwoSortedLists.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Q21-MergeTwoSortedLists.swift"; sourceTree = "<group>"; };
@@ -626,6 +630,7 @@
 			isa = PBXGroup;
 			children = (
 				F04989DC255F80B300FDE8DC /* Q264-UglyNumberII.swift */,
+				F0D7E993263FD5C800E378AA /* Q50_PowX_N.swift */,
 			);
 			path = Math;
 			sourceTree = "<group>";
@@ -957,6 +962,7 @@
 		F0D6235C2578DA2A004AF4AD /* Medium */ = {
 			isa = PBXGroup;
 			children = (
+				F0D7E995263FD67100E378AA /* Math */,
 				F0E41C8A262E71580083ABAF /* LinkedList */,
 				F0BECE4B25DFA010004960D9 /* String */,
 				F0D6235B2578DA1C004AF4AD /* Array */,
@@ -974,6 +980,14 @@
 				F0D7E986263FA96E00E378AA /* Q17-LetterCombinationsOfAPhoneNumber.swift */,
 			);
 			path = Backtracking;
+			sourceTree = "<group>";
+		};
+		F0D7E995263FD67100E378AA /* Math */ = {
+			isa = PBXGroup;
+			children = (
+				F0D7E996263FD67D00E378AA /* Q50_PowX_N_Test.swift */,
+			);
+			path = Math;
 			sourceTree = "<group>";
 		};
 		F0E1182B263BE786005AAC68 /* LinkedList */ = {
@@ -1218,6 +1232,7 @@
 				F04989DD255F80B300FDE8DC /* Q264-UglyNumberII.swift in Sources */,
 				BC82425B217B17590011CA7F /* AppDelegate.swift in Sources */,
 				F0D7E976263FA6EF00E378AA /* Q28-ImplementstrStr.swift in Sources */,
+				F0D7E994263FD5C800E378AA /* Q50_PowX_N.swift in Sources */,
 				F0E41BF9262434520083ABAF /* Binance-ShortestStr.swift in Sources */,
 				F0D7E987263FA96E00E378AA /* Q22-GenerateParentheses.swift in Sources */,
 				F0D4EE5225FF32E400037B39 /* Q347-TopKFrequentElements.swift in Sources */,
@@ -1317,6 +1332,7 @@
 				F0D4EEE0260D8F9300037B39 /* Q453-MinimumMovestoEqualArrayElements_Test.swift in Sources */,
 				F0BECE3F25DE5F16004960D9 /* Q521-LongestUncommonSubsequenceI_Test.swift in Sources */,
 				F09453142591C8BA004042AC /* Q520_DetectCapital_Test.swift in Sources */,
+				F0D7E997263FD67D00E378AA /* Q50_PowX_N_Test.swift in Sources */,
 				F0E41CA3262E80D60083ABAF /* Q21-MergeTwoSortedLists_Test.swift in Sources */,
 				F0BECE4825DF9FF9004960D9 /* Q38-CountandSay_Test.swift in Sources */,
 				F0D4EE1A25F9F1C500037B39 /* Q985-SumofEvenNumbersAfterQueries_Test.swift in Sources */,

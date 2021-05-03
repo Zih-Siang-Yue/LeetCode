@@ -44,11 +44,7 @@ class Leetcode {
         //5
         let longestPalind = longestPalindrome("bb")
         print("leetcode5 output: \(longestPalind)")
-                        
-        //50
-        let pow = myPow(0.423, 1)
-        print("leetcode50 output: \(pow)")
-        
+                                
         //53
         let masSubs = maxSubArray([-2,1,-3,4,-1,2,1,-5,4])
         print("leetcode53 output: \(masSubs)")
@@ -457,26 +453,6 @@ class Leetcode {
     func isPalindrome(str: String) -> Bool {
         let rStr = String(str.reversed())
         return str == rStr ? true : false
-    }
-    
-    //Leetcode - 50 x的 ｎ次方
-    func myPow(_ x: Double, _ n: Int) -> Double {
-        //1. 利用遞迴方式撰寫
-        //2. if n == 0 (任何 x 的 0次方皆為1) -> 回傳1
-        //3. 先判斷, 若次方數 < 0 -> x 變為 1/x, n = -n
-        //4. 判斷次方是否可被2整除, 若可以 重新呼叫自己 pow(x*x, n/2), 若不行 pow(x*x, n/2) * x
-        if n == 0 {
-            return 1
-        }
-        
-        var mX = x
-        var mN = n
-        if n < 0 {
-            mX = 1 / x
-            mN = -n
-        }
-        
-        return mN % 2 == 0 ? myPow(mX * mX, mN / 2) : myPow(mX * mX, mN / 2) * mX
     }
     
     //Leetcode - 53 Maximum Subarray

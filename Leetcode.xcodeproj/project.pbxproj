@@ -145,6 +145,8 @@
 		F0D7E9A32642865700E378AA /* Q160-IntersectionofTwoLinkedLists_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D7E9A22642865700E378AA /* Q160-IntersectionofTwoLinkedLists_Test.swift */; };
 		F0D7E9A52643BBB100E378AA /* Q237-DeleteNodeinaLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D7E9A42643BBB100E378AA /* Q237-DeleteNodeinaLinkedList.swift */; };
 		F0D7E9A72643C2BE00E378AA /* Q237-DeleteNodeinaLinkedList_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D7E9A62643C2BE00E378AA /* Q237-DeleteNodeinaLinkedList_Test.swift */; };
+		F0D7E9AD2649121B00E378AA /* Q804-UniqueMorseCodeWords.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D7E9AC2649121B00E378AA /* Q804-UniqueMorseCodeWords.swift */; };
+		F0D7E9AF264913B600E378AA /* Q804-UniqueMorseCodeWords_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D7E9AE264913B600E378AA /* Q804-UniqueMorseCodeWords_Test.swift */; };
 		F0E11824263BE4CE005AAC68 /* Q142-LinkedListCycle2_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E11823263BE4CE005AAC68 /* Q142-LinkedListCycle2_Test.swift */; };
 		F0E11849263BE979005AAC68 /* Q141-LinkedListCycle_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E11848263BE979005AAC68 /* Q141-LinkedListCycle_Test.swift */; };
 		F0E11855263BE9FE005AAC68 /* Q21-MergeTwoSortedLists.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E11854263BE9FE005AAC68 /* Q21-MergeTwoSortedLists.swift */; };
@@ -331,6 +333,8 @@
 		F0D7E9A22642865700E378AA /* Q160-IntersectionofTwoLinkedLists_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q160-IntersectionofTwoLinkedLists_Test.swift"; sourceTree = "<group>"; };
 		F0D7E9A42643BBB100E378AA /* Q237-DeleteNodeinaLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q237-DeleteNodeinaLinkedList.swift"; sourceTree = "<group>"; };
 		F0D7E9A62643C2BE00E378AA /* Q237-DeleteNodeinaLinkedList_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q237-DeleteNodeinaLinkedList_Test.swift"; sourceTree = "<group>"; };
+		F0D7E9AC2649121B00E378AA /* Q804-UniqueMorseCodeWords.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q804-UniqueMorseCodeWords.swift"; sourceTree = "<group>"; };
+		F0D7E9AE264913B600E378AA /* Q804-UniqueMorseCodeWords_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q804-UniqueMorseCodeWords_Test.swift"; sourceTree = "<group>"; };
 		F0E11823263BE4CE005AAC68 /* Q142-LinkedListCycle2_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Q142-LinkedListCycle2_Test.swift"; sourceTree = "<group>"; };
 		F0E11848263BE979005AAC68 /* Q141-LinkedListCycle_Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Q141-LinkedListCycle_Test.swift"; sourceTree = "<group>"; };
 		F0E11854263BE9FE005AAC68 /* Q21-MergeTwoSortedLists.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Q21-MergeTwoSortedLists.swift"; sourceTree = "<group>"; };
@@ -626,6 +630,7 @@
 				F0F28C20263E608A0060C328 /* Q13-RomantoInteger.swift */,
 				F0F28C29263E62680060C328 /* Q14-LongestCommonPrefix.swift */,
 				F0D7E975263FA6EF00E378AA /* Q28-ImplementstrStr.swift */,
+				F0D7E9AC2649121B00E378AA /* Q804-UniqueMorseCodeWords.swift */,
 			);
 			path = String;
 			sourceTree = "<group>";
@@ -858,6 +863,7 @@
 				F0F28C24263E60D80060C328 /* Q13-RomantoInteger_Test.swift */,
 				F0F28C2D263E62C90060C328 /* Q14-LongestCommonPrefix_Test.swift */,
 				F0D7E977263FA78C00E378AA /* Q28-ImplementstrStr_Test.swift */,
+				F0D7E9AE264913B600E378AA /* Q804-UniqueMorseCodeWords_Test.swift */,
 			);
 			path = String;
 			sourceTree = "<group>";
@@ -1275,6 +1281,7 @@
 				F04989DF255F85A900FDE8DC /* Q40-CombinationSumII.swift in Sources */,
 				F09453102591C567004042AC /* Q520-DetectCapital.swift in Sources */,
 				F0D4EE1625F9F01900037B39 /* Q985-SumofEvenNumbersAfterQueries.swift in Sources */,
+				F0D7E9AD2649121B00E378AA /* Q804-UniqueMorseCodeWords.swift in Sources */,
 				F0D4EE8E26086A0B00037B39 /* Q1103-DistributeCandiestoPeople.swift in Sources */,
 				F058E8F025428845002885CC /* Q15-3Sum.swift in Sources */,
 				F094532125931EE3004042AC /* Q557-ReverseWordsinaString3.swift in Sources */,
@@ -1383,6 +1390,7 @@
 				F09452CC25907DBC004042AC /* Q415-AddStrings_Test.swift in Sources */,
 				F094532525931F20004042AC /* Q557_ReverseWordsinaString3_Test.swift in Sources */,
 				F09452E8259088A5004042AC /* Q459-RepeatedSubstringPattern_Test.swift in Sources */,
+				F0D7E9AF264913B600E378AA /* Q804-UniqueMorseCodeWords_Test.swift in Sources */,
 				F0D4EE4625FB507900037B39 /* Q238-ProductofArrayExceptSelf_Test.swift in Sources */,
 				F0F28C11263E5E0F0060C328 /* Q9-PalindromeNumber_Test.swift in Sources */,
 				F0D6235E2578DA5A004AF4AD /* Q16-3SumClosest_Test.swift in Sources */,
